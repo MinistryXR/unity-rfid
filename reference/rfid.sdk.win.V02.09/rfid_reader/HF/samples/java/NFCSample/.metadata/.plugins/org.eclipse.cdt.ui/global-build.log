@@ -1,0 +1,448 @@
+10:46:01 **** Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+10:46:07 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+10:46:36 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+10:51:53 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+10:51:59 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+10:52:22 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+10:52:27 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:02:04 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:02:08 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:04:44 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Compile++ thumb: NdkSupport <= com_rfid_transport_NdkSupport.cpp
+[armeabi] Compile++ thumb: NdkSupport <= utils.cpp
+[armeabi] Compile++ thumb: NdkSupport <= SerialPort.cpp
+[armeabi] Compile++ thumb: NdkSupport <= CommonFun.cpp
+[armeabi] Compile++ thumb: NdkSupport <= TCPClient.cpp
+[armeabi] SharedLibrary  : libNdkSupport.so
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:04:51 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:05:40 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:05:45 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:06:11 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:06:16 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:07:00 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:07:05 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:08:07 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:08:10 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:13:17 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi-v7a] Compile++ thumb: NdkSupport <= com_rfid_transport_NdkSupport.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= utils.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= SerialPort.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= CommonFun.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= TCPClient.cpp
+[armeabi-v7a] SharedLibrary  : libNdkSupport.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:13:23 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:13:36 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+Android NDK: WARNING: APP_PLATFORM android-19 is larger than android:minSdkVersion 8 in ./AndroidManifest.xml    
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:15:45 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi-v7a] Compile++ thumb: NdkSupport <= com_rfid_transport_NdkSupport.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= utils.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= SerialPort.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= CommonFun.cpp
+[armeabi-v7a] Compile++ thumb: NdkSupport <= TCPClient.cpp
+[armeabi-v7a] SharedLibrary  : libNdkSupport.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:15:50 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:18:37 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Compile++ thumb: NdkSupport <= com_rfid_transport_NdkSupport.cpp
+[armeabi] Compile++ thumb: NdkSupport <= utils.cpp
+[armeabi] Compile++ thumb: NdkSupport <= SerialPort.cpp
+[armeabi] Compile++ thumb: NdkSupport <= CommonFun.cpp
+[armeabi] Compile++ thumb: NdkSupport <= TCPClient.cpp
+[armeabi] SharedLibrary  : libNdkSupport.so
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:18:43 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+11:26:26 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:27:48 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:27:51 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:30:48 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:30:53 **** Incremental Build of configuration Default for project anRfidLibSourceDebug ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" NDK_DEBUG=1 all 
+[armeabi] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi/gdbserver
+[armeabi] Gdbsetup       : libs/armeabi/gdb.setup
+[armeabi-v7a] Gdbserver      : [arm-linux-androideabi-4.6] libs/armeabi-v7a/gdbserver
+[armeabi-v7a] Gdbsetup       : libs/armeabi-v7a/gdb.setup
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:56:32 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+10:17:36 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+16:54:11 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+17:01:50 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+17:03:26 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:29:03 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:45:08 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:49:20 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+15:23:27 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+15:51:25 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+17:14:47 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+17:15:16 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+17:16:45 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+09:05:03 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+10:09:28 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+10:54:06 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:02:52 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:05:22 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+11:06:25 **** Incremental Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+14:41:47 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+14:42:40 **** Build of configuration Default for project anRfidLibSourceTest ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+10:42:05 **** Build of configuration Default for project AnReaderLib ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+10:53:17 **** Incremental Build of configuration Default for project AnReaderLib ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+10:44:16 **** Clean-only build of configuration Default for project AnReaderLib ****
+sh "D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build" clean 
+Cannot run program "sh": Launching failed
+
+Error: Program "sh" not found in PATH
+PATH=[C:/Program Files/Java/jre1.8.0_92/bin/server;C:/Program Files/Java/jre1.8.0_92/bin;C:/Program Files/Java/jre1.8.0_92/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\ProgramData\Lenovo\ReadyApps;C:\Program Files (x86)\MySQL\MySQL Server 5.5\bin;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_40\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;D:\软件安装包\安卓编译环境_Eclipe\adt-bundle-windows-x86_64-20140321\eclipse;]

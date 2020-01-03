@@ -1,0 +1,2 @@
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.pdb

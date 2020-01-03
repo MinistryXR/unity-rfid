@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;cn.pda.serialport&apos; to &apos;RfidLibSample/src&apos;&#x0D;&#x0A;- Original project: &apos;HFAndea&apos;&#x0D;&#x0A;- Destination element: &apos;RfidLibSample/src&apos;&#x0D;&#x0A;- Original element: &apos;HFAndea/src/cn.pda.serialport&apos;" description="Copy package" destination="=RfidLibSample/src" element1="/src&lt;cn.pda.serialport" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1458547627835" version="1.0"/>
+</session>

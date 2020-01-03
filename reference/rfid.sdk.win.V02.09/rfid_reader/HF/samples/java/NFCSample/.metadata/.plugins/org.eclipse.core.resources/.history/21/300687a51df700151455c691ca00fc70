@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_iso15693Uid"
+        android:layout_width="wrap_content"
+        android:layout_height="35dip"
+        android:gravity="center_vertical"
+        android:text="UID:"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/sn_uidList"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_toRightOf="@id/tv_iso15693Uid" />
+
+    <Button
+        android:id="@+id/btn_iso15693Inventory"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp" 
+        android:layout_toRightOf="@id/sn_uidList"
+        android:layout_marginLeft="5dp"
+        android:text="盘点"/>
+
+</RelativeLayout>

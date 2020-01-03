@@ -1,0 +1,16 @@
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\debug_unicode\ResolveAssemblyReference.cache
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\debug_unicode\RPANSample.Form1.resources
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\debug_unicode\RPANSample.Properties.Resources.resources
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\debug_unicode\InventoryReadSample.csproj.GenerateResource.Cache
+C:\Users\andea\Desktop\HF-高频\samples\run\win64\unicode_debug\BufferModeSample.exe
+C:\Users\andea\Desktop\HF-高频\samples\run\win64\unicode_debug\BufferModeSample.pdb
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.exe
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.pdb
+C:\Users\andea\Desktop\HF-高频\samples\run\win32\unicode_debug\BufferModeSample.exe
+C:\Users\andea\Desktop\HF-高频\samples\run\win32\unicode_debug\BufferModeSample.pdb
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\RPANSample.Form1.resources
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\RPANSample.Properties.Resources.resources
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\InventoryReadSample.csproj.GenerateResource.Cache
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\BufferModeSample.exe
+C:\Users\andea\Desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\BufferModeSample.pdb

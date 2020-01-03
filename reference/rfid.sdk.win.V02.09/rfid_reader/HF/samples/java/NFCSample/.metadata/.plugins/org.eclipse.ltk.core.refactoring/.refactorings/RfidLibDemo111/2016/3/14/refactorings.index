@@ -1,0 +1,24 @@
+1459129645232	Extracts string '清空' into R.string.btn_clearList
+1459136682692	Delete element
+1459137163911	Rename type 'ISISO15693Tag'
+1459142629526	Rename method 'GetAllDevicesPath'
+1459145666341	Rename field 'INVENTORY_END'
+1459145685416	Rename field 'ThreadEnd'
+1459215562893	Rename field 'm_syncTDReports'
+1459219408824	Extracts string '数据' into R.string.tv_scanfData
+1459227651958	Rename field 'mHandler'
+1459227877247	Rename field 'GetScanRecordHandler'
+1459228283264	Rename type 'InventoryHandler'
+1459228307360	Rename field 'inventoryHandler'
+1459234326901	Extracts string '标签总数:0' into R.string.tv_inventoryInfo
+1459235730866	Extracts string '记录数:0' into R.string.tv_scanRecordInfo
+1459236757134	Extracts string '清空列表' into R.string.btn_clearScanList
+1459237033142	Rename field 'btn_clearList'
+1459242248306	Extracts string '频率功率:' into R.string.tv_rfPower
+1459242305375	Copy file
+1459242742548	Rename resource 'commType.xml'
+1459242759920	Rename resource 'devicesType.xml'
+1459243129995	Extracts string '设置功率' into R.string.tv_setPower
+1459244562010	Extracts string '读取' into R.string.btn_readPower
+1459307222535	Delete element
+1459308798355	Delete element

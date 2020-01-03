@@ -1,0 +1,8 @@
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\bin\Debug\ConfigurationBlockSample.exe
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\bin\Debug\ConfigurationBlockSample.pdb
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\obj\Debug\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\obj\Debug\ConfigurationBlockSample.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\obj\Debug\ConfigurationBlockSample.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\obj\Debug\ConfigurationBlockSample.csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\obj\Debug\ConfigurationBlockSample.exe
+H:\Users\desktop\HF-高频\samples\C#\ConfigurationBlockSample\obj\Debug\ConfigurationBlockSample.pdb

@@ -1,0 +1,19 @@
+1459909248540	Rename type 'HTagHandle'
+1459909278254	Rename type 'TagOperate'
+1459919173347	Rename type 'ANM201ISO15693PICCAccess'
+1459924491895	Rename field 'sn_uidList'
+1460001406095	Rename method 'GetTagInfo'
+1460012111017	Rename field 'btn_setDsfid'
+1460014464271	Rename field 'btn_lockDsfid'
+1460014533980	Rename field 'btn_icodesli_lock'
+1460014850145	Extracts string '锁EAS' into R.string.btn_icodesli_lockEas
+1460017049303	Rename field 'btn_setAFI'
+1460017117556	Rename field 'btn_setAFI'
+1460017169947	Rename field 'btn_lockAFI'
+1460017204916	Rename field 'btn_lockAFI'
+1460083903076	Copy compilation unit
+1460084920645	Rename type 'ADReaderAPI'
+1460084944257	Rename type 'ISO15693API'
+1460092200117	Move file
+1460092236920	Move file
+1460092353929	Extracts string 'arrow' into R.string.tagListimage

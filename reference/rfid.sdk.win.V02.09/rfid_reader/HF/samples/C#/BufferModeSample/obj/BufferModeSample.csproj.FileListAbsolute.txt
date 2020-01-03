@@ -1,0 +1,16 @@
+H:\Users\desktop\HF-高频\samples\run\win64\debug\BufferModeSample.exe
+H:\Users\desktop\HF-高频\samples\run\win64\debug\BufferModeSample.pdb
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\Debug\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\Debug\RPANSample.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\Debug\RPANSample.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\Debug\BufferModeSample.csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\Debug\BufferModeSample.exe
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x64\Debug\BufferModeSample.pdb
+H:\Users\desktop\HF-高频\samples\run\win32\unicode_debug\BufferModeSample.exe
+H:\Users\desktop\HF-高频\samples\run\win32\unicode_debug\BufferModeSample.pdb
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\RPANSample.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\RPANSample.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\BufferModeSample.csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\BufferModeSample.exe
+H:\Users\desktop\HF-高频\samples\C#\BufferModeSample\obj\x86\debug_unicode\BufferModeSample.pdb

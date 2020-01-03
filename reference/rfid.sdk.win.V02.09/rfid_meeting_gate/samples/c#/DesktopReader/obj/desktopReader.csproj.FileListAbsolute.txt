@@ -1,0 +1,16 @@
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\run\win64\unicode_debug\DesktopReader.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\run\win64\unicode_debug\DesktopReader.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x64\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x64\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x64\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x64\debug_unicode\desktopReader.csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x64\debug_unicode\DesktopReader.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x64\debug_unicode\DesktopReader.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\run\win32\unicode_debug\DesktopReader.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\run\win32\unicode_debug\DesktopReader.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x86\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x86\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x86\debug_unicode\desktopReader.csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x86\debug_unicode\DesktopReader.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_meeting_gate-会议签到门开发包\samples\c#\DesktopReader\obj\x86\debug_unicode\DesktopReader.pdb

@@ -1,0 +1,67 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetingGateAsst_CS", "..\..\c#\MeetingGateAsst\MeetingGateAsst_CS.csproj", "{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp samples", "CSharp samples", "{DD2315BE-62AF-4AE1-91C9-09D0B2C603EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MFC samples", "MFC samples", "{65D2BB42-6AD5-405F-B2AB-4D6B3C8083E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MeetingGateAsst", "..\..\mfc\MeetingGateAsst\MeetingGateAsst.vcproj", "{349BEA38-FE42-4170-A80E-1250A7A63C3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "desktopReader", "..\..\c#\DesktopReader\desktopReader.csproj", "{2DD94001-E996-4A6B-A068-3D0A5454A036}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug_unicode|Win32 = debug_unicode|Win32
+		debug_unicode|x64 = debug_unicode|x64
+		debug_unicode|x86 = debug_unicode|x86
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.debug_unicode|Win32.ActiveCfg = debug_unicode|x86
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.debug_unicode|Win32.Build.0 = debug_unicode|x86
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.debug_unicode|x64.ActiveCfg = debug_unicode|x64
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.debug_unicode|x64.Build.0 = debug_unicode|x64
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.debug_unicode|x86.ActiveCfg = debug_unicode|x86
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.debug_unicode|x86.Build.0 = debug_unicode|x86
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.Debug|Win32.ActiveCfg = Debug|x86
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.Debug|x64.ActiveCfg = Debug|x64
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.Debug|x64.Build.0 = Debug|x64
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.Debug|x86.ActiveCfg = Debug|x86
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE}.Debug|x86.Build.0 = Debug|x86
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.debug_unicode|Win32.ActiveCfg = debug_unicode|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.debug_unicode|Win32.Build.0 = debug_unicode|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.debug_unicode|x64.ActiveCfg = debug_unicode|x64
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.debug_unicode|x64.Build.0 = debug_unicode|x64
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.debug_unicode|x86.ActiveCfg = debug_unicode|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.debug_unicode|x86.Build.0 = debug_unicode|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.Debug|Win32.Build.0 = Debug|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.Debug|x64.ActiveCfg = Debug|x64
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.Debug|x64.Build.0 = Debug|x64
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F}.Debug|x86.Build.0 = Debug|Win32
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|Win32.ActiveCfg = debug_unicode|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|Win32.Build.0 = debug_unicode|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x64.ActiveCfg = debug_unicode|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x64.Build.0 = debug_unicode|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x86.ActiveCfg = debug_unicode|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x86.Build.0 = debug_unicode|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|Win32.ActiveCfg = Debug|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x64.ActiveCfg = Debug|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x64.Build.0 = Debug|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x86.ActiveCfg = Debug|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1630E720-98C1-45D3-82D0-E0A0FAC71EAE} = {DD2315BE-62AF-4AE1-91C9-09D0B2C603EB}
+		{2DD94001-E996-4A6B-A068-3D0A5454A036} = {DD2315BE-62AF-4AE1-91C9-09D0B2C603EB}
+		{349BEA38-FE42-4170-A80E-1250A7A63C3F} = {65D2BB42-6AD5-405F-B2AB-4D6B3C8083E8}
+	EndGlobalSection
+EndGlobal

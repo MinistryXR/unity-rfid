@@ -1,0 +1,22 @@
+unit rfidlib_tag_ti_hfiplus;
+
+interface
+type
+PBYTE=^byte  ;
+
+
+
+function  TIHFIPLUS_GetLibVersion( buf:pchar ;  nSize:longword):longword;stdcall; external 'rfidlib_tag_ti_hfiplus.dll' ;
+
+function  TIHFIPLUS_Write2Blocks(hr:longword  ;
+						                    ht:longword;
+									 blkAddr:longword;
+									newTwoBlksData:pbyte;
+									 bytesToWrite  :longword
+									) :integer;stdcall ;external 'rfidlib_tag_ti_hfiplus.dll' ;
+function  TIHFIPLUS_Lock2Blocks(hr:longword  ;
+						                    ht:longword;
+									 blkAddr:longword) ;
+implementation
+
+end.

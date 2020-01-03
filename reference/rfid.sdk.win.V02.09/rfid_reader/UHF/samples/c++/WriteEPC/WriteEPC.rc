@@ -1,0 +1,253 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\WriteEPC.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WriteEPC.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WRITEEPC_DIALOG DIALOGEX 0, 0, 488, 354
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "WriteEPC"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,7,40,465,300
+    PUSHBUTTON      "Get device infor",IDC_BUTTON1,13,11,80,19
+END
+
+IDD_INVENTORY DIALOGEX 0, 0, 429, 239
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Tag data:",IDC_STATIC,14,14,45,11
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,26,333,206
+    PUSHBUTTON      "Start Inventory",IDC_BUTTON1,354,48,58,23
+    LTEXT           "Timeout:",IDC_STATIC,351,96,32,8
+    EDITTEXT        IDC_EDIT1,351,106,57,16,ES_AUTOHSCROLL
+    LTEXT           "Total Count:",IDC_STATIC,354,132,54,21
+    CTEXT           "0",IDC_STATIC_TOTAL,350,146,55,23
+    PUSHBUTTON      "Stop",IDC_BUTTON2,353,75,59,20
+    CONTROL         "",IDC_RICHEDIT21,"RichEdit20A",ES_AUTOHSCROLL | WS_BORDER | WS_TABSTOP,347,170,66,62
+END
+
+IDD_WRITE DIALOGEX 0, 0, 392, 222
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "EPCs:",IDC_STATIC,19,22,31,14
+    COMBOBOX        IDC_COMBO1,45,21,293,21,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Start word:",IDC_STATIC,15,45,46,21
+    LTEXT           "Word count:",IDC_STATIC,15,65,44,14
+    LTEXT           "Access password:",IDC_STATIC,171,51,65,14
+    LTEXT           "EPC data:",IDC_STATIC,14,89,51,20
+    EDITTEXT        IDC_EDIT1,56,84,255,16,ES_AUTOHSCROLL
+    LTEXT           "Hex",IDC_STATIC,309,87,33,18
+    PUSHBUTTON      "Write",IDC_BUTTON1,77,111,51,21
+    COMBOBOX        IDC_COMBO2,57,44,55,15,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,57,62,55,14,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT2,232,47,73,18,ES_AUTOHSCROLL
+END
+
+IDD_OPEN DIALOGEX 0, 0, 339, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Open",IDOK,150,164,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,81,164,50,14
+    COMBOBOX        IDC_COMBO_COM,47,38,56,125,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "COM:",IDC_STATIC,22,40,23,9
+    LTEXT           "Baud:",IDC_STATIC,22,59,26,12
+    LTEXT           "Frame:",IDC_STATIC,22,79,25,11
+    GROUPBOX        "Serial parameters",IDC_STATIC,13,29,118,76
+    LTEXT           "Reader Type:",IDC_STATIC,24,14,50,13
+    COMBOBOX        IDC_COMBO_READERTYPE,75,12,74,125,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "USB Parameters",IDC_STATIC,136,28,173,76
+    LTEXT           "USB open type:",IDC_STATIC,147,41,57,9
+    COMBOBOX        IDC_COMBO_USBOPENTYPE,146,52,81,125,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Serial Number:",IDC_STATIC,145,67,53,8
+    COMBOBOX        IDC_COMBO_USBSERIAL,145,77,95,125,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Network",IDC_STATIC,14,111,295,47
+    LTEXT           "IP Addr:",IDC_STATIC,19,126,29,9
+    CONTROL         "",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,48,124,90,14
+    LTEXT           "Port",IDC_STATIC,147,125,36,15
+    EDITTEXT        IDC_EDIT_PORT,168,122,53,17,ES_AUTOHSCROLL
+    LTEXT           "Communication Type:",IDC_STATIC,164,14,72,12
+    COMBOBOX        IDC_COMBO_COMMTYPE,237,13,74,125,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_BAUD,47,57,56,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FRAME,47,78,56,78,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "WriteEPC.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "WriteEPC.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WRITEEPC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 481
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 347
+    END
+
+    IDD_INVENTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_WRITE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 385
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 215
+    END
+
+    IDD_OPEN, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 328
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\WriteEPC.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

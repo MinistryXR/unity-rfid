@@ -1,0 +1,274 @@
+#include"com_rfid_transport_NdkSupport.h"
+#include"CommonFun.h"
+#include"SerialPort.h"
+#include"TCPClient.h"
+
+/*
+ * Class:     com_rfid_transport_NdkSupport
+ * Method:    COMOpen
+ * Signature: (Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)I
+ */
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_COMOpen(JNIEnv *env,
+		jclass cls, jstring NameStr, jint iBaud, jstring frameStr, jobject hCom)
+{
+
+	int iDataBits = 8, iStopBits = 1, iParity = 0;
+	int iret = -1;
+	char*pFrame = CommonFun::jstringToChar(env, frameStr);
+	char*pComName = CommonFun::jstringToChar(env, NameStr);
+	SerialPort *pComHandle = new SerialPort();
+	if (strcmp(pFrame, "8N1") == 0)
+	{
+		iParity = 'N';
+	}
+	else if (strcmp(pFrame, "8E1") == 0)
+	{
+		iParity = 'E';
+	}
+	else if (strcmp(pFrame, "8O1") == 0)
+	{
+		iParity = 'O';
+	}
+	else
+	{
+		delete pComHandle;
+		goto END;
+	}
+	iret = pComHandle->open_com(pComName, iBaud, iDataBits, iStopBits, iParity);
+	if (iret != 0)
+	{
+		delete pComHandle;
+		goto END;
+	}
+	CommonFun::SetLong(env, hCom, (jlong) pComHandle);
+	END: free(pFrame);
+	free(pComName);
+	//LOGD("OPEN COM OK");
+	return iret;
+}
+
+/*
+ * Class:     com_rfid_transport_NdkSupport
+ * Method:    COMClose
+ * Signature: (J)I
+ */
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_COMClose(JNIEnv *env,
+		jclass cls, jlong hCom)
+{
+	if (hCom)
+	{
+		return 0;
+	}
+	SerialPort *pComHandle = (SerialPort *) hCom;
+	pComHandle->close_com();
+	delete pComHandle;
+	return 0;
+}
+
+/*
+ * Class:     com_rfid_transport_NdkSupport
+ * Method:    COMSendBuffer
+ * Signature: (J[BII)I
+ */
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_COMSendBuffer(
+		JNIEnv *env, jclass obj, jlong hCom, jbyteArray buffer, jint offset,
+		jint len)
+{
+	int nret = -1;
+	if (hCom == 0)
+	{
+		LOGD("COM NOT OPEN");
+		return nret;
+	}
+	SerialPort *pComHandle = (SerialPort *) hCom;
+	jbyte * olddata = (jbyte*) env->GetByteArrayElements(buffer, 0);
+	jsize oldsize = env->GetArrayLength(buffer);
+	unsigned char* pBuffer = (unsigned char*) olddata;
+	int Bufferlen = (int) oldsize;
+	nret = pComHandle->send_frame(pBuffer, len);
+	env->ReleaseByteArrayElements(buffer, (jbyte*) olddata, JNI_ABORT); /* abort to not copy back contents */
+	return nret;
+}
+
+/*
+ * Class:     com_rfid_transport_NdkSupport
+ * Method:    COMRecvBuffer
+ * Signature: (J[BI)I
+ */
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_COMRecvBuffer(
+		JNIEnv *env, jclass obj, jlong hCom, jbyteArray buffer, jint iToRecv)
+{
+	int nret = -1;
+	if (hCom == 0)
+	{
+		LOGD("COM NOT OPEN");
+		return nret;
+	}
+	BYTE *recvData = new BYTE[iToRecv];
+	memset(recvData, 0x00, iToRecv);
+	SerialPort *pComHandle = (SerialPort *) hCom;
+	nret = pComHandle->recv_frame(recvData, iToRecv);
+	if (nret <= 0)
+	{
+		goto EndExit;
+	}
+	env->SetByteArrayRegion(buffer, 0, iToRecv, (jbyte*) recvData);
+	EndExit: delete[] recvData;
+	return nret;
+}
+
+//清空缓冲区数据
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_COMIoflush(
+		JNIEnv *env, jclass cls, jlong hCom)
+{
+	int nret = -1;
+	if (hCom == 0)
+	{
+		LOGD("COM NOT OPEN");
+		return nret;
+	}
+	SerialPort *pComHandle = (SerialPort *) hCom;
+	pComHandle->io_flush();
+	return 0;
+}
+
+jint JNICALL Java_com_rfid_transport_NdkSupport_CalCRC16(JNIEnv *env,
+		jclass obj, jbyteArray buffer, jint offset, jint cnt)
+{
+	jbyte * pBuffer = (jbyte*) env->GetByteArrayElements(buffer, 0);
+	unsigned short crc = 0xffff;
+	unsigned short i = 0, j = 0;
+	unsigned char val = 0x00;
+
+	for (i = 0; i < cnt; i++)
+	{
+		val = pBuffer[i + offset];
+		crc ^= val;
+		for (j = 0; j < 8; j++)
+		{
+			if ((crc & 0x0001) != 0)
+				crc = (crc >> 1) ^ 0x8408;
+			else
+				crc = (crc >> 1);
+		}
+	}
+	env->ReleaseByteArrayElements(buffer, (jbyte*) pBuffer, JNI_ABORT);
+	return (crc & 0xffff);
+}
+
+JNIEXPORT void JNICALL Java_com_rfid_transport_NdkSupport_SetLongValue
+(JNIEnv *env, jclass obj, jobject dest, jlong val)
+{
+	CommonFun::SetLong(env,dest,val);
+}
+
+JNIEXPORT void JNICALL Java_com_rfid_transport_NdkSupport_SetIntegerValue
+(JNIEnv *env, jclass obj, jobject dest, jint val)
+{
+	CommonFun::SetInteger(env,dest,val);
+}
+
+JNIEXPORT void JNICALL Java_com_rfid_transport_NdkSupport_SetByteValue
+(JNIEnv *env, jclass obj, jobject dest, jbyte val)
+{
+	CommonFun::SetByte(env,dest,val);
+}
+
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_TCPClientOpen(
+		JNIEnv *env, jclass obj, jstring remoteIp, jint remotePort,
+		jobject handle)
+{
+	int iret = -1;
+	//LOGD("OKOK12345");
+	//char*pLocalIp = CommonFun::jstringToChar(env, localIp);
+	char*pRemoteIp = CommonFun::jstringToChar(env, remoteIp);
+	TCPClient *pTcp = new TCPClient();
+	pTcp->setpara(pRemoteIp, remotePort);
+	iret = pTcp->Connect();
+	if (iret != ERR_NOERR)
+	{
+		LOGD("Open net failed.iret = %d", iret);
+		delete pTcp;
+		goto End;
+	}
+	//LOGD("OKOK");
+	CommonFun::SetLong(env, handle, (jlong) pTcp);
+	//End: free (pLocalIp);
+	End: free(pRemoteIp);
+	return iret;
+}
+
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_TCPClientClose(
+		JNIEnv *env, jclass obj, jlong handle)
+{
+	if (handle == 0)
+	{
+		return 0;
+	}
+	TCPClient *pTcp = (TCPClient*) handle;
+	pTcp->releasesocket();
+	return 0;
+}
+
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_TCPClientSendBuffer(
+		JNIEnv *env, jclass obj, jlong handle, jbyteArray buffer, jint offset,
+		jint len)
+{
+	int nret = -1;
+	if (handle == 0)
+	{
+		return nret;
+	}
+	TCPClient *pTcpHandle = (TCPClient *) handle;
+	jbyte * olddata = (jbyte*) env->GetByteArrayElements(buffer, 0);
+	jsize oldsize = env->GetArrayLength(buffer);
+	unsigned char* pBuffer = (unsigned char*) olddata;
+	int Bufferlen = (int) oldsize;
+	nret = pTcpHandle->WriteBuffer(pBuffer, len);
+	env->ReleaseByteArrayElements(buffer, (jbyte*) olddata, JNI_ABORT); /* abort to not copy back contents */
+	return nret;
+}
+
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_TCPClientRecvBuffer(
+		JNIEnv *env, jclass obj, jlong handle, jbyteArray buffer, jint iToRecv)
+{
+	//LOGD("begin to recv");
+	int nret = -1;
+	if (handle == 0)
+	{
+		//LOGD("COM NOT OPEN");
+		return nret;
+	}
+	BYTE *recvData = new BYTE[iToRecv];
+	memset(recvData, 0x00, iToRecv);
+	TCPClient *pTcpHandle = (TCPClient *) handle;
+	nret = pTcpHandle->ReadBuffer(recvData, iToRecv);
+	if (nret <= 0)
+	{
+		goto EndExit;
+	}
+	env->SetByteArrayRegion(buffer, 0, iToRecv, (jbyte*) recvData);
+	EndExit: delete[] recvData;
+	return nret;
+}
+
+JNIEXPORT jint JNICALL Java_com_rfid_transport_NdkSupport_TCPClientIoflush(
+		JNIEnv *env, jclass obj, jlong handle)
+{
+	if (handle == 0)
+	{
+		return 0;
+	}
+	TCPClient *pTcpHandle = (TCPClient *) handle;
+	while (true)
+	{
+		BYTE recvData[1024] =
+		{ 0x00 };
+		int nret = pTcpHandle->ReadBuffer(recvData, sizeof(recvData));
+		if (nret <= 0)
+		{
+			break;
+		}
+	}
+	return 0;
+}

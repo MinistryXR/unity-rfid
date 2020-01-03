@@ -1,0 +1,802 @@
+2016-10-09 17:07:24,240 [Worker-1] INFO  c.g.e.m.h.c.ui.Html5AppCoreUIPlugin - Pluging started
+2016-10-09 17:07:27,943 [main] ERROR org.eclipse.jgit.util.FS - Caught exception in FS.readPipe()
+java.io.IOException: Cannot run program "bash" (in directory "C:\Users\13642"): CreateProcess error=2, ?????????
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1041) ~[na:1.7.0_45]
+	at java.lang.Runtime.exec(Runtime.java:617) ~[na:1.7.0_45]
+	at org.eclipse.jgit.util.FS.readPipe(FS.java:431) [org.eclipse.jgit_3.7.0.201502260915-r.jar:3.7.0.201502260915-r]
+	at org.eclipse.jgit.util.FS_Win32.discoverGitPrefix(FS_Win32.java:113) [org.eclipse.jgit_3.7.0.201502260915-r.jar:3.7.0.201502260915-r]
+	at org.eclipse.jgit.util.FS.gitPrefix(FS.java:517) [org.eclipse.jgit_3.7.0.201502260915-r.jar:3.7.0.201502260915-r]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.checkGitPrefix(ConfigurationChecker.java:69) [org.eclipse.egit.ui_3.7.0.201502260915-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.check(ConfigurationChecker.java:61) [org.eclipse.egit.ui_3.7.0.201502260915-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker.access$0(ConfigurationChecker.java:60) [org.eclipse.egit.ui_3.7.0.201502260915-r.jar:na]
+	at org.eclipse.egit.ui.internal.ConfigurationChecker$1$1.run(ConfigurationChecker.java:48) [org.eclipse.egit.ui_3.7.0.201502260915-r.jar:na]
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764) [org.eclipse.swt.win32.win32.x86_64_3.103.2.v20150203-1351.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032) [org.eclipse.e4.ui.workbench.swt_0.12.100.v20141126-1150.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148) [org.eclipse.e4.ui.workbench_1.2.2.v20141212-1259.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20140210-1835.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150) [org.eclipse.ui.workbench_3.106.2.v20150204-1030.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135) [org.eclipse.ui.ide.application_1.0.501.v20141111-1238.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.200.v20130910-1609.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235) [org.eclipse.osgi_3.10.2.v20150203-1939.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648) [OR45D0~1.JAR:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603) [OR45D0~1.JAR:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465) [OR45D0~1.JAR:na]
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1438) [OR45D0~1.JAR:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_45]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_45]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_45]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_45]
+	at com.genuitec.pulse.eclipse.launcher.Main.main(Main.java:110) [pulse.i18n.jar:na]
+Caused by: java.io.IOException: CreateProcess error=2, ?????????
+	at java.lang.ProcessImpl.create(Native Method) ~[na:1.7.0_45]
+	at java.lang.ProcessImpl.<init>(ProcessImpl.java:385) ~[na:1.7.0_45]
+	at java.lang.ProcessImpl.start(ProcessImpl.java:136) ~[na:1.7.0_45]
+	at java.lang.ProcessBuilder.start(ProcessBuilder.java:1022) ~[na:1.7.0_45]
+	... 39 common frames omitted
+2016-10-09 17:07:28,390 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:28,391 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:29,168 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+2016-10-09 17:07:29,227 [Worker-9] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2016-10-09 17:07:29,581 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/3.1/plexus-3.1.pom
+2016-10-09 17:07:29,784 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+2016-10-09 17:07:30,208 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/17/spice-parent-17.pom
+2016-10-09 17:07:30,401 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+2016-10-09 17:07:30,806 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/10/forge-parent-10.pom
+2016-10-09 17:07:31,043 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+2016-10-09 17:07:31,420 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+2016-10-09 17:07:31,688 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+2016-10-09 17:07:32,075 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+2016-10-09 17:07:32,281 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+2016-10-09 17:07:32,635 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+2016-10-09 17:07:32,835 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+2016-10-09 17:07:33,198 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+2016-10-09 17:07:34,156 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+2016-10-09 17:07:34,910 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+2016-10-09 17:07:35,079 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+2016-10-09 17:07:36,028 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+2016-10-09 17:07:36,212 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+2016-10-09 17:07:36,582 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+2016-10-09 17:07:36,860 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.8.0\ICEfaces\icefaces.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.8.0\icefaces-1.8.0.jar
+2016-10-09 17:07:36,913 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5831123260948225152.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.8.0\icefaces-1.8.0.pom
+2016-10-09 17:07:37,113 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces/1.7.2/icefaces-1.7.2.jar
+2016-10-09 17:07:37,128 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:37,128 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:37,144 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.2\ICEfaces\icefaces.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.7.2\icefaces-1.7.2.jar
+2016-10-09 17:07:37,197 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2386252039203032878.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.7.2\icefaces-1.7.2.pom
+2016-10-09 17:07:37,560 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces/1.7.1/icefaces-1.7.1.jar
+2016-10-09 17:07:37,560 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:37,560 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:37,579 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.1\ICEfaces\icefaces.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.7.1\icefaces-1.7.1.jar
+2016-10-09 17:07:37,613 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6862357847963772726.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.7.1\icefaces-1.7.1.pom
+2016-10-09 17:07:38,880 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces/1.7.0/icefaces-1.7.0.jar
+2016-10-09 17:07:38,884 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:38,884 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:38,900 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.0\ICEfaces\icefaces.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.7.0\icefaces-1.7.0.jar
+2016-10-09 17:07:38,962 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4293089278816670134.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.7.0\icefaces-1.7.0.pom
+2016-10-09 17:07:39,585 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces/1.6.2/icefaces-1.6.2.jar
+2016-10-09 17:07:39,601 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:39,601 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:39,601 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.6.2\ICEfaces\icefaces.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.6.2\icefaces-1.6.2.jar
+2016-10-09 17:07:39,647 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7342882783407716132.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.6.2\icefaces-1.6.2.pom
+2016-10-09 17:07:40,017 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces/1.6.1/icefaces-1.6.1.jar
+2016-10-09 17:07:40,033 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:40,033 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:40,033 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.6.1\ICEfaces\icefaces.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.6.1\icefaces-1.6.1.jar
+2016-10-09 17:07:40,085 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3927146835038539444.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces\1.6.1\icefaces-1.6.1.pom
+2016-10-09 17:07:40,449 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icepush/icepush/2.0.2/icepush-2.0.2.jar
+2016-10-09 17:07:40,465 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:40,465 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:40,486 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\org.icepush\icepush\2.0\icepush.jar to C:\Users\13642\.m2\repository\org\icepush\icepush\2.0.2\icepush-2.0.2.jar
+2016-10-09 17:07:40,534 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2133518949559795016.pom to C:\Users\13642\.m2\repository\org\icepush\icepush\2.0.2\icepush-2.0.2.pom
+2016-10-09 17:07:44,387 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-comps/1.8.0/icefaces-comps-1.8.0.jar
+2016-10-09 17:07:44,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:44,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:44,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.8.0\ICEfaces\icefaces-comps.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.8.0\icefaces-comps-1.8.0.jar
+2016-10-09 17:07:44,441 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7018049859794915497.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.8.0\icefaces-comps-1.8.0.pom
+2016-10-09 17:07:47,878 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-comps/1.7.2/icefaces-comps-1.7.2.jar
+2016-10-09 17:07:47,878 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:47,878 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:47,894 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.2\ICEfaces\icefaces-comps.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.7.2\icefaces-comps-1.7.2.jar
+2016-10-09 17:07:47,947 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2459638827593799238.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.7.2\icefaces-comps-1.7.2.pom
+2016-10-09 17:07:48,326 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-comps/1.7.1/icefaces-comps-1.7.1.jar
+2016-10-09 17:07:48,332 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:48,332 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:48,332 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.1\ICEfaces\icefaces-comps.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.7.1\icefaces-comps-1.7.1.jar
+2016-10-09 17:07:48,379 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4527937286635303531.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.7.1\icefaces-comps-1.7.1.pom
+2016-10-09 17:07:48,749 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-comps/1.7.0/icefaces-comps-1.7.0.jar
+2016-10-09 17:07:48,764 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:48,764 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:48,764 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.0\ICEfaces\icefaces-comps.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.7.0\icefaces-comps-1.7.0.jar
+2016-10-09 17:07:48,811 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4197206128809392441.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.7.0\icefaces-comps-1.7.0.pom
+2016-10-09 17:07:49,232 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-comps/1.6.2/icefaces-comps-1.6.2.jar
+2016-10-09 17:07:49,233 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:49,233 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:49,233 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.6.2\ICEfaces\icefaces-comps.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.6.2\icefaces-comps-1.6.2.jar
+2016-10-09 17:07:49,280 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2200259788610102433.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.6.2\icefaces-comps-1.6.2.pom
+2016-10-09 17:07:50,636 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-comps/1.6.1/icefaces-comps-1.6.1.jar
+2016-10-09 17:07:50,667 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:50,667 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:50,667 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.6.1\ICEfaces\icefaces-comps.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.6.1\icefaces-comps-1.6.1.jar
+2016-10-09 17:07:50,736 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5043649560575877396.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-comps\1.6.1\icefaces-comps-1.6.1.pom
+2016-10-09 17:07:51,115 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-facelets/1.8.0/icefaces-facelets-1.8.0.jar
+2016-10-09 17:07:51,137 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:51,137 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:51,137 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.8.0\ICEfaces-Facelets\icefaces-facelets.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.8.0\icefaces-facelets-1.8.0.jar
+2016-10-09 17:07:51,184 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall425873854470662785.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.8.0\icefaces-facelets-1.8.0.pom
+2016-10-09 17:07:51,553 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-facelets/1.7.2/icefaces-facelets-1.7.2.jar
+2016-10-09 17:07:51,569 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:51,569 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:51,569 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.2\ICEfaces-Facelets\icefaces-facelets.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.7.2\icefaces-facelets-1.7.2.jar
+2016-10-09 17:07:51,616 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1064353206480120518.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.7.2\icefaces-facelets-1.7.2.pom
+2016-10-09 17:07:52,038 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-facelets/1.7.1/icefaces-facelets-1.7.1.jar
+2016-10-09 17:07:52,054 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:52,070 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:52,070 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.0\ICEfaces-Facelets\icefaces-facelets.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.7.1\icefaces-facelets-1.7.1.jar
+2016-10-09 17:07:52,101 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7189396199448832183.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.7.1\icefaces-facelets-1.7.1.pom
+2016-10-09 17:07:52,470 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-facelets/1.7.0/icefaces-facelets-1.7.0.jar
+2016-10-09 17:07:52,470 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:52,470 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:52,486 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.7.0\ICEfaces-Facelets\icefaces-facelets.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.7.0\icefaces-facelets-1.7.0.jar
+2016-10-09 17:07:52,517 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6724170377701018945.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.7.0\icefaces-facelets-1.7.0.pom
+2016-10-09 17:07:52,887 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-facelets/1.6.2/icefaces-facelets-1.6.2.jar
+2016-10-09 17:07:52,902 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:52,902 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:52,918 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.6.2\ICEfaces-Facelets\icefaces-facelets.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.6.2\icefaces-facelets-1.6.2.jar
+2016-10-09 17:07:52,972 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6735183122574397764.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.6.2\icefaces-facelets-1.6.2.pom
+2016-10-09 17:07:53,388 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-facelets/1.6.1/icefaces-facelets-1.6.1.jar
+2016-10-09 17:07:53,403 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:53,403 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:53,403 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\1.6.1\ICEfaces-Facelets\icefaces-facelets.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.6.1\icefaces-facelets-1.6.1.jar
+2016-10-09 17:07:53,456 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6129833617220050916.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-facelets\1.6.1\icefaces-facelets-1.6.1.pom
+2016-10-09 17:07:53,973 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/net/sourceforge/jexcelapi/jxl/2.6.8/jxl-2.6.8.jar
+2016-10-09 17:07:53,973 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:53,973 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:54,004 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\net.sourceforge.jexcelapi\jxl\2.6.8\jxl.jar to C:\Users\13642\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.8\jxl-2.6.8.jar
+2016-10-09 17:07:54,089 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2336464180055054287.pom to C:\Users\13642\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.8\jxl-2.6.8.pom
+2016-10-09 17:07:54,705 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icefaces/icefaces-mobi/1.3.0/icefaces-mobi-1.3.0.jar
+2016-10-09 17:07:54,721 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:54,721 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:54,721 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\org.icefaces\icefaces-mobi\1.3\icefaces-mobi.jar to C:\Users\13642\.m2\repository\org\icefaces\icefaces-mobi\1.3.0\icefaces-mobi-1.3.0.jar
+2016-10-09 17:07:54,805 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5295937184012157633.pom to C:\Users\13642\.m2\repository\org\icefaces\icefaces-mobi\1.3.0\icefaces-mobi-1.3.0.pom
+2016-10-09 17:07:56,061 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/icepush/icepush/3.0.0/icepush-3.0.0.jar
+2016-10-09 17:07:56,076 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:56,076 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:56,092 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.icefaces_13.0.0.me201405280815\data\org.icepush\icepush\3.0\icepush.jar to C:\Users\13642\.m2\repository\org\icepush\icepush\3.0.0\icepush-3.0.0.jar
+2016-10-09 17:07:56,123 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7323507528974558860.pom to C:\Users\13642\.m2\repository\org\icepush\icepush\3.0.0\icepush-3.0.0.pom
+2016-10-09 17:07:59,766 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/activation/activation/1.0.2/activation-1.0.2.jar
+2016-10-09 17:07:59,766 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:07:59,766 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:07:59,781 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.j2eedt.core_13.0.0.me201507300331\data\libraryset\1.4\activation.jar to C:\Users\13642\.m2\repository\javax\activation\activation\1.0.2\activation-1.0.2.jar
+2016-10-09 17:07:59,850 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3952821856399668229.pom to C:\Users\13642\.m2\repository\javax\activation\activation\1.0.2\activation-1.0.2.pom
+2016-10-09 17:08:01,130 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/mail/mail/1.3.1/mail-1.3.1.jar
+2016-10-09 17:08:01,130 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:01,130 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:01,151 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.j2eedt.core_13.0.0.me201507300331\data\libraryset\1.4\mail.jar to C:\Users\13642\.m2\repository\javax\mail\mail\1.3.1\mail-1.3.1.jar
+2016-10-09 17:08:01,183 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3624099154065168008.pom to C:\Users\13642\.m2\repository\javax\mail\mail\1.3.1\mail-1.3.1.pom
+2016-10-09 17:08:02,030 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/xml/namespace/1.0.1/namespace-1.0.1.jar
+2016-10-09 17:08:02,052 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:02,052 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:02,052 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.j2eedt.core_13.0.0.me201507300331\data\libraryset\1.4\namespace.jar to C:\Users\13642\.m2\repository\javax\xml\namespace\1.0.1\namespace-1.0.1.jar
+2016-10-09 17:08:02,099 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall75800755553979075.pom to C:\Users\13642\.m2\repository\javax\xml\namespace\1.0.1\namespace-1.0.1.pom
+2016-10-09 17:08:02,715 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/sql/jdbc-stdext/2.0/jdbc-stdext-2.0.jar
+2016-10-09 17:08:02,730 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:02,730 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:02,730 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.j2eedt.core_13.0.0.me201507300331\data\libraryset\JSTL1.0\lib\jdbc2_0-stdext.jar to C:\Users\13642\.m2\repository\javax\sql\jdbc-stdext\2.0\jdbc-stdext-2.0.jar
+2016-10-09 17:08:02,768 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1089045010582057012.pom to C:\Users\13642\.m2\repository\javax\sql\jdbc-stdext\2.0\jdbc-stdext-2.0.pom
+2016-10-09 17:08:03,400 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/jts/jts/1.0/jts-1.0.jar
+2016-10-09 17:08:03,400 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:03,400 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:03,416 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.j2eedt.core_13.0.0.me201507300331\data\libraryset\1.3\jts.jar to C:\Users\13642\.m2\repository\javax\jts\jts\1.0\jts-1.0.jar
+2016-10-09 17:08:03,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6094282269936305548.pom to C:\Users\13642\.m2\repository\javax\jts\jts\1.0\jts-1.0.pom
+2016-10-09 17:08:03,816 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/el-api/el-api/1.0/el-api-1.0.jar
+2016-10-09 17:08:03,852 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:03,853 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:03,853 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\58\0\.cp\data\facelets\lib\el-api.jar to C:\Users\13642\.m2\repository\el-api\el-api\1.0\el-api-1.0.jar
+2016-10-09 17:08:03,969 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1307918994287220310.pom to C:\Users\13642\.m2\repository\el-api\el-api\1.0\el-api-1.0.pom
+2016-10-09 17:08:04,586 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/el-ri/el-ri/1.0/el-ri-1.0.jar
+2016-10-09 17:08:04,601 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:04,601 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:04,601 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\58\0\.cp\data\facelets\lib\el-ri.jar to C:\Users\13642\.m2\repository\el-ri\el-ri\1.0\el-ri-1.0.jar
+2016-10-09 17:08:04,701 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7028332019956245303.pom to C:\Users\13642\.m2\repository\el-ri\el-ri\1.0\el-ri-1.0.pom
+2016-10-09 17:08:05,318 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/faces/jsf-api/2.0.3/jsf-api-2.0.3.jar
+2016-10-09 17:08:05,318 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:05,318 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:05,318 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\58\0\.cp\data\2.0\Mojarra\jsf-api.jar to C:\Users\13642\.m2\repository\javax\faces\jsf-api\2.0.3\jsf-api-2.0.3.jar
+2016-10-09 17:08:05,355 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2904641669086289068.pom to C:\Users\13642\.m2\repository\javax\faces\jsf-api\2.0.3\jsf-api-2.0.3.pom
+2016-10-09 17:08:05,719 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/faces/jsf-impl/2.0.3/jsf-impl-2.0.3.jar
+2016-10-09 17:08:05,734 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:05,734 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:05,734 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\58\0\.cp\data\2.0\Mojarra\jsf-impl.jar to C:\Users\13642\.m2\repository\javax\faces\jsf-impl\2.0.3\jsf-impl-2.0.3.jar
+2016-10-09 17:08:05,772 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7835864838731690759.pom to C:\Users\13642\.m2\repository\javax\faces\jsf-impl\2.0.3\jsf-impl-2.0.3.pom
+2016-10-09 17:08:06,389 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/jboss/cache/jbosscache-core/3.1.0/jbosscache-core-3.1.0.jar
+2016-10-09 17:08:06,404 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:06,404 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:06,420 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\3.3\lib\extra\jbosscache2\jbosscache-core-3.1.0.GA.jar to C:\Users\13642\.m2\repository\org\jboss\cache\jbosscache-core\3.1.0\jbosscache-core-3.1.0.jar
+2016-10-09 17:08:06,457 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5255729373641417424.pom to C:\Users\13642\.m2\repository\org\jboss\cache\jbosscache-core\3.1.0\jbosscache-core-3.1.0.pom
+2016-10-09 17:08:08,724 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/resource/connector/1.0/connector-1.0.jar
+2016-10-09 17:08:08,739 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:08,739 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:08,739 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\2.1\lib\extra\connector.jar to C:\Users\13642\.m2\repository\javax\resource\connector\1.0\connector-1.0.jar
+2016-10-09 17:08:08,793 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1284743113435499067.pom to C:\Users\13642\.m2\repository\javax\resource\connector\1.0\connector-1.0.pom
+2016-10-09 17:08:09,162 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/security/jacc/1.0/jacc-1.0.jar
+2016-10-09 17:08:09,177 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:09,193 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:09,193 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\3.0\lib\extra\jacc-1_0-fr.jar to C:\Users\13642\.m2\repository\javax\security\jacc\1.0\jacc-1.0.jar
+2016-10-09 17:08:09,240 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2392439657916259537.pom to C:\Users\13642\.m2\repository\javax\security\jacc\1.0\jacc-1.0.pom
+2016-10-09 17:08:09,862 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/security/jaas/1.0.01/jaas-1.0.01.jar
+2016-10-09 17:08:09,878 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:09,878 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:09,878 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\3.0\lib\core\jaas.jar to C:\Users\13642\.m2\repository\javax\security\jaas\1.0.01\jaas-1.0.01.jar
+2016-10-09 17:08:09,925 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5738561251028749524.pom to C:\Users\13642\.m2\repository\javax\security\jaas\1.0.01\jaas-1.0.01.pom
+2016-10-09 17:08:10,542 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/transaction/jta/1.0.1B/jta-1.0.1B.jar
+2016-10-09 17:08:10,564 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:10,564 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:10,564 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\2.1\lib\core\jta.jar to C:\Users\13642\.m2\repository\javax\transaction\jta\1.0.1B\jta-1.0.1B.jar
+2016-10-09 17:08:10,626 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1342440696252972093.pom to C:\Users\13642\.m2\repository\javax\transaction\jta\1.0.1B\jta-1.0.1B.pom
+2016-10-09 17:08:11,261 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javassist/javassist/3.9.0/javassist-3.9.0.jar
+2016-10-09 17:08:11,264 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:11,264 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:11,264 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\3.3\lib\core\bytecode\javassist\javassist-3.9.0.GA.jar to C:\Users\13642\.m2\repository\javassist\javassist\3.9.0\javassist-3.9.0.jar
+2016-10-09 17:08:11,327 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2299801980592921984.pom to C:\Users\13642\.m2\repository\javassist\javassist\3.9.0\javassist-3.9.0.pom
+2016-10-09 17:08:11,960 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/hibernate/hibernate/3.3.2/hibernate-3.3.2.jar
+2016-10-09 17:08:11,966 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:11,966 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:11,982 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\60\0\.cp\myeclipse-data\3.3\lib\core\hibernate3.jar to C:\Users\13642\.m2\repository\org\hibernate\hibernate\3.3.2\hibernate-3.3.2.jar
+2016-10-09 17:08:12,044 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6576308885897121920.pom to C:\Users\13642\.m2\repository\org\hibernate\hibernate\3.3.2\hibernate-3.3.2.pom
+2016-10-09 17:08:12,413 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/javax.persistence/2.0.1/javax.persistence-2.0.1.jar
+2016-10-09 17:08:12,429 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:12,429 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:12,429 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\62\0\.cp\data\eclipselink\2.1\javax.persistence_2.0.1.v201006031150.jar to C:\Users\13642\.m2\repository\org\eclipse\persistence\javax.persistence\2.0.1\javax.persistence-2.0.1.jar
+2016-10-09 17:08:12,467 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7112574455375649592.pom to C:\Users\13642\.m2\repository\org\eclipse\persistence\javax.persistence\2.0.1\javax.persistence-2.0.1.pom
+2016-10-09 17:08:13,746 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/eclipselink/2.1/eclipselink-2.1.jar
+2016-10-09 17:08:13,765 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:13,765 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:13,768 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\62\0\.cp\data\eclipselink\2.1\eclipselink.jar to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink\2.1\eclipselink-2.1.jar
+2016-10-09 17:08:13,830 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5294580052316600666.pom to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink\2.1\eclipselink-2.1.pom
+2016-10-09 17:08:14,200 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/eclipselink-jpa-modelgen/2.1/eclipselink-jpa-modelgen-2.1.jar
+2016-10-09 17:08:14,231 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:14,231 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:14,231 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\62\0\.cp\data\eclipselink\2.1\eclipselink-jpa-modelgen_2.1.1.v20100817-r8050.jar to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink-jpa-modelgen\2.1\eclipselink-jpa-modelgen-2.1.jar
+2016-10-09 17:08:14,284 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3676860087705356361.pom to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink-jpa-modelgen\2.1\eclipselink-jpa-modelgen-2.1.pom
+2016-10-09 17:08:14,885 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/eclipselink-jpa-modelgen/2.5.1/eclipselink-jpa-modelgen-2.5.1.jar
+2016-10-09 17:08:14,916 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:14,916 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:14,916 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\62\0\.cp\data\eclipselink\2.5\org.eclipse.persistence.jpa.modelgen_2.5.1.v20130918-f2b9fc5.jar to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink-jpa-modelgen\2.5.1\eclipselink-jpa-modelgen-2.5.1.jar
+2016-10-09 17:08:14,948 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6760494967412862353.pom to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink-jpa-modelgen\2.5.1\eclipselink-jpa-modelgen-2.5.1.pom
+2016-10-09 17:08:15,570 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/jexcelapi/jxl/2.6.9/jxl-2.6.9.jar
+2016-10-09 17:08:15,586 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:15,586 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:15,602 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\2.5\lib\jexcelapi\jxl.jar to C:\Users\13642\.m2\repository\jexcelapi\jxl\2.6.9\jxl-2.6.9.jar
+2016-10-09 17:08:15,702 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4761051082045266860.pom to C:\Users\13642\.m2\repository\jexcelapi\jxl\2.6.9\jxl-2.6.9.pom
+2016-10-09 17:08:16,086 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/jamonapi/jamon/2.7/jamon-2.7.jar
+2016-10-09 17:08:16,118 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:16,118 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:16,118 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\2.5\lib\jamon\jamon-2.7.jar to C:\Users\13642\.m2\repository\com\jamonapi\jamon\2.7\jamon-2.7.jar
+2016-10-09 17:08:16,202 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7817256972616843424.pom to C:\Users\13642\.m2\repository\com\jamonapi\jamon\2.7\jamon-2.7.pom
+2016-10-09 17:08:16,571 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/ow2/easybeans/quartz/1.6.1/quartz-1.6.1.jar
+2016-10-09 17:08:16,571 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:16,571 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:16,571 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\2.5\lib\quartz\quartz-all-1.6.1.jar to C:\Users\13642\.m2\repository\org\ow2\easybeans\quartz\1.6.1\quartz-1.6.1.jar
+2016-10-09 17:08:16,602 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4720248519427121723.pom to C:\Users\13642\.m2\repository\org\ow2\easybeans\quartz\1.6.1\quartz-1.6.1.pom
+2016-10-09 17:08:17,219 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/javaconfig/spring-javaconfig/1.0.0.m4/spring-javaconfig-1.0.0.m4.jar
+2016-10-09 17:08:17,234 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:17,234 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:17,250 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\javaconfig\org.springframework.config.java-1.0.0.M4.jar to C:\Users\13642\.m2\repository\org\springframework\javaconfig\spring-javaconfig\1.0.0.m4\spring-javaconfig-1.0.0.m4.jar
+2016-10-09 17:08:17,271 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8499343967570844837.pom to C:\Users\13642\.m2\repository\org\springframework\javaconfig\spring-javaconfig\1.0.0.m4\spring-javaconfig-1.0.0.m4.pom
+2016-10-09 17:08:17,904 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/sun/jmx/jmxri/1.2.1/jmxri-1.2.1.jar
+2016-10-09 17:08:17,904 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:17,904 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:17,920 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\1.2\lib\dependencies\jmx\jmxri.jar to C:\Users\13642\.m2\repository\com\sun\jmx\jmxri\1.2.1\jmxri-1.2.1.jar
+2016-10-09 17:08:17,951 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4544860327227324632.pom to C:\Users\13642\.m2\repository\com\sun\jmx\jmxri\1.2.1\jmxri-1.2.1.pom
+2016-10-09 17:08:21,595 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/management/jmxremote/1.0.1_04/jmxremote-1.0.1_04.jar
+2016-10-09 17:08:21,595 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:21,595 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:21,610 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\1.2\lib\dependencies\jmx\jmxremote.jar to C:\Users\13642\.m2\repository\javax\management\jmxremote\1.0.1_04\jmxremote-1.0.1_04.jar
+2016-10-09 17:08:21,642 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8262999677487245802.pom to C:\Users\13642\.m2\repository\javax\management\jmxremote\1.0.1_04\jmxremote-1.0.1_04.pom
+2016-10-09 17:08:23,898 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/management/jmxremote_optional/1.0.1_04/jmxremote_optional-1.0.1_04.jar
+2016-10-09 17:08:23,914 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:23,914 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:23,914 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\1.2\lib\dependencies\jmx\jmxremote_optional.jar to C:\Users\13642\.m2\repository\javax\management\jmxremote_optional\1.0.1_04\jmxremote_optional-1.0.1_04.jar
+2016-10-09 17:08:23,961 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2781697428805664124.pom to C:\Users\13642\.m2\repository\javax\management\jmxremote_optional\1.0.1_04\jmxremote_optional-1.0.1_04.pom
+2016-10-09 17:08:24,330 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/management/jmxri/1.2.1/jmxri-1.2.1.jar
+2016-10-09 17:08:24,346 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:24,346 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:24,361 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\1.2\lib\dependencies\jmx\jmxri.jar to C:\Users\13642\.m2\repository\javax\management\jmxri\1.2.1\jmxri-1.2.1.jar
+2016-10-09 17:08:24,399 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1953294428244050309.pom to C:\Users\13642\.m2\repository\javax\management\jmxri\1.2.1\jmxri-1.2.1.pom
+2016-10-09 17:08:24,814 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/jdo/jdo/1.0.1/jdo-1.0.1.jar
+2016-10-09 17:08:24,814 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:24,814 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:24,830 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\1.2\lib\dependencies\jdo\jdo2.jar to C:\Users\13642\.m2\repository\jdo\jdo\1.0.1\jdo-1.0.1.jar
+2016-10-09 17:08:24,914 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall552978030239889732.pom to C:\Users\13642\.m2\repository\jdo\jdo\1.0.1\jdo-1.0.1.pom
+2016-10-09 17:08:25,346 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/bea/wlplatform/commonj-twm/1.1/commonj-twm-1.1.jar
+2016-10-09 17:08:25,362 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:25,362 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:25,381 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\2.0\lib\commonj\commonj-twm.jar to C:\Users\13642\.m2\repository\com\bea\wlplatform\commonj-twm\1.1\commonj-twm-1.1.jar
+2016-10-09 17:08:25,415 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4275176060915466719.pom to C:\Users\13642\.m2\repository\com\bea\wlplatform\commonj-twm\1.1\commonj-twm-1.1.pom
+2016-10-09 17:08:25,846 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/oracle/toplink/toplink/10.1.3/toplink-10.1.3.jar
+2016-10-09 17:08:25,846 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:25,846 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:25,862 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\2.0\lib\toplink\toplink-api.jar to C:\Users\13642\.m2\repository\com\oracle\toplink\toplink\10.1.3\toplink-10.1.3.jar
+2016-10-09 17:08:25,900 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5485770959732276609.pom to C:\Users\13642\.m2\repository\com\oracle\toplink\toplink\10.1.3\toplink-10.1.3.pom
+2016-10-09 17:08:26,263 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/groovy/1.0/groovy-1.0.jar
+2016-10-09 17:08:26,280 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:26,280 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:26,285 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\63\0\.cp\data\2.0\lib\groovy\groovy-1.0.jar to C:\Users\13642\.m2\repository\org\codehaus\groovy\1.0\groovy-1.0.jar
+2016-10-09 17:08:26,316 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7660185281687565427.pom to C:\Users\13642\.m2\repository\org\codehaus\groovy\1.0\groovy-1.0.pom
+2016-10-09 17:08:26,747 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/security/org.springframework.security.core/3.0.5.RELEASE/org.springframework.security.core-3.0.5.RELEASE.jar
+2016-10-09 17:08:26,762 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:26,762 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:26,762 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\security-3.0\spring-security-core-3.0.5.RELEASE.jar to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.core\3.0.5.RELEASE\org.springframework.security.core-3.0.5.RELEASE.jar
+2016-10-09 17:08:26,816 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall97719811619467438.pom to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.core\3.0.5.RELEASE\org.springframework.security.core-3.0.5.RELEASE.pom
+2016-10-09 17:08:27,184 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/security/org.springframework.security.web/3.0.5.RELEASE/org.springframework.security.web-3.0.5.RELEASE.jar
+2016-10-09 17:08:27,216 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:27,216 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:27,216 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\security-3.0\spring-security-web-3.0.5.RELEASE.jar to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.web\3.0.5.RELEASE\org.springframework.security.web-3.0.5.RELEASE.jar
+2016-10-09 17:08:27,263 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4303220343956437352.pom to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.web\3.0.5.RELEASE\org.springframework.security.web-3.0.5.RELEASE.pom
+2016-10-09 17:08:27,681 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/security/org.springframework.security.config/3.0.5.RELEASE/org.springframework.security.config-3.0.5.RELEASE.jar
+2016-10-09 17:08:27,701 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:27,701 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:27,717 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\security-3.0\spring-security-config-3.0.5.RELEASE.jar to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.config\3.0.5.RELEASE\org.springframework.security.config-3.0.5.RELEASE.jar
+2016-10-09 17:08:27,748 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2888762879129369176.pom to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.config\3.0.5.RELEASE\org.springframework.security.config-3.0.5.RELEASE.pom
+2016-10-09 17:08:28,163 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/security/org.springframework.security.ldap/3.0.5.RELEASE/org.springframework.security.ldap-3.0.5.RELEASE.jar
+2016-10-09 17:08:28,182 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:28,182 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:28,186 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\security-3.0\spring-security-ldap-3.0.5.RELEASE.jar to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.ldap\3.0.5.RELEASE\org.springframework.security.ldap-3.0.5.RELEASE.jar
+2016-10-09 17:08:28,217 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7929435923608559012.pom to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.ldap\3.0.5.RELEASE\org.springframework.security.ldap-3.0.5.RELEASE.pom
+2016-10-09 17:08:28,617 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/security/org.springframework.security.taglibs/3.0.5.RELEASE/org.springframework.security.taglibs-3.0.5.RELEASE.jar
+2016-10-09 17:08:28,633 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:28,633 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:28,633 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\security-3.0\spring-security-taglibs-3.0.5.RELEASE.jar to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.taglibs\3.0.5.RELEASE\org.springframework.security.taglibs-3.0.5.RELEASE.jar
+2016-10-09 17:08:28,702 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4370864607426687014.pom to C:\Users\13642\.m2\repository\org\springframework\security\org.springframework.security.taglibs\3.0.5.RELEASE\org.springframework.security.taglibs-3.0.5.RELEASE.pom
+2016-10-09 17:08:29,084 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/bea/commonj/com.springsource.commonj/1.1.0/com.springsource.commonj-1.1.0.jar
+2016-10-09 17:08:29,103 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:29,103 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:29,103 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\misc\com.springsource.commonj-1.1.0.jar to C:\Users\13642\.m2\repository\com\bea\commonj\com.springsource.commonj\1.1.0\com.springsource.commonj-1.1.0.jar
+2016-10-09 17:08:29,165 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall768739311710597533.pom to C:\Users\13642\.m2\repository\com\bea\commonj\com.springsource.commonj\1.1.0\com.springsource.commonj-1.1.0.pom
+2016-10-09 17:08:29,518 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/opensymphony/quartz/com.springsource.org.quartz/1.6.2/com.springsource.org.quartz-1.6.2.jar
+2016-10-09 17:08:29,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:29,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:29,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\misc\com.springsource.org.quartz-1.6.2.jar to C:\Users\13642\.m2\repository\com\opensymphony\quartz\com.springsource.org.quartz\1.6.2\com.springsource.org.quartz-1.6.2.jar
+2016-10-09 17:08:29,587 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1573627146569883837.pom to C:\Users\13642\.m2\repository\com\opensymphony\quartz\com.springsource.org.quartz\1.6.2\com.springsource.org.quartz-1.6.2.pom
+2016-10-09 17:08:29,966 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/jdo/jdo2-api/2.1.0/jdo2-api-2.1.0.jar
+2016-10-09 17:08:29,988 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:29,988 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:30,004 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\persistJDO\com.springsource.javax.jdo-2.1.0.jar to C:\Users\13642\.m2\repository\javax\jdo\jdo2-api\2.1.0\jdo2-api-2.1.0.jar
+2016-10-09 17:08:30,035 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6014980208363451452.pom to C:\Users\13642\.m2\repository\javax\jdo\jdo2-api\2.1.0\jdo2-api-2.1.0.pom
+2016-10-09 17:08:30,404 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/caucho/com.springsource.com.caucho/3.2.1/com.springsource.com.caucho-3.2.1.jar
+2016-10-09 17:08:30,419 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:30,419 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:30,419 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\remoting\com.springsource.com.caucho-3.2.1.jar to C:\Users\13642\.m2\repository\com\caucho\com.springsource.com.caucho\3.2.1\com.springsource.com.caucho-3.2.1.jar
+2016-10-09 17:08:30,466 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6444380891016725190.pom to C:\Users\13642\.m2\repository\com\caucho\com.springsource.com.caucho\3.2.1\com.springsource.com.caucho-3.2.1.pom
+2016-10-09 17:08:30,888 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/codehaus/jackson/com.springsource.org.codehaus.jackson.mapper/1.0.0/com.springsource.org.codehaus.jackson.mapper-1.0.0.jar
+2016-10-09 17:08:30,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:30,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:30,905 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\web\com.springsource.org.codehaus.jackson.mapper-1.0.0.jar to C:\Users\13642\.m2\repository\org\codehaus\jackson\com.springsource.org.codehaus.jackson.mapper\1.0.0\com.springsource.org.codehaus.jackson.mapper-1.0.0.jar
+2016-10-09 17:08:30,936 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2969453619926753074.pom to C:\Users\13642\.m2\repository\org\codehaus\jackson\com.springsource.org.codehaus.jackson.mapper\1.0.0\com.springsource.org.codehaus.jackson.mapper-1.0.0.pom
+2016-10-09 17:08:31,367 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/junit/com.springsource.org.junit/4.7.0/com.springsource.org.junit-4.7.0.jar
+2016-10-09 17:08:31,389 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:31,389 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:31,404 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\test\com.springsource.org.junit-4.7.0.jar to C:\Users\13642\.m2\repository\org\junit\com.springsource.org.junit\4.7.0\com.springsource.org.junit-4.7.0.jar
+2016-10-09 17:08:31,452 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2399271749521870853.pom to C:\Users\13642\.m2\repository\org\junit\com.springsource.org.junit\4.7.0\com.springsource.org.junit-4.7.0.pom
+2016-10-09 17:08:31,821 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/inject/com.springsource.javax.inject/1.0.0/com.springsource.javax.inject-1.0.0.jar
+2016-10-09 17:08:31,821 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:31,821 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:31,837 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\test\com.springsource.javax.inject-1.0.0.jar to C:\Users\13642\.m2\repository\javax\inject\com.springsource.javax.inject\1.0.0\com.springsource.javax.inject-1.0.0.jar
+2016-10-09 17:08:31,868 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2350212755679883799.pom to C:\Users\13642\.m2\repository\javax\inject\com.springsource.javax.inject\1.0.0\com.springsource.javax.inject-1.0.0.pom
+2016-10-09 17:08:32,453 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/commons/com.springsource.org.apache.commons.lang/2.4.0/com.springsource.org.apache.commons.lang-2.4.0.jar
+2016-10-09 17:08:32,491 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:32,491 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:32,491 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\persistJdbc\com.springsource.org.apache.commons.lang-2.4.0.jar to C:\Users\13642\.m2\repository\org\apache\commons\com.springsource.org.apache.commons.lang\2.4.0\com.springsource.org.apache.commons.lang-2.4.0.jar
+2016-10-09 17:08:32,538 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8793770604459230739.pom to C:\Users\13642\.m2\repository\org\apache\commons\com.springsource.org.apache.commons.lang\2.4.0\com.springsource.org.apache.commons.lang-2.4.0.pom
+2016-10-09 17:08:32,907 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/sun/jdmk/jmxtools/1.2.1/jmxtools-1.2.1.jar
+2016-10-09 17:08:32,907 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:32,907 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:32,907 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\core\jmxtools-1.2.1.jar to C:\Users\13642\.m2\repository\com\sun\jdmk\jmxtools\1.2.1\jmxtools-1.2.1.jar
+2016-10-09 17:08:32,969 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8863612653135983337.pom to C:\Users\13642\.m2\repository\com\sun\jdmk\jmxtools\1.2.1\jmxtools-1.2.1.pom
+2016-10-09 17:08:33,354 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.6.8.RELEASE/aspectjweaver-1.6.8.RELEASE.jar
+2016-10-09 17:08:33,369 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:33,369 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:33,369 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\64\0\.cp\data\3.0\lib\aop\com.springsource.org.aspectj.weaver-1.6.8.RELEASE.jar to C:\Users\13642\.m2\repository\org\aspectj\aspectjweaver\1.6.8.RELEASE\aspectjweaver-1.6.8.RELEASE.jar
+2016-10-09 17:08:33,438 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3398962336073844853.pom to C:\Users\13642\.m2\repository\org\aspectj\aspectjweaver\1.6.8.RELEASE\aspectjweaver-1.6.8.RELEASE.pom
+2016-10-09 17:08:33,809 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/google/code/guice/guice/2.0/guice-2.0.jar
+2016-10-09 17:08:33,809 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:33,809 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:33,809 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\65\0\.cp\data\security-3.1\deps\guice-2.0.jar to C:\Users\13642\.m2\repository\com\google\code\guice\guice\2.0\guice-2.0.jar
+2016-10-09 17:08:33,855 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2860592223504801319.pom to C:\Users\13642\.m2\repository\com\google\code\guice\guice\2.0\guice-2.0.pom
+2016-10-09 17:08:34,240 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/jdo/jdori/1.0.1/jdori-1.0.1.jar
+2016-10-09 17:08:34,240 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:34,240 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:34,240 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\68\0\.cp\dependencies\jdori-1.0.1.jar to C:\Users\13642\.m2\repository\jdo\jdori\1.0.1\jdori-1.0.1.jar
+2016-10-09 17:08:34,290 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8665141853423776457.pom to C:\Users\13642\.m2\repository\jdo\jdori\1.0.1\jdori-1.0.1.pom
+2016-10-09 17:08:34,656 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/jws/jsr181/1.0/jsr181-1.0.jar
+2016-10-09 17:08:34,671 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:34,671 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:34,671 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\68\0\.cp\dependencies\jsr181-api.jar to C:\Users\13642\.m2\repository\javax\jws\jsr181\1.0\jsr181-1.0.jar
+2016-10-09 17:08:34,709 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4383511951372357567.pom to C:\Users\13642\.m2\repository\javax\jws\jsr181\1.0\jsr181-1.0.pom
+2016-10-09 17:08:44,354 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/xml/jaxr-api/1.0_03/jaxr-api-1.0_03.jar
+2016-10-09 17:08:44,354 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:44,354 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:44,369 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\68\0\.cp\dependencies\jaxr-api.jar to C:\Users\13642\.m2\repository\javax\xml\jaxr-api\1.0_03\jaxr-api-1.0_03.jar
+2016-10-09 17:08:44,407 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2860860822602045426.pom to C:\Users\13642\.m2\repository\javax\xml\jaxr-api\1.0_03\jaxr-api-1.0_03.pom
+2016-10-09 17:08:44,770 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/eclipselink/1.0.2/eclipselink-1.0.2.jar
+2016-10-09 17:08:44,785 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:44,785 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:44,806 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\96\0\.cp\data\eclipselink\1.0\eclipselink.jar to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink\1.0.2\eclipselink-1.0.2.jar
+2016-10-09 17:08:44,854 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2865052010681197473.pom to C:\Users\13642\.m2\repository\org\eclipse\persistence\eclipselink\1.0.2\eclipselink-1.0.2.pom
+2016-10-09 17:08:45,707 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/javax.persistence/1.0.0/javax.persistence-1.0.0.jar
+2016-10-09 17:08:45,723 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:45,723 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:45,723 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\96\0\.cp\data\eclipselink\1.0\javax.persistence_1.0.0.jar to C:\Users\13642\.m2\repository\org\eclipse\persistence\javax.persistence\1.0.0\javax.persistence-1.0.0.jar
+2016-10-09 17:08:45,770 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3117827541602207667.pom to C:\Users\13642\.m2\repository\org\eclipse\persistence\javax.persistence\1.0.0\javax.persistence-1.0.0.pom
+2016-10-09 17:08:46,387 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/jms/jms/1.1/jms-1.1.jar
+2016-10-09 17:08:46,408 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:46,408 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:46,409 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\96\0\.cp\data\openjpa\0.9\geronimo-jms_1.1_spec-1.0.1.jar to C:\Users\13642\.m2\repository\javax\jms\jms\1.1\jms-1.1.jar
+2016-10-09 17:08:46,440 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3539478378592480474.pom to C:\Users\13642\.m2\repository\javax\jms\jms\1.1\jms-1.1.pom
+2016-10-09 17:08:47,072 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/pluto-taglib/1.0.1/pluto-taglib-1.0.1.jar
+2016-10-09 17:08:47,106 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:47,106 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:47,110 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\97\0\.cp\data\lib\jsr168\pluto-taglib-1.0.1.jar to C:\Users\13642\.m2\repository\myeclipse\pluto-taglib\1.0.1\pluto-taglib-1.0.1.jar
+2016-10-09 17:08:47,209 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3827154756754870080.pom to C:\Users\13642\.m2\repository\myeclipse\pluto-taglib\1.0.1\pluto-taglib-1.0.1.pom
+2016-10-09 17:08:47,827 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/pluto-taglib/2.0/pluto-taglib-2.0.jar
+2016-10-09 17:08:47,858 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:47,858 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:47,858 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\97\0\.cp\data\lib\jsr286\pluto-taglib-2.0.0.jar to C:\Users\13642\.m2\repository\myeclipse\pluto-taglib\2.0\pluto-taglib-2.0.jar
+2016-10-09 17:08:47,911 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6367040480066016794.pom to C:\Users\13642\.m2\repository\myeclipse\pluto-taglib\2.0\pluto-taglib-2.0.pom
+2016-10-09 17:08:51,534 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/chartengineapi/2.2.0/chartengineapi-2.2.0.jar
+2016-10-09 17:08:51,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:51,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:51,550 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\chartengineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.2.0\chartengineapi-2.2.0.jar
+2016-10-09 17:08:51,634 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8743990967328842830.pom to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.2.0\chartengineapi-2.2.0.pom
+2016-10-09 17:08:52,250 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/coreapi/2.2.0/coreapi-2.2.0.jar
+2016-10-09 17:08:52,266 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:52,266 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:52,266 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\coreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.2.0\coreapi-2.2.0.jar
+2016-10-09 17:08:52,313 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8565972024460443971.pom to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.2.0\coreapi-2.2.0.pom
+2016-10-09 17:08:52,682 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataadapterapi/2.2.0/dataadapterapi-2.2.0.jar
+2016-10-09 17:08:52,682 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:52,682 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:52,682 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\dataadapterapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.2.0\dataadapterapi-2.2.0.jar
+2016-10-09 17:08:52,719 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall917249545783661742.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.2.0\dataadapterapi-2.2.0.pom
+2016-10-09 17:08:53,998 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dteapi/2.2.0/dteapi-2.2.0.jar
+2016-10-09 17:08:53,998 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:53,998 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:54,015 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\dteapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.2.0\dteapi-2.2.0.jar
+2016-10-09 17:08:54,036 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8489566638595949130.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.2.0\dteapi-2.2.0.pom
+2016-10-09 17:08:54,420 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/engineapi/2.2.0/engineapi-2.2.0.jar
+2016-10-09 17:08:54,436 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:54,436 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:54,452 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\engineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.2.0\engineapi-2.2.0.jar
+2016-10-09 17:08:54,483 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5829803304199203746.pom to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.2.0\engineapi-2.2.0.pom
+2016-10-09 17:08:54,837 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelapi/2.2.0/modelapi-2.2.0.jar
+2016-10-09 17:08:54,868 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:54,868 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:54,868 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\modelapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.2.0\modelapi-2.2.0.jar
+2016-10-09 17:08:54,937 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2215037355243085274.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.2.0\modelapi-2.2.0.pom
+2016-10-09 17:08:55,300 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/scriptapi/2.2.0/scriptapi-2.2.0.jar
+2016-10-09 17:08:55,320 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:55,321 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:55,322 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\scriptapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.2.0\scriptapi-2.2.0.jar
+2016-10-09 17:08:55,369 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5916126862954949935.pom to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.2.0\scriptapi-2.2.0.pom
+2016-10-09 17:08:55,985 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/viewservlets/2.2.0/viewservlets-2.2.0.jar
+2016-10-09 17:08:56,000 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:56,000 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:56,022 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\viewservlets.jar to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.2.0\viewservlets-2.2.0.jar
+2016-10-09 17:08:56,054 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3092841607052709267.pom to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.2.0\viewservlets-2.2.0.pom
+2016-10-09 17:08:58,304 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/flute/1.0/flute-1.0.jar
+2016-10-09 17:08:58,304 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:58,304 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:58,319 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\flute.jar to C:\Users\13642\.m2\repository\myeclipse\flute\1.0\flute-1.0.jar
+2016-10-09 17:08:58,356 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2400084627960430716.pom to C:\Users\13642\.m2\repository\myeclipse\flute\1.0\flute-1.0.pom
+2016-10-09 17:08:58,723 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.common/2.2.1/org.eclipse.emf.common-2.2.1.jar
+2016-10-09 17:08:58,725 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:08:58,725 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:08:58,725 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\org.eclipse.emf.common_2.2.1.v200702131851.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.common\2.2.1\org.eclipse.emf.common-2.2.1.jar
+2016-10-09 17:08:58,772 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7557913498207123765.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.common\2.2.1\org.eclipse.emf.common-2.2.1.pom
+2016-10-09 17:09:00,977 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.ecore/2.2.2/org.eclipse.emf.ecore-2.2.2.jar
+2016-10-09 17:09:00,977 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:00,977 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:00,977 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\org.eclipse.emf.ecore_2.2.2.v200702131851.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore\2.2.2\org.eclipse.emf.ecore-2.2.2.jar
+2016-10-09 17:09:01,030 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5631402141351136505.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore\2.2.2\org.eclipse.emf.ecore-2.2.2.pom
+2016-10-09 17:09:01,393 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.ecore.xmi/2.2.2/org.eclipse.emf.ecore.xmi-2.2.2.jar
+2016-10-09 17:09:01,408 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:01,408 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:01,408 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.2\org.eclipse.emf.ecore.xmi_2.2.2.v200702131851.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore.xmi\2.2.2\org.eclipse.emf.ecore.xmi-2.2.2.jar
+2016-10-09 17:09:01,430 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall369785782864879636.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore.xmi\2.2.2\org.eclipse.emf.ecore.xmi-2.2.2.pom
+2016-10-09 17:09:02,063 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/chartengineapi/2.3.0/chartengineapi-2.3.0.jar
+2016-10-09 17:09:02,063 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:02,063 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:02,063 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\chartengineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.3.0\chartengineapi-2.3.0.jar
+2016-10-09 17:09:02,109 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8291155461274109332.pom to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.3.0\chartengineapi-2.3.0.pom
+2016-10-09 17:09:02,495 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/coreapi/2.3.0/coreapi-2.3.0.jar
+2016-10-09 17:09:02,495 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:02,495 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:02,495 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\coreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.3.0\coreapi-2.3.0.jar
+2016-10-09 17:09:02,532 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5280570564655279097.pom to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.3.0\coreapi-2.3.0.pom
+2016-10-09 17:09:03,998 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataadapterapi/2.3.0/dataadapterapi-2.3.0.jar
+2016-10-09 17:09:03,998 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:03,998 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:03,998 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\dataadapterapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.3.0\dataadapterapi-2.3.0.jar
+2016-10-09 17:09:04,066 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall67299334802485356.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.3.0\dataadapterapi-2.3.0.pom
+2016-10-09 17:09:04,513 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dteapi/2.3.0/dteapi-2.3.0.jar
+2016-10-09 17:09:04,513 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:04,513 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:04,513 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\dteapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.3.0\dteapi-2.3.0.jar
+2016-10-09 17:09:04,567 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall632423863817561213.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.3.0\dteapi-2.3.0.pom
+2016-10-09 17:09:04,933 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/engineapi/2.3.0/engineapi-2.3.0.jar
+2016-10-09 17:09:04,937 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:04,937 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:04,937 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\engineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.3.0\engineapi-2.3.0.jar
+2016-10-09 17:09:04,983 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7245965579618515949.pom to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.3.0\engineapi-2.3.0.pom
+2016-10-09 17:09:05,338 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelapi/2.3.0/modelapi-2.3.0.jar
+2016-10-09 17:09:05,353 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:05,353 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:05,353 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\modelapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.3.0\modelapi-2.3.0.jar
+2016-10-09 17:09:05,384 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8449475439047197382.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.3.0\modelapi-2.3.0.pom
+2016-10-09 17:09:05,770 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/scriptapi/2.3.0/scriptapi-2.3.0.jar
+2016-10-09 17:09:05,770 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:05,770 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:05,770 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\scriptapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.3.0\scriptapi-2.3.0.jar
+2016-10-09 17:09:05,817 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4754060119525480164.pom to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.3.0\scriptapi-2.3.0.pom
+2016-10-09 17:09:06,302 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/viewservlets/2.3.0/viewservlets-2.3.0.jar
+2016-10-09 17:09:06,336 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:06,337 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:06,339 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\viewservlets.jar to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.3.0\viewservlets-2.3.0.jar
+2016-10-09 17:09:06,371 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3447433367290391470.pom to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.3.0\viewservlets-2.3.0.pom
+2016-10-09 17:09:06,856 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/crosstabcoreapi/2.3.0/crosstabcoreapi-2.3.0.jar
+2016-10-09 17:09:06,871 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:06,871 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:06,887 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\crosstabcoreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\crosstabcoreapi\2.3.0\crosstabcoreapi-2.3.0.jar
+2016-10-09 17:09:06,918 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall35428427685769971.pom to C:\Users\13642\.m2\repository\myeclipse-reports\crosstabcoreapi\2.3.0\crosstabcoreapi-2.3.0.pom
+2016-10-09 17:09:07,435 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataaggregationapi/2.3.0/dataaggregationapi-2.3.0.jar
+2016-10-09 17:09:07,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:07,454 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:07,461 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\dataaggregationapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataaggregationapi\2.3.0\dataaggregationapi-2.3.0.jar
+2016-10-09 17:09:07,505 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3053072423621886660.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataaggregationapi\2.3.0\dataaggregationapi-2.3.0.pom
+2016-10-09 17:09:08,004 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelodaapi/2.3.0/modelodaapi-2.3.0.jar
+2016-10-09 17:09:08,010 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:08,010 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:08,018 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\modelodaapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelodaapi\2.3.0\modelodaapi-2.3.0.jar
+2016-10-09 17:09:08,056 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7544479448126116997.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelodaapi\2.3.0\modelodaapi-2.3.0.pom
+2016-10-09 17:09:08,417 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/odadesignapi/2.3.0/odadesignapi-2.3.0.jar
+2016-10-09 17:09:08,427 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:08,428 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:08,434 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\odadesignapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\odadesignapi\2.3.0\odadesignapi-2.3.0.jar
+2016-10-09 17:09:08,494 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1372031737854689557.pom to C:\Users\13642\.m2\repository\myeclipse-reports\odadesignapi\2.3.0\odadesignapi-2.3.0.pom
+2016-10-09 17:09:08,855 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataextraction/2.3.0/dataextraction-2.3.0.jar
+2016-10-09 17:09:08,869 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:08,869 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:08,872 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\dataextraction.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataextraction\2.3.0\dataextraction-2.3.0.jar
+2016-10-09 17:09:08,906 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8534882457466517645.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataextraction\2.3.0\dataextraction-2.3.0.pom
+2016-10-09 17:09:09,273 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.common/2.4.0/org.eclipse.emf.common-2.4.0.jar
+2016-10-09 17:09:09,292 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:09,293 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:09,304 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\org.eclipse.emf.common_2.4.0.v200808251517.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.common\2.4.0\org.eclipse.emf.common-2.4.0.jar
+2016-10-09 17:09:09,345 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5145581448350642000.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.common\2.4.0\org.eclipse.emf.common-2.4.0.pom
+2016-10-09 17:09:09,743 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.ecore/2.4.0/org.eclipse.emf.ecore-2.4.0.jar
+2016-10-09 17:09:09,752 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:09,752 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:09,757 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\org.eclipse.emf.ecore_2.4.1.v200808251517.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore\2.4.0\org.eclipse.emf.ecore-2.4.0.jar
+2016-10-09 17:09:09,802 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8900923988895113242.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore\2.4.0\org.eclipse.emf.ecore-2.4.0.pom
+2016-10-09 17:09:10,163 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.ecore.xmi/2.4.0/org.eclipse.emf.ecore.xmi-2.4.0.jar
+2016-10-09 17:09:10,170 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:10,170 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:10,173 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.3\org.eclipse.emf.ecore.xmi_2.4.1.v200808251517.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore.xmi\2.4.0\org.eclipse.emf.ecore.xmi-2.4.0.jar
+2016-10-09 17:09:10,205 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2791922381109303517.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore.xmi\2.4.0\org.eclipse.emf.ecore.xmi-2.4.0.pom
+2016-10-09 17:09:10,570 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/chartengineapi/2.5.0/chartengineapi-2.5.0.jar
+2016-10-09 17:09:10,577 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:10,578 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:10,582 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\chartengineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.5.0\chartengineapi-2.5.0.jar
+2016-10-09 17:09:10,638 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2196661143406326098.pom to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.5.0\chartengineapi-2.5.0.pom
+2016-10-09 17:09:11,002 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/chartitemapi/2.5.0/chartitemapi-2.5.0.jar
+2016-10-09 17:09:11,009 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:11,009 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:11,014 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\chartitemapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\chartitemapi\2.5.0\chartitemapi-2.5.0.jar
+2016-10-09 17:09:11,059 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall158148878897894023.pom to C:\Users\13642\.m2\repository\myeclipse-reports\chartitemapi\2.5.0\chartitemapi-2.5.0.pom
+2016-10-09 17:09:11,428 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/coreapi/2.5.0/coreapi-2.5.0.jar
+2016-10-09 17:09:11,435 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:11,436 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:11,441 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\coreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.5.0\coreapi-2.5.0.jar
+2016-10-09 17:09:11,485 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4513741328158196411.pom to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.5.0\coreapi-2.5.0.pom
+2016-10-09 17:09:21,141 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataadapterapi/2.5.0/dataadapterapi-2.5.0.jar
+2016-10-09 17:09:21,141 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:21,141 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:21,141 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\dataadapterapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.5.0\dataadapterapi-2.5.0.jar
+2016-10-09 17:09:21,179 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1963194972359819402.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.5.0\dataadapterapi-2.5.0.pom
+2016-10-09 17:09:21,562 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dteapi/2.5.0/dteapi-2.5.0.jar
+2016-10-09 17:09:21,564 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:21,564 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:21,579 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\dteapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.5.0\dteapi-2.5.0.jar
+2016-10-09 17:09:21,642 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3389645421804268654.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.5.0\dteapi-2.5.0.pom
+2016-10-09 17:09:21,995 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/engineapi/2.5.0/engineapi-2.5.0.jar
+2016-10-09 17:09:22,011 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:22,011 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:22,026 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\engineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.5.0\engineapi-2.5.0.jar
+2016-10-09 17:09:22,064 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4990731234054190581.pom to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.5.0\engineapi-2.5.0.pom
+2016-10-09 17:09:22,427 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelapi/2.5.0/modelapi-2.5.0.jar
+2016-10-09 17:09:22,443 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:22,443 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:22,443 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\modelapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.5.0\modelapi-2.5.0.jar
+2016-10-09 17:09:22,496 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2192269793627166066.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.5.0\modelapi-2.5.0.pom
+2016-10-09 17:09:26,535 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/scriptapi/2.5.0/scriptapi-2.5.0.jar
+2016-10-09 17:09:26,551 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:26,551 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:26,551 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\scriptapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.5.0\scriptapi-2.5.0.jar
+2016-10-09 17:09:26,589 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6031620884711276331.pom to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.5.0\scriptapi-2.5.0.pom
+2016-10-09 17:09:36,607 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/viewservlets/2.5.0/viewservlets-2.5.0.jar
+2016-10-09 17:09:36,607 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:36,607 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:36,623 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\viewservlets.jar to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.5.0\viewservlets-2.5.0.jar
+2016-10-09 17:09:36,654 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6241961070357118761.pom to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.5.0\viewservlets-2.5.0.pom
+2016-10-09 17:09:37,270 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/crosstabcoreapi/2.5.0/crosstabcoreapi-2.5.0.jar
+2016-10-09 17:09:37,292 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:37,292 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:37,292 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\crosstabcoreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\crosstabcoreapi\2.5.0\crosstabcoreapi-2.5.0.jar
+2016-10-09 17:09:37,339 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2944442866028978122.pom to C:\Users\13642\.m2\repository\myeclipse-reports\crosstabcoreapi\2.5.0\crosstabcoreapi-2.5.0.pom
+2016-10-09 17:09:37,971 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataaggregationapi/2.5.0/dataaggregationapi-2.5.0.jar
+2016-10-09 17:09:37,971 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:37,971 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:37,989 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\dataaggregationapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataaggregationapi\2.5.0\dataaggregationapi-2.5.0.jar
+2016-10-09 17:09:38,009 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8851426712636969024.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataaggregationapi\2.5.0\dataaggregationapi-2.5.0.pom
+2016-10-09 17:09:39,394 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelodaapi/2.5.0/modelodaapi-2.5.0.jar
+2016-10-09 17:09:39,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:39,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:39,394 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\modelodaapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelodaapi\2.5.0\modelodaapi-2.5.0.jar
+2016-10-09 17:09:39,441 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3040086271318852359.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelodaapi\2.5.0\modelodaapi-2.5.0.pom
+2016-10-09 17:09:39,811 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/odadesignapi/2.5.0/odadesignapi-2.5.0.jar
+2016-10-09 17:09:39,811 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:39,811 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:39,827 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\odadesignapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\odadesignapi\2.5.0\odadesignapi-2.5.0.jar
+2016-10-09 17:09:39,858 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5234852441807581804.pom to C:\Users\13642\.m2\repository\myeclipse-reports\odadesignapi\2.5.0\odadesignapi-2.5.0.pom
+2016-10-09 17:09:40,459 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataextraction/2.5.0/dataextraction-2.5.0.jar
+2016-10-09 17:09:40,474 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:40,474 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:40,496 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\dataextraction.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataextraction\2.5.0\dataextraction-2.5.0.jar
+2016-10-09 17:09:40,543 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4466888391938290940.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataextraction\2.5.0\dataextraction-2.5.0.pom
+2016-10-09 17:09:41,112 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/emitterconfig/2.5.0/emitterconfig-2.5.0.jar
+2016-10-09 17:09:41,128 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:41,128 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:41,128 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\emitterconfig.jar to C:\Users\13642\.m2\repository\myeclipse-reports\emitterconfig\2.5.0\emitterconfig-2.5.0.jar
+2016-10-09 17:09:41,159 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall453011955706260211.pom to C:\Users\13642\.m2\repository\myeclipse-reports\emitterconfig\2.5.0\emitterconfig-2.5.0.pom
+2016-10-09 17:09:41,775 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/chartengineapi/2.5.2/chartengineapi-2.5.2.jar
+2016-10-09 17:09:41,796 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:41,797 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:41,797 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\chartengineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.5.2\chartengineapi-2.5.2.jar
+2016-10-09 17:09:41,844 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4952599461793671205.pom to C:\Users\13642\.m2\repository\myeclipse-reports\chartengineapi\2.5.2\chartengineapi-2.5.2.pom
+2016-10-09 17:09:42,213 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/chartitemapi/2.5.2/chartitemapi-2.5.2.jar
+2016-10-09 17:09:42,228 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:42,228 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:42,244 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\chartitemapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\chartitemapi\2.5.2\chartitemapi-2.5.2.jar
+2016-10-09 17:09:42,275 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8986853902867478430.pom to C:\Users\13642\.m2\repository\myeclipse-reports\chartitemapi\2.5.2\chartitemapi-2.5.2.pom
+2016-10-09 17:09:42,897 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/coreapi/2.5.2/coreapi-2.5.2.jar
+2016-10-09 17:09:42,913 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:42,913 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:42,913 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\coreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.5.2\coreapi-2.5.2.jar
+2016-10-09 17:09:42,960 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall7831486605998732800.pom to C:\Users\13642\.m2\repository\myeclipse-reports\coreapi\2.5.2\coreapi-2.5.2.pom
+2016-10-09 17:09:43,330 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataadapterapi/2.5.2/dataadapterapi-2.5.2.jar
+2016-10-09 17:09:43,345 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:43,345 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:43,345 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\dataadapterapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.5.2\dataadapterapi-2.5.2.jar
+2016-10-09 17:09:43,376 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6224100939760182597.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataadapterapi\2.5.2\dataadapterapi-2.5.2.pom
+2016-10-09 17:09:43,998 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dteapi/2.5.2/dteapi-2.5.2.jar
+2016-10-09 17:09:44,014 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:44,014 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:44,014 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\dteapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.5.2\dteapi-2.5.2.jar
+2016-10-09 17:09:44,061 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4247629450120628830.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dteapi\2.5.2\dteapi-2.5.2.pom
+2016-10-09 17:09:44,662 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/engineapi/2.5.2/engineapi-2.5.2.jar
+2016-10-09 17:09:44,677 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:44,694 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:44,699 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\engineapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.5.2\engineapi-2.5.2.jar
+2016-10-09 17:09:44,731 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5033152051446932934.pom to C:\Users\13642\.m2\repository\myeclipse-reports\engineapi\2.5.2\engineapi-2.5.2.pom
+2016-10-09 17:09:45,348 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelapi/2.5.2/modelapi-2.5.2.jar
+2016-10-09 17:09:45,348 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:45,348 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:45,363 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\modelapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.5.2\modelapi-2.5.2.jar
+2016-10-09 17:09:45,417 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall1331595908935368979.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelapi\2.5.2\modelapi-2.5.2.pom
+2016-10-09 17:09:45,780 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/scriptapi/2.5.2/scriptapi-2.5.2.jar
+2016-10-09 17:09:45,801 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:45,801 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:45,801 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\scriptapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.5.2\scriptapi-2.5.2.jar
+2016-10-09 17:09:45,864 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8631767339891963518.pom to C:\Users\13642\.m2\repository\myeclipse-reports\scriptapi\2.5.2\scriptapi-2.5.2.pom
+2016-10-09 17:09:46,480 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/viewservlets/2.5.2/viewservlets-2.5.2.jar
+2016-10-09 17:09:46,498 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:46,499 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:46,502 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\viewservlets.jar to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.5.2\viewservlets-2.5.2.jar
+2016-10-09 17:09:46,549 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5243560731177773033.pom to C:\Users\13642\.m2\repository\myeclipse-reports\viewservlets\2.5.2\viewservlets-2.5.2.pom
+2016-10-09 17:09:47,150 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/crosstabcoreapi/2.5.2/crosstabcoreapi-2.5.2.jar
+2016-10-09 17:09:47,165 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:47,165 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:47,181 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\crosstabcoreapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\crosstabcoreapi\2.5.2\crosstabcoreapi-2.5.2.jar
+2016-10-09 17:09:47,203 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4970085910504864042.pom to C:\Users\13642\.m2\repository\myeclipse-reports\crosstabcoreapi\2.5.2\crosstabcoreapi-2.5.2.pom
+2016-10-09 17:09:47,581 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataaggregationapi/2.5.2/dataaggregationapi-2.5.2.jar
+2016-10-09 17:09:47,603 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:47,603 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:47,619 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\dataaggregationapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataaggregationapi\2.5.2\dataaggregationapi-2.5.2.jar
+2016-10-09 17:09:47,650 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4422779608190463530.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataaggregationapi\2.5.2\dataaggregationapi-2.5.2.pom
+2016-10-09 17:09:48,035 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/modelodaapi/2.5.2/modelodaapi-2.5.2.jar
+2016-10-09 17:09:48,050 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:48,050 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:48,050 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\modelodaapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\modelodaapi\2.5.2\modelodaapi-2.5.2.jar
+2016-10-09 17:09:48,100 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3367228429601445492.pom to C:\Users\13642\.m2\repository\myeclipse-reports\modelodaapi\2.5.2\modelodaapi-2.5.2.pom
+2016-10-09 17:09:48,704 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/odadesignapi/2.5.2/odadesignapi-2.5.2.jar
+2016-10-09 17:09:48,735 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:48,735 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:48,735 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\odadesignapi.jar to C:\Users\13642\.m2\repository\myeclipse-reports\odadesignapi\2.5.2\odadesignapi-2.5.2.jar
+2016-10-09 17:09:48,782 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3600869390156678985.pom to C:\Users\13642\.m2\repository\myeclipse-reports\odadesignapi\2.5.2\odadesignapi-2.5.2.pom
+2016-10-09 17:09:49,152 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/dataextraction/2.5.2/dataextraction-2.5.2.jar
+2016-10-09 17:09:49,183 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:49,183 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:49,183 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\dataextraction.jar to C:\Users\13642\.m2\repository\myeclipse-reports\dataextraction\2.5.2\dataextraction-2.5.2.jar
+2016-10-09 17:09:49,221 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall3089942482223339179.pom to C:\Users\13642\.m2\repository\myeclipse-reports\dataextraction\2.5.2\dataextraction-2.5.2.pom
+2016-10-09 17:09:49,584 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse-reports/emitterconfig/2.5.2/emitterconfig-2.5.2.jar
+2016-10-09 17:09:49,584 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:49,584 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:49,602 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5.2\emitterconfig.jar to C:\Users\13642\.m2\repository\myeclipse-reports\emitterconfig\2.5.2\emitterconfig-2.5.2.jar
+2016-10-09 17:09:49,637 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall5826698893205095356.pom to C:\Users\13642\.m2\repository\myeclipse-reports\emitterconfig\2.5.2\emitterconfig-2.5.2.pom
+2016-10-09 17:09:50,006 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.common/2.5.0/org.eclipse.emf.common-2.5.0.jar
+2016-10-09 17:09:50,006 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:50,006 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:50,022 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\org.eclipse.emf.common_2.5.0.v200906151043.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.common\2.5.0\org.eclipse.emf.common-2.5.0.jar
+2016-10-09 17:09:50,053 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall53295329273107048.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.common\2.5.0\org.eclipse.emf.common-2.5.0.pom
+2016-10-09 17:09:50,422 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.ecore/2.5.0/org.eclipse.emf.ecore-2.5.0.jar
+2016-10-09 17:09:50,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:50,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:50,453 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\org.eclipse.emf.ecore_2.5.0.v200906151043.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore\2.5.0\org.eclipse.emf.ecore-2.5.0.jar
+2016-10-09 17:09:50,522 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6205121335830769007.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore\2.5.0\org.eclipse.emf.ecore-2.5.0.pom
+2016-10-09 17:09:50,885 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/myeclipse/org.eclipse.emf.ecore.xmi/2.5.0/org.eclipse.emf.ecore.xmi-2.5.0.jar
+2016-10-09 17:09:50,907 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:50,907 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:50,907 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\98\0\.cp\data\2.5\org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore.xmi\2.5.0\org.eclipse.emf.ecore.xmi-2.5.0.jar
+2016-10-09 17:09:50,954 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall2573142118018579421.pom to C:\Users\13642\.m2\repository\myeclipse\org.eclipse.emf.ecore.xmi\2.5.0\org.eclipse.emf.ecore.xmi-2.5.0.pom
+2016-10-09 17:09:51,323 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/sun/jersey/jersey-multipart/1.0.3.1/jersey-multipart-1.0.3.1.jar
+2016-10-09 17:09:51,339 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:51,339 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:51,355 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.ws_13.0.0.me201508041557\lib\jersey\1.0\jersey-multipart-1.0.3.1.jar to C:\Users\13642\.m2\repository\com\sun\jersey\jersey-multipart\1.0.3.1\jersey-multipart-1.0.3.1.jar
+2016-10-09 17:09:51,408 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall8608967887825143448.pom to C:\Users\13642\.m2\repository\com\sun\jersey\jersey-multipart\1.0.3.1\jersey-multipart-1.0.3.1.pom
+2016-10-09 17:09:51,772 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/sun/jersey/jersey-multipart/1.4/jersey-multipart-1.4.jar
+2016-10-09 17:09:51,787 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:51,787 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:51,787 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.ws_13.0.0.me201508041557\lib\jersey\1.4\jersey-multipart-1.4.jar to C:\Users\13642\.m2\repository\com\sun\jersey\jersey-multipart\1.4\jersey-multipart-1.4.jar
+2016-10-09 17:09:51,825 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall513090297317339675.pom to C:\Users\13642\.m2\repository\com\sun\jersey\jersey-multipart\1.4\jersey-multipart-1.4.pom
+2016-10-09 17:09:52,204 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/sun/webservices-extra/1.1/webservices-extra-1.1.jar
+2016-10-09 17:09:52,210 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:52,210 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:52,210 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.ws.xfire_13.0.0.me201511181350\lib\webservices-extra.jar to C:\Users\13642\.m2\repository\com\sun\webservices-extra\1.1\webservices-extra-1.1.jar
+2016-10-09 17:09:52,257 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall6266083061820309386.pom to C:\Users\13642\.m2\repository\com\sun\webservices-extra\1.1\webservices-extra-1.1.pom
+2016-10-09 17:09:52,889 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/com/sun/webservices-rt/1.1/webservices-rt-1.1.jar
+2016-10-09 17:09:52,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:52,889 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:52,905 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\plugins\com.genuitec.eclipse.ws.xfire_13.0.0.me201511181350\lib\webservices-rt.jar to C:\Users\13642\.m2\repository\com\sun\webservices-rt\1.1\webservices-rt-1.1.jar
+2016-10-09 17:09:52,989 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall4770863241443336447.pom to C:\Users\13642\.m2\repository\com\sun\webservices-rt\1.1\webservices-rt-1.1.pom
+2016-10-09 17:09:53,355 [Worker-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/primefaces/primefaces/2.1/primefaces-2.1.jar
+2016-10-09 17:09:53,363 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - 
+2016-10-09 17:09:53,363 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using the builder org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder with a thread count of 1
+2016-10-09 17:09:53,367 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\MyEclipse 2015\configuration\org.eclipse.osgi\260\0\.cp\lib\primefaces\2.1\primefaces-2.1.jar to C:\Users\13642\.m2\repository\org\primefaces\primefaces\2.1\primefaces-2.1.jar
+2016-10-09 17:09:53,419 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Installing C:\Users\13642\AppData\Local\Temp\mvninstall764176474380265262.pom to C:\Users\13642\.m2\repository\org\primefaces\primefaces\2.1\primefaces-2.1.pom
+2016-10-09 17:09:54,343 [Worker-7] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated local repository index
+2016-10-09 17:15:55,879 [Worker-9] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo.maven.apache.org/maven2
+org.eclipse.core.runtime.OperationCanceledException: null
+	at org.eclipse.m2e.core.internal.index.nexus.AetherClientResourceFetcher.retrieve(AetherClientResourceFetcher.java:90) ~[org.eclipse.m2e.core_1.5.0.me201510140435.jar:na]
+	at org.apache.maven.index.updater.AbstractResourceFetcher.retrieve(AbstractResourceFetcher.java:35) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LocalCacheIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:700) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:829) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1238) [org.eclipse.m2e.core_1.5.0.me201510140435.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1193) [org.eclipse.m2e.core_1.5.0.me201510140435.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:703) [org.eclipse.m2e.core_1.5.0.me201510140435.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:72) [org.eclipse.m2e.core_1.5.0.me201510140435.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.6.1.v20141014-1248.jar:na]

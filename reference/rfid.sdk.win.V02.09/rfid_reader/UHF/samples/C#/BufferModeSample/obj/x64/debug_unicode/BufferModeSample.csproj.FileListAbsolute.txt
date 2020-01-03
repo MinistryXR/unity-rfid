@@ -1,0 +1,10 @@
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\run\win64\unicode_debug\BufferModeSample.exe
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\run\win64\unicode_debug\BufferModeSample.pdb
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.csprojAssemblyReference.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\RPANSample.Form1.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\RPANSample.Properties.Resources.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.csproj.GenerateResource.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.csproj.CoreCompileInputs.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.csproj.CopyComplete
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.exe
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\BufferModeSample\obj\x64\debug_unicode\BufferModeSample.pdb

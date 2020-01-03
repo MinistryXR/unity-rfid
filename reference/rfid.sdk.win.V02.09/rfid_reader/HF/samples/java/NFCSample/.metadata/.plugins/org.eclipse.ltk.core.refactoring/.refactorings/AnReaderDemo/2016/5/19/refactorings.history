@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;anreaderlib.jar&apos; to &apos;libs&apos;&#x0D;&#x0A;- Original project: &apos;AnReaderDemo&apos;&#x0D;&#x0A;- Destination element: &apos;libs&apos;&#x0D;&#x0A;- Original element: &apos;anreaderlib.jar&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="anreaderlib.jar" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1462243347397" target="libs" units="0" version="1.0"/>
+</session>

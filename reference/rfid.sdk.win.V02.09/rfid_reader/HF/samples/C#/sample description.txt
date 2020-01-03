@@ -1,0 +1,16 @@
+please open sulotion "samples\vs_projs\samples_vs2005.sln"  
+
+
+1. all the project default setting is x86 - unicode,and the output file located at "samples\run\win32\unicode_debug"
+   
+2.TagAccess project: sample for ISO15693 ,ISO14443a reader application ,rfid tag access sample,including inventory ,read memory and write memory and so on.
+
+3.ILT_sample project: sample for ILT(ISO18000-3 mode 3) tag access .
+
+4.SetOutput_cs project: sample for controlling output port of reader .
+
+5.RS485Sample_cs project: sample for how to create RS485 bus node for RS485 communication.
+
+6.BufferModeSample project: sample for getting records in buffer mode (R-PAN hand held reader and RL1700 reader supported this mode)
+
+7.ConfigurationBlockSample project: sample for read and write reader configuration block

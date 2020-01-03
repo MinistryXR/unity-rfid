@@ -1,0 +1,667 @@
+<HTML>
+<HEAD>
+<TITLE>MyActiveX - Methods, Properties, and Events</TITLE>
+
+<SCRIPT LANGUAGE="JavaScript">
+
+
+window.onload=function()
+{
+     var devCnt = MyActiveX1.RDR_GetLoadedReaderDriverCount();
+	 var j=0;
+     for(j=0;j<devCnt;j++)
+     {
+         var devName = MyActiveX1.RDR_GetLoadedReaderDriverOpt(j,"NAME");
+         var varItem = new Option(devName, j);      
+         DeviceType.options.add(varItem);      
+     }
+
+	 var ComNum = MyActiveX1.COMPort_Enum();
+	 for(j=0;j<ComNum;j++)
+	 {
+	     var sComName = MyActiveX1.COMPort_GetEnumItem(j);
+         var varItem = new Option(sComName, j);      
+         ComName.options.add(varItem);    
+	 }
+
+	 for(j=0;j<28;j++)
+	 {
+	    
+	     var varItemAddr = new Option(j,j);
+		 var varItemNum = new Option(j+1,j+1);
+		 BlockAddr.options.add(varItemAddr);
+		 BlockNum.options.add(varItemNum);
+	 }
+
+	 dsfidVal.value = "00";
+	 afiVal.value = "00";
+
+	 BaudVal.selectedIndex = 1;
+	 FramVal.selectedIndex = 0;
+	 Open.disabled=false;
+	 Close.disabled=true;
+	 CardSerial.disabled=true;
+	 Inventory.disabled=true;
+	 Connect.disabled=true;
+     Disconnect.disabled=true;
+     BlockAddr.disabled=true;
+     BlkData.disabled=true;
+	 GetTagInfo.disabled=true;
+     BlockNum.disabled=true;
+     readSecSta.disabled=true;
+     ReadSingleBlock.disabled=true;
+     WriteSingleBlock.disabled=true;
+     LockSingleBlock.disabled=true;
+     ReadMultiBlock.disabled=true;
+     WriteMultiBlock.disabled=true;
+     LockMultiBlock.disabled=true;
+     dsfidVal.disabled=true;
+     WriteDsfid.disabled=true;
+     LockDsfid.disabled=true;
+     afiVal.disabled=true;
+     WriteAfi.disabled=true;
+     LockAfi.disabled=true;
+     EnableEAS.disabled=true;
+     DisableEAS.disabled=true;
+     LockEAS.disabled=true;
+     VerifyEAS.disabled=true;
+	 OpenTypeChange();
+}
+
+function OpenTypeChange()
+{
+    var sOpenType = OpenType[OpenType.selectedIndex].text;
+	if(sOpenType=="COM")
+	{
+	    ComName.disabled = false;
+		BaudVal.disabled = false;
+		FramVal.disabled = false;
+		IPAddr.disabled = true;
+		nPortVal.disabled = true;
+	}
+	else if(sOpenType=="NET")
+	{
+	    ComName.disabled = true;
+		BaudVal.disabled = true;
+		FramVal.disabled = true;
+		IPAddr.disabled = false;
+		nPortVal.disabled = false;
+	}
+	else if(sOpenType=="USB")
+	{
+	    ComName.disabled = true;
+		BaudVal.disabled = true;
+		FramVal.disabled = true;
+		IPAddr.disabled = true;
+		nPortVal.disabled = true;
+	}
+}
+
+
+function OnOpen()
+{
+     var nret = -1;
+	 var sOpenType = OpenType[OpenType.selectedIndex].text;
+	 var sDevName = DeviceType[DeviceType.selectedIndex].text;
+	 if(sOpenType=="COM")
+	 {
+	    var sComName = ComName[ComName.selectedIndex].text;
+		var sBaud = BaudVal[BaudVal.selectedIndex].text;
+		var sFrame = FramVal[FramVal.selectedIndex].text;
+	 	nret = MyActiveX1.RDR_OpenPort(sDevName,sComName,sBaud,sFrame);
+	 }
+	 else if(sOpenType=="USB")
+	 {
+	    nret = MyActiveX1.RDR_OpenUSB(sDevName,0,"");
+	 }
+	 else if(sOpenType=="NET")
+	 {
+	     var sIp = IPAddr.value;
+		 var nPort = nPortVal.value;
+		 nret = MyActiveX1.RDR_OpenNet(sDevName,sIp,nPort);
+	 }
+	 if(nret==0)
+	 {
+	    DeviceType.disabled=true;
+        OpenType.disabled=true;
+        ComName.disabled=true;
+        BaudVal.disabled=true;
+        FramVal.disabled=true;
+        IPAddr.disabled=true;
+        nPortVal.disabled=true;
+		Open.disabled=true;
+	    Close.disabled=false;
+		Inventory.disabled=false;
+		CardSerial.disabled=false;
+	 }
+	 else
+	 {
+	    alert("打开设备失败!");
+	 }
+}
+
+function OnClose()
+{
+     MyActiveX1.RDR_Close();
+	 DeviceType.disabled=false;
+     OpenType.disabled=false;
+	 Open.disabled=false;
+	 Close.disabled=true;
+	 CardSerial.disabled=true;
+	 Inventory.disabled=true;
+	 Connect.disabled=true;
+     Disconnect.disabled=true;
+     BlockAddr.disabled=true;
+     BlkData.disabled=true;
+	 GetTagInfo.disabled=true;
+     BlockNum.disabled=true;
+     readSecSta.disabled=true;
+     ReadSingleBlock.disabled=true;
+     WriteSingleBlock.disabled=true;
+     LockSingleBlock.disabled=true;
+     ReadMultiBlock.disabled=true;
+     WriteMultiBlock.disabled=true;
+     LockMultiBlock.disabled=true;
+     dsfidVal.disabled=true;
+     WriteDsfid.disabled=true;
+     LockDsfid.disabled=true;
+     afiVal.disabled=true;
+     WriteAfi.disabled=true;
+     LockAfi.disabled=true;
+     EnableEAS.disabled=true;
+     DisableEAS.disabled=true;
+     LockEAS.disabled=true;
+     VerifyEAS.disabled=true;
+	 CardSerial.options.length=0;
+	 OpenTypeChange();
+
+}
+
+function OnInventory()
+{	
+    var nret=0;
+	var recordCnt=0;
+	var j=0;
+	CardSerial.options.length=0
+    nret = MyActiveX1.RDR_InitInventory();
+	if(nret!=0)
+	{
+		return ;
+	}
+	nret = MyActiveX1.RDR_Enable15693(0,0x00,0);
+	if(nret!=0)
+	{
+	    MyActiveX1.RDR_FinishInventory();
+		return;
+	}
+	nret = MyActiveX1.RDR_Inventory(0,"");
+	if(nret!=0)
+	{
+	    MyActiveX1.RDR_FinishInventory();
+		return;
+	}
+	recordCnt = MyActiveX1.RDR_GetRecordCnt();
+	
+	for(j=0;j<recordCnt;j++)
+	{
+	    var sTagInfo = MyActiveX1.GetRecord(j).split("-");
+		var sTagID = sTagInfo[sTagInfo.length-1];
+		var varItem = new Option(sTagID, j);      
+        CardSerial.options.add(varItem); 
+	}
+	if(recordCnt>0)
+	{
+	    Connect.disabled=false;
+		Disconnect.disabled=true;
+		
+	}
+	else
+	{
+	    Connect.disabled=true;
+		Disconnect.disabled=true;
+	}
+    MyActiveX1.RDR_FinishInventory();
+}
+
+function OnConnect()
+{
+   var nret=0;
+   var uids = CardSerial[CardSerial.selectedIndex].text;
+   
+   
+   if(uids=="")
+   {
+      alert("卡号不能为空");
+      return;
+   }
+   
+   nret = MyActiveX1.ISO15693_Connect(1,1,uids);
+   
+   if(nret==0)
+   {
+        CardSerial.disabled=true;
+		Inventory.disabled=true;
+	    Connect.disabled=true;
+		Disconnect.disabled=false;
+		BlockAddr.disabled=false;
+        BlkData.disabled=false;
+		
+	    GetTagInfo.disabled=false;
+        BlockNum.disabled=false;
+        readSecSta.disabled=false;
+        ReadSingleBlock.disabled=false;
+        WriteSingleBlock.disabled=false;
+        LockSingleBlock.disabled=false;
+        ReadMultiBlock.disabled=false;
+        WriteMultiBlock.disabled=false;
+        LockMultiBlock.disabled=false;
+        dsfidVal.disabled=false;
+        WriteDsfid.disabled=false;
+        LockDsfid.disabled=false;
+        afiVal.disabled=false;
+        WriteAfi.disabled=false;
+        LockAfi.disabled=false;
+        EnableEAS.disabled=false;
+        DisableEAS.disabled=false;
+        LockEAS.disabled=false;
+        VerifyEAS.disabled=false;
+   }
+
+}
+
+function OnDisconnect()
+{
+    var nret = MyActiveX1.RDR_TagDisconnect();
+    if(nret==0)
+    {
+        CardSerial.disabled=false;
+		Inventory.disabled=false;
+        Connect.disabled=false;
+        Disconnect.disabled=true;
+		BlockAddr.disabled=true;
+        BlkData.disabled=true;
+		BlkData.disabled=true;
+		
+	    GetTagInfo.disabled=true;
+        BlockNum.disabled=true;
+        readSecSta.disabled=true;
+        ReadSingleBlock.disabled=true;
+        WriteSingleBlock.disabled=true;
+        LockSingleBlock.disabled=true;
+        ReadMultiBlock.disabled=true;
+        WriteMultiBlock.disabled=true;
+        LockMultiBlock.disabled=true;
+        dsfidVal.disabled=true;
+        WriteDsfid.disabled=true;
+        LockDsfid.disabled=true;
+        afiVal.disabled=true;
+        WriteAfi.disabled=true;
+        LockAfi.disabled=true;
+        EnableEAS.disabled=true;
+        DisableEAS.disabled=true;
+        LockEAS.disabled=true;
+        VerifyEAS.disabled=true;
+    }
+}
+
+function OnGetTagInfo()
+{
+     var info = MyActiveX1.ISO15693_GetSystemInfo();
+	 var showResult;
+	 if(info=="")
+	 {
+
+	     showResult = "失败代码:"+MyActiveX1.ErrCode;
+	 }
+	 else
+	 {
+	     showResult = "标签信息:" + info;
+	 }
+	 alert(showResult);
+}
+
+
+function OnReadSingleBlock()
+{
+     var addr = parseInt(BlockAddr.value,10);
+	 var IsSecSta;
+	 if(readSecSta.checked)
+	 {
+	     IsSecSta = 1;
+	 }
+	 else 
+	 {
+
+	     IsSecSta = 0;
+	 }
+	 
+     var DataStr =MyActiveX1.ISO15693_ReadSingleBlock(IsSecSta,addr);
+     BlkData.value = DataStr;
+     if(DataStr == "") 
+     {
+        var msg;
+		msg = "错误代码:" + MyActiveX1.ErrCode;
+	    alert(msg);
+     }
+}
+
+function OnWriteSingleBlock()
+{
+     var addr = parseInt(BlockAddr.value,10);
+	 var dataToWrite = BlkData.value;
+	 if(dataToWrite=="")
+	 {
+	     alert("写数据不能为空!");
+		 return;
+	 }
+	 var iret = MyActiveX1.ISO15693_WriteSingleBlock(addr,dataToWrite);
+	 if(iret==0)
+	 {
+	       alert("写数据成功");
+	 }
+	 else
+	 {
+	      var msg;
+		  msg = "失败代码为:" + iret;
+		  alert(msg);
+	 }
+}
+
+function OnLockSingleBlock()
+{
+     var addr = parseInt(BlockAddr.value,10);
+	 var nret = MyActiveX1.ISO15693_LockBlock(addr);
+	 if(iret==0)
+	 {
+	       alert("锁数据块成功");
+	 }
+	 else
+	 {
+	      var msg;
+		  msg = "失败代码为:" + iret;
+		  alert(msg);
+	 }
+}
+
+function OnReadMultiBlock()
+{
+      var addr = parseInt(BlockAddr.value,10);
+	  var num = parseInt(BlockNum.value,10);
+	  var IsSecSta;
+	  if(readSecSta.checked)
+	  {
+	     IsSecSta = 1;
+	  }
+	  else 
+	  {
+
+	     IsSecSta = 0;
+	  }
+	  var sBlkData = MyActiveX1.ISO15693_ReadMultiBlocks(IsSecSta,addr,num);
+	  BlkData.value = sBlkData;
+	  if(sBlkData=="")
+	  {
+	       var msg;
+		   msg = "错误代码:" + MyActiveX1.ErrCode;
+	       alert(msg);
+	  }
+}
+
+function OnWriteMultiBlock()
+{
+      var addr = parseInt(BlockAddr.value,10);
+	  var num = parseInt(BlockNum.value,10);
+	  var strToWrite = BlkData.value;
+	  var nret = MyActiveX1.ISO15693_WriteMultipleBlocks(addr,num,strToWrite);
+	  if(nret==0)
+	  {
+	       alert("锁数据块成功");
+	  }
+	  else
+	  {
+	      var msg;
+		  msg = "失败代码为:" + nret;
+		  alert(msg);
+	  }
+}
+
+
+function OnLockMultiBlock()
+{
+      var addr = parseInt(BlockAddr.value,10);
+	  var num = parseInt(BlockNum.value,10);
+	  var nret = MyActiveX1.ISO15693_LockMultipleBlocks(addr,num);
+	  if(iret==0)
+	  {
+	       alert("锁多个数据块成功");
+	  }
+	  else
+	  {
+	      var msg;
+		  msg = "失败代码为:" + nret;
+		  alert(msg);
+	  }
+}
+
+
+function OnLockDsfid()
+{
+    var nret = MyActiveX1.ISO15693_LockDSFID();
+	if(nret==0)
+	{
+	    alert("锁DSFID成功!");
+	}
+	else
+	{
+	    var msg;
+		msg = "失败代码:" + nret;
+	    alert(msg);
+	}
+}
+
+
+function OnWriteDsfid()
+{
+    var dsfid = parseInt(dsfidVal.value,16);
+    var nret = MyActiveX1.ISO15693_WriteDSFID(dsfid);
+	if(nret==0)
+	{
+	    alert("写DSFID成功!");
+	}
+	else
+	{
+	    var msg;
+		msg = "失败代码:" + nret;
+	    alert(msg);
+	}
+}
+
+function OnLockAfi()
+{
+    var nret = MyActiveX1.ISO15693_LockAFI();
+	if(nret==0)
+	{
+	    alert("锁AFI成功!");
+	}
+	else
+	{
+	    var msg;
+		msg = "失败代码:" + nret;
+	    alert(msg);
+	}
+}
+
+function OnWriteAfi()
+{
+    var afi = parseInt(afiVal.value,16);
+    var nret = MyActiveX1.ISO15693_WriteAFI(afi);
+	if(nret==0)
+	{
+	    alert("写AFI成功!");
+	}
+	else
+	{
+	    var msg;
+		msg = "失败代码:" + nret;
+	    alert(msg);
+	}
+}
+
+function OnEnableEAS()
+{
+    var nret = MyActiveX1.NXPICODESLI_EableEAS();
+	if(nret==0)
+	{
+	     alert("开启EAS成功");
+	}
+	else
+	{
+	     var msg;
+		 msg = "失败代码:" + nret;
+		 alert(msg);
+	}
+}
+
+function OnDisableEAS()
+{
+    var nret = MyActiveX1.NXPICODESLI_DisableEAS();
+	if(nret==0)
+	{
+	     alert("关闭EAS成功");
+	}
+	else
+	{
+	     var msg;
+		 msg = "失败代码:" + nret;
+		 alert(msg);
+	}
+}
+
+function OnLockEAS()
+{
+    var nret = MyActiveX1.NXPICODESLI_LockEAS();
+	if(nret==0)
+	{
+	     alert("锁EAS成功");
+	}
+	else
+	{
+	     var msg;
+		 msg = "失败代码:" + nret;
+		 alert(msg);
+	}
+}
+
+function OnVerifyEAS()
+{
+    var easVal = MyActiveX1.NXPICODESLI_EASAlarm();
+	if(easVal=="01")
+	{
+	     alert("EAS已经打开");
+	}
+	else if(easVal=="00")
+	{
+	    alert("EAS已经关闭");
+	}
+	else
+	{
+	     var msg;
+		 msg = "失败代码:" + MyActiveX1.ErrCode;
+		 alert(msg);
+	}
+}
+
+</SCRIPT>
+
+</HEAD>
+<BODY>
+<center style="font-weight: 700">
+
+<p></p>
+<OBJECT ID="MyActiveX1" WIDTH=0 HEIGHT=0
+ CLASSID="CLSID:38BEF3F4-E284-4548-8E7B-FE20AE443AD8">
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="2646">
+    <PARAM NAME="_ExtentY" VALUE="1323">
+    <PARAM NAME="_StockProps" VALUE="0">
+</OBJECT>
+
+<fieldset style="font: 9pt 宋体; width: 600px; height: 200"><legend>设备参数</legend>
+
+    设备类型:<select name="DeviceType" style="width:75px"></select>
+    端口类型:<select name="OpenType" style="width:75px"  onchange="OpenTypeChange();"><option value=0>COM</option><option value=1>USB</option><option value=2>NET</option></select>
+
+    <p></p>
+    <fieldset style="font: 9pt 宋体; width: 500px; height: 40"><legend>串口参数</legend>
+       串口号:<select name="ComName" style="width:75px"></select>
+       波特率:<select name="BaudVal" style="width:75px"><option value=0>9600</option><option value=1>38400</option><option value=2>115200</option></select>
+       帧结构:<select name="FramVal" style="width:75px"><option value=0>8E1</option><option value=1>8N1</option><option value=2>8O1</option></select>
+    </fieldset>
+
+    <p></p>
+    <fieldset style="font: 9pt 宋体; width: 500px; height: 40"><legend>网络参数</legend>
+       IP地址:<INPUT TYPE ="text" NAME="IPAddr" VALUE="192.168.1.222 " size=50 style="width: 110px; height: 20px">
+       端口号:<INPUT TYPE ="text" NAME="nPortVal" VALUE="9909" size=50 style="width: 40px; height: 20px">
+    </fieldset>
+
+    <p></p>
+    <INPUT TYPE="button" NAME="Open" style="width:100px;" VALUE="打开"   ONCLICK=OnOpen()>
+    <INPUT TYPE="button" NAME="Close" style="width:100px;" VALUE="关闭" ONCLICK=OnClose()>
+</fieldset>
+
+<p></p>
+<fieldset style="font: 9pt 宋体; width: 700px;"><legend>ICODE_SLI</legend>
+    卡号: <select name="CardSerial" style="width:200px"></select>
+    <INPUT TYPE="button" NAME="Inventory" VALUE="盘点" ONCLICK=OnInventory()>
+  
+    <p></p>    
+    <INPUT TYPE="button" NAME="Connect" VALUE="连接" ONCLICK=OnConnect()>
+    <INPUT TYPE="button" NAME="Disconnect" VALUE="断开" ONCLICK=OnDisconnect()>
+    <INPUT TYPE="button" NAME="GetTagInfo" VALUE="获取标签信息" ONCLICK=OnGetTagInfo()>
+
+    <p></p>
+    <fieldset style="font: 9pt 宋体; width: 550px;"><legend>数据块操作</legend>
+          <p></p>
+          开始块:<select name="BlockAddr" style="width:200px"></select>
+          块数量:<select name="BlockNum" style="width:70px"></select>
+          读安全状态:<INPUT TYPE="checkbox" NAME="readSecSta">
+   
+          <p></p>
+          读写数据(16进制字符串): <INPUT TYPE ="text" NAME="BlkData" VALUE="" size=50 style="width: 276px; height: 20px">
+
+          <p></p>
+          <INPUT TYPE="button" NAME="ReadSingleBlock" VALUE="读单块" ONCLICK=OnReadSingleBlock()>
+          <INPUT TYPE="button" NAME="WriteSingleBlock" VALUE="写单块" ONCLICK=OnWriteSingleBlock()>
+          <INPUT TYPE="button" NAME="LockSingleBlock" VALUE="锁单块" ONCLICK=OnLockSingleBlock()>
+          <INPUT TYPE="button" NAME="ReadMultiBlock" VALUE="读多块" ONCLICK=OnReadMultiBlock()>
+          <INPUT TYPE="button" NAME="WriteMultiBlock" VALUE="写多块" ONCLICK=OnWriteMultiBlock()>
+          <INPUT TYPE="button" NAME="LockMultiBlock" VALUE="锁多块" ONCLICK=OnLockMultiBlock()>
+      </fieldset>     
+
+
+    <p></p>
+    <fieldset style="font: 9pt 宋体; width: 550px;"><legend>DSFID和AFI</legend>
+          DSFID值(hex):<INPUT TYPE ="text" NAME="dsfidVal" VALUE="" size=50 style="width: 30px; height: 20px">
+          <INPUT TYPE="button" NAME="WriteDsfid" VALUE="写DSFID" ONCLICK=OnWriteDsfid()>
+          <INPUT TYPE="button" NAME="LockDsfid" VALUE="锁DSFID" ONCLICK=OnLockDsfid()>
+
+          <p></p>
+           AFI值(hex):<INPUT TYPE ="text" NAME="afiVal" VALUE="" size=50 style="width: 30px; height: 20px">
+          <INPUT TYPE="button" NAME="WriteAfi" VALUE="写AFI" ONCLICK=OnWriteAfi()>
+          <INPUT TYPE="button" NAME="LockAfi" VALUE="锁AFI" ONCLICK=OnLockAfi()>
+    </fieldset>
+
+    <p></p>
+    <fieldset style="font: 9pt 宋体; width: 550px;"><legend>EAS操作</legend>
+          <INPUT TYPE="button" NAME="EnableEAS" VALUE="启用EAS" ONCLICK=OnEnableEAS()>
+          <INPUT TYPE="button" NAME="DisableEAS" VALUE="停止EAS" ONCLICK=OnDisableEAS()>
+          <INPUT TYPE="button" NAME="LockEAS" VALUE="锁EAS" ONCLICK=OnLockEAS()>
+          <INPUT TYPE="button" NAME="VerifyEAS" VALUE="EAS检测" ONCLICK=OnVerifyEAS()>
+    </fieldset>
+    
+</fieldset>
+
+
+</center>
+</BODY>
+</HTML>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Genuitec</title>
+	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.genuitec.com</link>
+	<description>The Cloud Control Company</description>
+	<lastBuildDate>Sat, 08 Oct 2016 19:44:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.6.1</generator>
+	<item>
+		<title>Eclipse Neon goes SR1 -Secure Delivery Center does too!</title>
+		<link>https://www.genuitec.com/eclipse-neon-goes-sr1-secure-delivery-center/</link>
+		<pubDate>Fri, 30 Sep 2016 17:14:43 +0000</pubDate>
+		<dc:creator><![CDATA[Anabella]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Secure Delivery Center]]></category>
+		<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[neon]]></category>
+		<category><![CDATA[SDC]]></category>
+		<category><![CDATA[sr1]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=498319</guid>
+		<description><![CDATA[<p>Holy cow! Is this release full of improvements or what? Yes, indeed it is. For sure this will give us material to be entertained with for days exploring each of them. One thing that caught my attention is that many of these improvements are focused on how to keep us inside the IDE and make [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/eclipse-neon-goes-sr1-secure-delivery-center/">Eclipse Neon goes SR1 -Secure Delivery Center does too!</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Creating My First Web App with Angular 2 in Eclipse</title>
+		<link>https://www.genuitec.com/first-angular-2-app/</link>
+		<pubDate>Tue, 20 Sep 2016 14:00:01 +0000</pubDate>
+		<dc:creator><![CDATA[dimitry]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[Planet Eclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[angular 2]]></category>
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=496768</guid>
+		<description><![CDATA[<p>Angular 2 is a framework for building desktop and mobile web applications. After hearing rave reviews about Angular 2, I decided to check it out and take my first steps into modern web development. In this article, I&#8217;ll show you how to create a simple master-details application using Angular 2, TypeScript, Angular CLI and Eclipse [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/first-angular-2-app/">Creating My First Web App with Angular 2 in Eclipse</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Genuitec to Discontinue Development of GapDebug</title>
+		<link>https://www.genuitec.com/discontinue-development-of-gapdebug/</link>
+		<pubDate>Tue, 13 Sep 2016 14:00:58 +0000</pubDate>
+		<dc:creator><![CDATA[wayne]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Genuitec]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=496654</guid>
+		<description><![CDATA[<p>As GapDebug Product Manager, I want to share some information about the future of GapDebug. For almost 3 years we have developed and maintained GapDebug (@GapDebug) as a free debugging and app management platform for hybrid-mobile developers. It has been a fun learning experience with many cool challenges and rewards. After much consideration we have [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/discontinue-development-of-gapdebug/">Genuitec to Discontinue Development of GapDebug</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>From Java Developer to Rockstar Full Stack Developer &#8211; Part 1</title>
+		<link>https://www.genuitec.com/from-java-developer-to-rockstar-full-stack-developer-part-1/</link>
+		<pubDate>Fri, 09 Sep 2016 14:58:48 +0000</pubDate>
+		<dc:creator><![CDATA[Anabella]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[dev search]]></category>
+		<category><![CDATA[developer]]></category>
+		<category><![CDATA[full-stack]]></category>
+		<category><![CDATA[Java]]></category>
+		<category><![CDATA[jsjet]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[typescript]]></category>
+		<category><![CDATA[webclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=495275</guid>
+		<description><![CDATA[<p>Genuitec is working hard on making it easier for you, Java developer, to become an awesome full stack developer. Now that I hopefully got your attention, let me tell you more about our plans on how we are going to achieve this goal.We had a vision. A vision to make it easier for Java developers [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/from-java-developer-to-rockstar-full-stack-developer-part-1/">From Java Developer to Rockstar Full Stack Developer &#8211; Part 1</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>MyEclipse Twitter Chat &#8211; Recap August 30th</title>
+		<link>https://www.genuitec.com/myeclipse-twitter-chat-recap-august-30th/</link>
+		<pubDate>Tue, 30 Aug 2016 16:22:37 +0000</pubDate>
+		<dc:creator><![CDATA[Rocio Trujillo]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[angular 2]]></category>
+		<category><![CDATA[JSHint]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Twitter Chat]]></category>
+		<category><![CDATA[webclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=495293</guid>
+		<description><![CDATA[<p>Hello! here is the Genuitec Twitter chat recap! in case you missed it 😉Q1 What’s new with the latest 2016 CI 5 releases of @Webclipse and @MyEclipseIDE? A1 Our first addition to the #CodeLive dashboard, is a new Magic Wand analysis and navigation tool. The Wand shows you where each section of the file is coming [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-twitter-chat-recap-august-30th/">MyEclipse Twitter Chat &#8211; Recap August 30th</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>How Developers Can Get in on the Pokémon Go Craze</title>
+		<link>https://www.genuitec.com/how-developers-can-get-in-on-the-pokemon-go-craze/</link>
+		<pubDate>Tue, 16 Aug 2016 15:38:49 +0000</pubDate>
+		<dc:creator><![CDATA[aaronlonin]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[Gaming]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[webclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=493994</guid>
+		<description><![CDATA[<p>Unless you’ve been living under a rock, you’ve heard of Pokémon Go. This mobile app uses GPS to combine the virtual world and the real world. Back in the day, I logged many hours playing Pokémon on an old Nintendo Game Boy. Now, Pokémon Go has gotten me outside hunting for Pokémon because I want [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/how-developers-can-get-in-on-the-pokemon-go-craze/">How Developers Can Get in on the Pokémon Go Craze</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>How Working from Home Got Me out of the House</title>
+		<link>https://www.genuitec.com/how-working-from-home-got-me-out-of-the-house/</link>
+		<pubDate>Tue, 09 Aug 2016 13:59:51 +0000</pubDate>
+		<dc:creator><![CDATA[support-octavio]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[virtual office]]></category>
+		<category><![CDATA[working from home]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=492616</guid>
+		<description><![CDATA[<p>I feel privileged to work for a company with a virtual workplace. I know some of you will read this and think it must be lonely to work from home, but that’s not the case. Genuitec’s annual team building trips have been a great way to stay connected with my team. These trips have also [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/how-working-from-home-got-me-out-of-the-house/">How Working from Home Got Me out of the House</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>You&#8217;re Not Nearly as Good as You Think You Are</title>
+		<link>https://www.genuitec.com/youre-not-nearly-as-good-as-you-think-you-are/</link>
+		<pubDate>Wed, 03 Aug 2016 14:02:52 +0000</pubDate>
+		<dc:creator><![CDATA[Todd Williams]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Thought Leadership]]></category>
+		<category><![CDATA[leadership]]></category>
+		<category><![CDATA[opinion]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=492493</guid>
+		<description><![CDATA[<p>“Ignorance more frequently begets confidence than does knowledge.”— Charles DarwinYou’re a good driver, right? Better than average you’d say? Pretty smart too I’d wager. Of course smarter than average; I won’t even ask because you’re reading our blog. How about entrepreneurship? I bet you could start a new company and do at least as good [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/youre-not-nearly-as-good-as-you-think-you-are/">You&#8217;re Not Nearly as Good as You Think You Are</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Stable With a Side of CI5</title>
+		<link>https://www.genuitec.com/stable-with-a-side-of-ci5/</link>
+		<pubDate>Tue, 02 Aug 2016 18:07:27 +0000</pubDate>
+		<dc:creator><![CDATA[Anabella]]></dc:creator>
+				<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[MyEclipse Top News]]></category>
+		<category><![CDATA[codelive]]></category>
+		<category><![CDATA[jsjet]]></category>
+		<category><![CDATA[JSLinter]]></category>
+		<category><![CDATA[livepreview]]></category>
+		<category><![CDATA[Tomcat9]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=492500</guid>
+		<description><![CDATA[<p>The time to move to MyEclipse 2016 is now.After months of very arduous work, MyEclipse 2016 Stable 1.0 is finally here! This is definitely one of the most exciting releases of the year (so far!). Why? Because we not only continued maintaining and improving core Java EE features, but we are also focusing on providing [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/stable-with-a-side-of-ci5/">Stable With a Side of CI5</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Reduce JavaScript Errors with JSHint</title>
+		<link>https://www.genuitec.com/reduce-javascript-errors-with-jshint/</link>
+		<pubDate>Wed, 27 Jul 2016 14:06:48 +0000</pubDate>
+		<dc:creator><![CDATA[joseruiz]]></dc:creator>
+				<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[JSHint]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=491719</guid>
+		<description><![CDATA[<p>JSHint is an open source tool used in software development to analyze JavaScript code and verify that it complies with certain coding rules you established. This powerful tool helps detect errors and issues in your code, plus it forces your team to keep certain coding conventions and style guides resulting in code that is reliable [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/reduce-javascript-errors-with-jshint/">Reduce JavaScript Errors with JSHint</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Technical Decisions Are Business Decisions</title>
+		<link>https://www.genuitec.com/technical-decisions-are-business-decisions/</link>
+		<pubDate>Wed, 20 Jul 2016 15:08:23 +0000</pubDate>
+		<dc:creator><![CDATA[Todd Williams]]></dc:creator>
+				<category><![CDATA[General]]></category>
+		<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[Opinion]]></category>
+		<category><![CDATA[Thought Leadership]]></category>
+		<category><![CDATA[leadership]]></category>
+		<category><![CDATA[opinion]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=490955</guid>
+		<description><![CDATA[<p>Making money is art and working is art and good business is the best art of all.–Andy WarholBeing a software developer doesn’t mean you know anything about the software business. In fact, it likely means you’re clueless. I know this is true, because I made that same mistake many years ago. Few of us take the time [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/technical-decisions-are-business-decisions/">Technical Decisions Are Business Decisions</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>MyEclipse 2016 Stable 1.0 &#8211; The Saga Continues</title>
+		<link>https://www.genuitec.com/myeclipse-2016-stable-1-0-the-saga-continues/</link>
+		<pubDate>Fri, 15 Jul 2016 16:35:01 +0000</pubDate>
+		<dc:creator><![CDATA[Anabella]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[2016]]></category>
+		<category><![CDATA[codelive]]></category>
+		<category><![CDATA[Java EE]]></category>
+		<category><![CDATA[jsjet]]></category>
+		<category><![CDATA[livepreview]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=490404</guid>
+		<description><![CDATA[<p>After months of very arduous work, MyEclipse 2016 Stable 1.0 is finally here! This is definitely one of the most exciting releases of the year (so far!). Why? Because we not only continued maintaining and improving core Java EE features, but we are also focusing on providing support for the Full Stack developer allowing Java [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/myeclipse-2016-stable-1-0-the-saga-continues/">MyEclipse 2016 Stable 1.0 &#8211; The Saga Continues</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+<enclosure url="https://resources.cloud.genuitec.com/wp-content/uploads/2016/07/MyEclipse-2016.mp4" length="7157673" type="video/mp4" />
+		</item>
+		<item>
+		<title>Module Bundling with Webpack: An Introduction</title>
+		<link>https://www.genuitec.com/module-bundling-webpack-introduction/</link>
+		<pubDate>Thu, 14 Jul 2016 14:39:06 +0000</pubDate>
+		<dc:creator><![CDATA[support-octavio]]></dc:creator>
+				<category><![CDATA[Eclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[programming]]></category>
+		<category><![CDATA[Web Development]]></category>
+		<category><![CDATA[webpack]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=490109</guid>
+		<description><![CDATA[<p>Webpack is an open-source JavaScript module bundler developed by Tobias Koppers and Webpack contributors. The initial release was March 10th, 2012 and the current stable version is 1.13.Webpack takes modules with dependencies and generates static assets representing those modules. All your assets are considered as modules and packaged in a final bundle with the rest [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/module-bundling-webpack-introduction/">Module Bundling with Webpack: An Introduction</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Java EE Development Using Docker with MyEclipse: Part 2</title>
+		<link>https://www.genuitec.com/java-ee-development-using-docker-myeclipse-part-2/</link>
+		<pubDate>Mon, 11 Jul 2016 13:43:00 +0000</pubDate>
+		<dc:creator><![CDATA[Todd Williams]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Docker]]></category>
+		<category><![CDATA[Java EE]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=489684</guid>
+		<description><![CDATA[<p>Hopefully you’ve already read Part 1 of this blog and have successfully learned how to run an application within a Docker container. Now, let’s take it a step further and learn how to debug our application within the Docker container. This blog builds on the example created in Part 1, if you have not read [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/java-ee-development-using-docker-myeclipse-part-2/">Java EE Development Using Docker with MyEclipse: Part 2</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
+		<title>Java EE Development Using Docker with MyEclipse: Part 1</title>
+		<link>https://www.genuitec.com/java-ee-development-using-docker-myeclipse-part-1/</link>
+		<pubDate>Tue, 05 Jul 2016 15:26:09 +0000</pubDate>
+		<dc:creator><![CDATA[Todd Williams]]></dc:creator>
+				<category><![CDATA[Java]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Docker]]></category>
+		<category><![CDATA[Java EE]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=487597</guid>
+		<description><![CDATA[<p>Why Do I Care?If you’re not deploying in containers yet, you likely will be soon because complex applications are moving to containerization technologies—like Docker—for ease of deployment, simplified management, increased reliability, platform portability and microservices support. This overview gives you the basics of how to adapt your development process in a simple way to support [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/java-ee-development-using-docker-myeclipse-part-1/">Java EE Development Using Docker with MyEclipse: Part 1</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 8960/9276 objects using disk
+Page Caching using disk: enhanced
+Content Delivery Network via resources.cloud.genuitec.com
+Database Caching 66/79 queries in 0.125 seconds using disk
+
+ Served from: www.genuitec.com @ 2016-10-09 04:07:30 by W3 Total Cache -->

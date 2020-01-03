@@ -1,0 +1,6 @@
+MainForm = 315, 4, 1125, 440, Z, 110, 145, 924, 582, C
+rfidlib_aip_iso15683 = 88, 116, 898, 552, 
+rfidlib_reader = 66, 87, 876, 524, 
+functions = 132, 132, 1077, 592, 
+rfidlib_aip_iso14443a = 110, 145, 920, 581, C
+rfidlib_aip_iso18000p3m3 = -21, 394, 758, 840, C

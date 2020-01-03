@@ -1,0 +1,11 @@
+14:41:47 **** Build of configuration Default for project anRfidLibSource ****
+"D:\\软件安装包\\安卓编译环境\\android-ndk-r9d\\ndk-build.cmd" all 
+[armeabi] Install        : libNdkSupport.so => libs/armeabi/libNdkSupport.so
+[armeabi] Install        : libdevapi.so => libs/armeabi/libdevapi.so
+[armeabi] Install        : libirdaSerialPort.so => libs/armeabi/libirdaSerialPort.so
+[armeabi-v7a] Install        : libNdkSupport.so => libs/armeabi-v7a/libNdkSupport.so
+[armeabi-v7a] Install        : libdevapi.so => libs/armeabi-v7a/libdevapi.so
+[armeabi-v7a] Install        : libirdaSerialPort.so => libs/armeabi-v7a/libirdaSerialPort.so
+
+14:41:51 Build Finished (took 3s.309ms)
+

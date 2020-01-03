@@ -1,0 +1,17 @@
+program MeetingGateAsst_delphi;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  rfidlib_Gxxx in 'rfidlib_Gxxx.pas',
+  UnitInventoryThrd in 'UnitInventoryThrd.pas',
+  rfidlib_G302 in 'rfidlib_G302.pas',
+  rfidlib_G101 in 'rfidlib_G101.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

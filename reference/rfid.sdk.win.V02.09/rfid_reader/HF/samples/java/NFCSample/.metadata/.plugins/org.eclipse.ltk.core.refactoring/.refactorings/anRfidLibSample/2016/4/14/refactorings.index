@@ -1,0 +1,26 @@
+1459472857503	Extracts string '连接' into R.string.btn_iso15693Connect
+1459472867983	Extracts string '断开' into R.string.btn_iso15693Disconnect
+1459472886819	Extracts string 'UID:' into R.string.tv_iso15693Uid
+1459472953046	Rename type 'IcodeSliTagActivity'
+1459475583768	Rename resource 'ConnectMode.xml'
+1459475630738	Copy file
+1459475647741	Rename resource 'icodesli_blk.xml'
+1459476217471	Extracts string '地址:' into R.string.tv_icodesli_addr
+1459476746419	Extracts string '数量' into R.string.tv_icodesli_blkNum
+1459477574226	Extracts string '数据:' into R.string.tv_icodesli_dlkData
+1459477588275	Extracts string '读' into R.string.btn_icodesli_read
+1459477599210	Extracts string '写' into R.string.btn_icodesli_write
+1459477611788	Extracts string '锁' into R.string.btn_icodesli_lock
+1459481611906	Extracts string 'DSFID:' into R.string.tv_icodesli_dsfid
+1459481629010	Extracts string '00' into R.string.ed_icodesli_dsfid
+1459482498421	Extracts string '写' into R.string.btn_setDsfid
+1459482510783	Extracts string '锁' into R.string.btn_lockDsfid
+1459482847634	Extracts string 'AFI:' into R.string.tv_icodesli_afi
+1459482862603	Extracts string '00' into R.string.ed_icodesli_afi
+1459482872024	Extracts string '写' into R.string.btn_setAFI
+1459482881084	Extracts string '锁' into R.string.btn_lockAFI
+1459482955206	Extracts string '信息' into R.string.btn_icodesli_tagInfo
+1459487101163	Extracts string '使能EAS' into R.string.btn_icodesli_enEAS
+1459487111620	Extracts string '禁止EAS' into R.string.btn_icodesli_disEnEAS
+1459487121579	Extracts string '检查EAS' into R.string.btn_icodesli_checkEAS
+1459489493893	Extracts string '返回' into R.string.btn_icodesli_return

@@ -1,0 +1,14 @@
+1459389052700	Rename resource 'inventorylist_bg.xml'
+1459394716582	Extracts string '恢复出厂设置' into R.string.btn_loadDefault
+1459401069982	Extracts string '使用默认参数' into R.string.check_useDefault
+1459401801094	Extracts string '只读新标签' into R.string.check_onlyReadNew
+1459401833570	Extracts string '匹配AFI' into R.string.check_matchAFI
+1459401859000	Extracts string 'AFI值:' into R.string.tv_afiVal
+1459401889906	Extracts string '00' into R.string.ed_defaultAfi
+1459402313053	Extracts string '取消' into R.string.btn_inventorySetCancel
+1459402323613	Extracts string '设置' into R.string.btn_inventorySetOk
+1459412204429	Extracts string 'ISO15693协议设置：' into R.string.tv_iso15693ProtocolSet
+1459414240792	Extracts string '盘点' into R.string.btn_iso15693Inventory
+1459415626680	Copy file
+1459416062938	Extracts string '模式：' into R.string.tv_iso15693ConnectMode
+1459417051938	Rename resource 'activity_tag_iso15693.xml'

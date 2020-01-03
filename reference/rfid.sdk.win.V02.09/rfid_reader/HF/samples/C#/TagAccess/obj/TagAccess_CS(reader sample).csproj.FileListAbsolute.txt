@@ -1,0 +1,111 @@
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\run\win64\unicode_debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\run\win64\unicode_debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.05\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.pdb
+E:\开发包\rfid.sdk.win.V02.06\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.07\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.pdb
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.exe
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS.pdb
+H:\Users\desktop\HF-高频\samples\run\win32\debug\TagAccess_CS.exe
+H:\Users\desktop\HF-高频\samples\run\win32\debug\TagAccess_CS.pdb
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessConditions.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeBlkBlock.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.AccessTypeTailBlock.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\WindowsApplication2.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\Debug\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.exe
+H:\Users\desktop\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.exe
+H:\Users\desktop\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.pdb
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessConditions.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.Cache

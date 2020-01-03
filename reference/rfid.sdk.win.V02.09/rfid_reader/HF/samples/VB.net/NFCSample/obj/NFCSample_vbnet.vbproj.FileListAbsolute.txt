@@ -1,0 +1,12 @@
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\NFCSample_vbnet.exe
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\NFCSample_vbnet.pdb
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\debug\NFCSample_vbnet.xml
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.MainFrm.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.vbproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.exe
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.xml
+E:\SDKs\rfid.sdk.win.V02.08\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.pdb
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.exe
+E:\SDKs\rfid.sdk.win.V02.09\rfid_reader-读卡器开发包\HF-高频\samples\VB.net\NFCSample\obj\Debug\NFCSample_vbnet.xml

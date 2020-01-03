@@ -1,0 +1,25 @@
+1460942108926	Extracts string '溢出时间' into R.string.tv_overflow_time
+1460942327060	Extracts string '读' into R.string.btn_read_overtime
+1460942361621	Extracts string '写' into R.string.btn_write_overtime
+1460947224771	Rename field 'inventory_list'
+1460947288629	Delete element
+1460947295521	Delete element
+1460947918242	Delete element
+1460949580115	Delete element
+1460949635756	Delete element
+1460949767518	Delete element
+1460950004200	Delete element
+1460950771552	Delete element
+1460951034704	Delete element
+1460955643263	Delete elements
+1460957632725	Extracts string '溢出时间' into R.string.tv_overflow_time
+1460957856453	Extracts string '读' into R.string.btn_read_overflow_time
+1460957868214	Extracts string '写' into R.string.btn_write_overflow_time
+1460962635568	Delete element
+1460966279457	Delete element
+1460968224916	Copy elements
+1460968439794	Copy files
+1460968642690	Copy files
+1460968673043	Copy folder
+1460968686443	Copy folder
+1460968840214	Copy package

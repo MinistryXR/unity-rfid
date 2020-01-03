@@ -1,0 +1,4 @@
+MainForm = 110, 145, 920, 581, , 110, 145, 924, 582, C
+rfidlib_aip_iso15683 = 0, 0, 0, 0, C
+rfidlib_reader = 66, 87, 876, 524, 
+functions = 0, 0, 0, 0, C

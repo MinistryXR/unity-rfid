@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <TITLE>MyActiveX - Methods, Properties, and Events</TITLE>
+    <SCRIPT LANGUAGE="JavaScript">
+        function OnInitWindows() {
+            for (j = 0; j < 255; j++) {
+                var v = j + 1;
+                var varItemActive = new Option(v, j);
+                var varItemFrequency = new Option(v, j);
+                var varItemStop = new Option(v, j);
+                ActiveTime.options.add(varItemActive);
+                Frequency.options.add(varItemFrequency);
+                StopTime.options.add(varItemStop);
+            }
+
+            _table = document.getElementById("RecordTable");
+            _table.border = "1px";
+            _table.width = "500px";
+            //_table.height = "150px";
+
+            AddRecord("UID", "Diretion", "Instead state");
+
+
+            BaudVal.selectedIndex = 1;
+            FramVal.selectedIndex = 0;
+
+            var devCnt = MyActiveX1.RDR_GetLoadedReaderDriverCount();
+            var j = 0;
+            for (j = 0; j < devCnt; j++) {
+                var devName = MyActiveX1.RDR_GetLoadedReaderDriverOpt(j, "NAME");
+                var varItem = new Option(devName, j);
+                DeviceType.options.add(varItem);
+            }
+
+            var ComNum = MyActiveX1.COMPort_Enum();
+            for (j = 0; j < ComNum; j++) {
+                var sComName = MyActiveX1.COMPort_GetEnumItem(j);
+                var varItem = new Option(sComName, j);
+                ComName.options.add(varItem);
+            }
+            DeviceType.disabled = false;
+            OpenType.disabled = false;
+            ComName.disabled = false;
+            BaudVal.disabled = false;
+            FramVal.disabled = false;
+            IPAddr.disabled = false;
+            nPortVal.disabled = false;
+            Open.disabled = false;
+            Close.disabled = true;
+            BuzzerOnboard.disabled = true;
+            Output1.disabled = true;
+            Output2.disabled = true;
+            Output3.disabled = true;
+            Output4.disabled = true;
+            ActiveTime.disabled = true;
+            Frequency.disabled = true;
+            StopTime.disabled = true;
+            SetOutput.disabled = true;
+            GetReport.disabled = true;
+        }
+
+        function AddRecord(uid, direction, insteadState) {
+            _table = document.getElementById("RecordTable");
+            var row = document.createElement("tr");
+            row.id = _table.rows.length;
+
+            var uidCell = document.createElement("td");
+            uidCell.id = row.id + "-" + 1;
+            uidCell.appendChild(document.createTextNode(uid));
+            row.appendChild(uidCell);
+
+            var dirCell = document.createElement("td");
+            dirCell.id = row.id + "-" + 2;
+            dirCell.appendChild(document.createTextNode(direction));
+            row.appendChild(dirCell);
+
+            var inssteadStaCell = document.createElement("td");
+            inssteadStaCell.id = row.id + "-" + 3;
+            inssteadStaCell.appendChild(document.createTextNode(insteadState));
+            row.appendChild(inssteadStaCell);
+            document.getElementById("RecordBody").appendChild(row);
+            _table.height = _table.rows.length * 30 + "px";
+        }
+
+        function OnOpen() {
+            var nret = -1;
+            var sOpenType = OpenType[OpenType.selectedIndex].text;
+            var sDevName = DeviceType[DeviceType.selectedIndex].text;
+            if (sOpenType == "COM") {
+                var sComName = ComName[ComName.selectedIndex].text;
+                var sBaud = BaudVal[BaudVal.selectedIndex].text;
+                var sFrame = FramVal[FramVal.selectedIndex].text;
+                nret = MyActiveX1.RDR_OpenPort(sDevName, sComName, sBaud, sFrame);
+            }
+            else if (sOpenType == "NET") {
+                var sIp = IPAddr.value;
+                var nPort = nPortVal.value;
+                nret = MyActiveX1.RDR_OpenNet(sDevName, sIp, nPort);
+            }
+            if (nret == 0) {
+                DeviceType.disabled = true;
+                OpenType.disabled = true;
+                ComName.disabled = true;
+                BaudVal.disabled = true;
+                FramVal.disabled = true;
+                IPAddr.disabled = true;
+                nPortVal.disabled = true;
+                Open.disabled = true;
+                Close.disabled = false;
+                BuzzerOnboard.disabled = false;
+                Output1.disabled = false;
+                Output2.disabled = false;
+                Output3.disabled = false;
+                Output4.disabled = false;
+                ActiveTime.disabled = false;
+                Frequency.disabled = false;
+                StopTime.disabled = false;
+                SetOutput.disabled = false;
+                GetReport.disabled = false;
+                alert("Open the deviece successfully.");
+            }
+            else {
+                alert("Failed to open the device.");
+            }
+        }
+
+        function OnSetOutput() {
+            var hOperas = MyActiveX1.RDR_CreateSetOutputOperations();
+            if (hOperas == 0) {
+                alert("Failed to set output.");
+                return;
+            }
+            var mActiveTime = (ActiveTime.selectedIndex + 1) * 100;
+            var mFrequency = Frequency.selectedIndex + 1;
+            var mStopTime = (StopTime.selectedIndex + 1) * 100;
+            if (BuzzerOnboard.checked) {
+                MyActiveX1.RDR_AddOneOutputOperation(hOperas, 1, 3, mFrequency, mActiveTime, mStopTime);
+            }
+            if (Output1.checked) {
+                MyActiveX1.RDR_AddOneOutputOperation(hOperas, 2, 3, mFrequency, mActiveTime, mStopTime);
+            }
+            if (Output2.checked) {
+                MyActiveX1.RDR_AddOneOutputOperation(hOperas, 3, 3, mFrequency, mActiveTime, mStopTime);
+            }
+            if (Output3.checked) {
+                MyActiveX1.RDR_AddOneOutputOperation(hOperas, 4, 3, mFrequency, mActiveTime, mStopTime);
+            }
+            if (Output4.checked) {
+                MyActiveX1.RDR_AddOneOutputOperation(hOperas, 5, 3, mFrequency, mActiveTime, mStopTime);
+            }
+
+            var iret = MyActiveX1.RDR_SetOutput(hOperas);
+            MyActiveX1.DNODE_Destroy(hOperas);
+            if (iret == 0) {
+                alert("Set output successfully.");
+            }
+            else {
+                alert("Failed to set output.");
+            }
+        }
+
+        function OnGetReport() {
+            var gFlg = 1;
+            var iret = MyActiveX1.RDR_BuffMode_FetchRecords(gFlg);
+            if (iret != 0) {
+                alert("Failed to get the record.err=" + iret);
+                return;
+            }
+            gFlg = 1;
+            var RecordNum = MyActiveX1.RDR_GetRecordCnt();
+            if (RecordNum == 0) {
+                return;
+            }
+
+            for (var j = 0; j < RecordNum; j++) {
+                var strData = MyActiveX1.RDR_ParseRecord(j, 2);
+                var sTagInfo = strData.split("-");
+                var uid = sTagInfo[0];
+                var direction = sTagInfo[1];
+                var insteadSta = sTagInfo[2];
+
+                var strDir = "", strInsteadsta = "";
+                if (direction == 0) {
+                    strDir = "NULL";
+                }
+                else if (direction == 1) {
+                    strDir = "In";
+                }
+                else if (direction == 2) {
+                    strDir = "Out";
+                }
+
+                if (insteadSta == 0) {
+                    strInsteadsta = "No";
+                }
+                else {
+                    strInsteadsta = "Yes";
+                }
+                AddRecord(uid, strDir, strInsteadsta);
+            }
+            MyActiveX1.RDR_FinishFetchReports();
+        }
+
+        function OnClose() {
+            MyActiveX1.RDR_Close();
+            DeviceType.disabled = false;
+            OpenType.disabled = false;
+            ComName.disabled = false;
+            BaudVal.disabled = false;
+            FramVal.disabled = false;
+            IPAddr.disabled = false;
+            nPortVal.disabled = false;
+            Open.disabled = false;
+            Close.disabled = true;
+            BuzzerOnboard.disabled = true;
+            Output1.disabled = true;
+            Output2.disabled = true;
+            Output3.disabled = true;
+            Output4.disabled = true;
+            ActiveTime.disabled = true;
+            Frequency.disabled = true;
+            StopTime.disabled = true;
+            SetOutput.disabled = true;
+            GetReport.disabled = true;
+        }
+    </SCRIPT>
+</head>
+<body onload="OnInitWindows();">
+    <center style="font-weight: 700">
+
+        <p></p>
+        <OBJECT ID="MyActiveX1" WIDTH=0 HEIGHT=0
+                CLASSID="CLSID:38BEF3F4-E284-4548-8E7B-FE20AE443AD8">
+            <PARAM NAME="_Version" VALUE="65536" />
+            <PARAM NAME="_ExtentX" VALUE="2646" />
+            <PARAM NAME="_ExtentY" VALUE="1323" />
+            <PARAM NAME="_StockProps" VALUE="0" />
+        </OBJECT>
+
+        <fieldset style="font: 9pt italic; width: 600px; height: 200px">
+            <legend>Device </legend>
+
+            Device Name:<select name="DeviceType" style="width:75px"></select>
+            Communnication:<select name="OpenType" style="width:75px" onchange="OpenTypeChange();"><option value=0>COM</option><option value=1>NET</option></select>
+
+            <p></p>
+            <fieldset style="font: 9pt italic; width: 500px; height: 40px">
+                <legend>Serial port parameters</legend>
+                COM:<select name="ComName" style="width:75px"></select>
+                Baud:<select name="BaudVal" style="width:75px"><option value=0>9600</option><option value=1>38400</option><option value=2>115200</option></select>
+                Frame:<select name="FramVal" style="width:75px"><option value=0>8E1</option><option value=1>8N1</option><option value=2>8O1</option></select>
+            </fieldset>
+
+            <p></p>
+            <fieldset style="font: 9pt italic; width: 500px; height: 40px">
+                <legend>Net parameters</legend>
+                IP address:<INPUT TYPE="text" NAME="IPAddr" VALUE="192.168.1.222 " size=50 style="width: 110px; height: 20px" />
+                Port:<INPUT TYPE="text" NAME="nPortVal" VALUE="6012" size=50 style="width: 40px; height: 20px" />
+            </fieldset>
+
+            <p></p>
+            <INPUT TYPE="button" NAME="Open" style="width:100px;" VALUE="Open" ONCLICK=OnOpen() />
+            <INPUT TYPE="button" NAME="Close" style="width:100px;" VALUE="Close" ONCLICK=OnClose() />
+        </fieldset>
+
+        <p></p>
+        <fieldset style="font: 9pt italic; width: 700px;">
+            <legend>Set Output</legend>
+            Buzzer On-board:<input type="checkbox" name="BuzzerOnboard" checked="checked" />
+            Output1#1:<input type="checkbox" name="Output1" checked="checked" />
+            Output1#2:<input type="checkbox" name="Output2" checked="checked" />
+            Output1#3:<input type="checkbox" name="Output3" checked="checked" />
+            Output1#4:<input type="checkbox" name="Output4" checked="checked" />
+            <p></p>
+            Active time:<select name="ActiveTime" style="width:75px"></select>
+            Frequency:<select name="Frequency" style="width:75px"></select>
+            StopTime:<select name="StopTime" style="width:75px"></select>
+            <p></p>
+            <INPUT TYPE="button" NAME="SetOutput" style="width:100px;" VALUE="Set Output" ONCLICK=OnSetOutput() />
+        </fieldset>
+
+
+        <p></p>
+        <fieldset style="font: 9pt italic; width: 700px;">
+            <legend>Get report</legend>
+            <INPUT TYPE="button" NAME="GetReport" style="width:100px;" VALUE="Get Report" ONCLICK=OnGetReport() />
+            <p></p>
+            <table id="RecordTable" align="center">
+                <tbody id="RecordBody"></tbody>
+            </table>
+            <p></p>
+        </fieldset>
+
+    </center>
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Microsoft YaHei UI" Size="9" />
+  <Class Name="WindowsApplication2.AccessConditions" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessConditions.cs</FileName>
+      <HashCode>ACAAIgAAACAAABAQAACAAAACAMA5AACAEHAPAAAABAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.AccessTypeBlkBlock" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessTypeBlkBlock.cs</FileName>
+      <HashCode>AAAAAAABADEAAAAAAACAAAAjAAAZAAAAAGAAAIGAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.AccessTypeTailBlock" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>AccessTypeTailBlock.cs</FileName>
+      <HashCode>AAAAACABECEAAAAAAACAABACAAAYACAEAWAgAIAEAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.Form1" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>//+fxwAZDSikw/+/FICJyb9zI807+f/38XUfcP93TLg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.TagReportEvent" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>BAAAAAAAAAAAEABAAAAAAAAAAAAAAAAAAIAAAQAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.CReaderDriverInf" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>EABAAAAAAAAAAAAAAACAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.CSupportedAirProtocol" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Form1.cs</FileName>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.Program" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.Properties.Resources" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsApplication2.Properties.Settings" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RFIDLIB.rfidlib_def" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib.cs</FileName>
+      <HashCode>gQkgAggFggKCAAERBGIAgCEAMQmSoMIAACAEQhBJAEQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RFIDLIB.rfidlib_aip_iso14443A" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib_aip_iso14443A.cs</FileName>
+      <HashCode>BAAAAAAACCAQAAEAA1AAgAQAAICQAAAAAAEAAAAAgIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RFIDLIB.rfidlib_aip_iso15693" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib_aip_iso15693.cs</FileName>
+      <HashCode>ABIEAIACQaICJQCQAAVA4KIZBAggCEAQACAQJFEIAgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RFIDLIB.rfidlib_aip_iso18000p3m3" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib_aip_iso18000p3m3.cs</FileName>
+      <HashCode>AgIAQIAAAAAAAABAAAAAAAAAAAAgAQACAAAAAAAAAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RFIDLIB.rfidlib_reader" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib_reader.cs</FileName>
+      <HashCode>CACwQAhMCIUACVC4IARAAQMIgGKIAgAoogi4AIQABBI=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Delegate Name="RFIDLIB.RFIDLIB_EVENT_CALLBACK" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="RFIDLIB.RFID_EVENT_CALLBACK_NEW" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>rfidlib.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIAGAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Delegate>
+</ClassDiagram>

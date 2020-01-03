@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagAccess_CS(reader sample)", "TagAccess_CS(reader sample).csproj", "{2DD94001-E996-4A6B-A068-3D0A5454A036}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug_unicode|x64 = debug_unicode|x64
+		debug_unicode|x86 = debug_unicode|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x64.ActiveCfg = debug_unicode|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x64.Build.0 = debug_unicode|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x86.ActiveCfg = debug_unicode|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.debug_unicode|x86.Build.0 = debug_unicode|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x64.ActiveCfg = Debug|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x64.Build.0 = Debug|x64
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x86.ActiveCfg = Debug|x86
+		{2DD94001-E996-4A6B-A068-3D0A5454A036}.Debug|x86.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D1E206D-A838-475D-A681-BE12C94A8E04}
+	EndGlobalSection
+EndGlobal

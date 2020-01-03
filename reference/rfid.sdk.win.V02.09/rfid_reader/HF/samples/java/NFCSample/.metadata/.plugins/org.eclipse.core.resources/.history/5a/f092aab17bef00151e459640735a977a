@@ -1,0 +1,281 @@
+package com.rfid.transport;
+
+import android.R.integer;
+
+public class CommTransport {
+	public final static int IOCTRL_PURGECOMM = 1;
+	public final static int IOCTRL_TERMINATE_WAIT = 2;
+	public final static int IOCTRL_RESET_WAIT = 3;
+	public final static int MINI_FRAME_SIZE = 8;
+
+	private final static int INPU_RAW_BUF_SIZE = 1024;
+
+	private BufferPack m_lastdata = new BufferPack(INPU_RAW_BUF_SIZE);
+	private RingBuffer m_recvedBuffer = null;
+	private byte m_bufferForRead[] = null;
+	private IComm m_if = null;
+	private SockaddrAnSer m_remoteAddr = new SockaddrAnSer();
+
+	// 打开蓝牙设备
+	public int connectBluetoolth(String BluetoolAddr) {
+		m_if = new Transport_Bluetooth(); // 蓝牙
+		Transport_Bluetooth m_bluetool = (Transport_Bluetooth) m_if;
+		m_remoteAddr.setNad((byte) 255);
+		int iret = m_bluetool.Connect(BluetoolAddr);
+		if (iret == Definition.NO_ERROR) {
+			m_recvedBuffer = new RingBuffer(INPU_RAW_BUF_SIZE);
+			m_bufferForRead = new byte[INPU_RAW_BUF_SIZE];
+		}
+		return iret;
+	}
+	
+	public int connectCom(String sPath,int m_baud,String sFrame,byte addr) {
+		m_if = new Transport_SerialPort();
+		Transport_SerialPort m_com = (Transport_SerialPort) m_if;
+		m_remoteAddr.setNad((byte) addr);
+		int iret = m_com.Connect(sPath, m_baud, sFrame);
+		if (iret == Definition.NO_ERROR) {
+			m_recvedBuffer = new RingBuffer(INPU_RAW_BUF_SIZE);
+			m_bufferForRead = new byte[INPU_RAW_BUF_SIZE];
+		}
+		return iret;
+	}
+
+	// 关闭连接
+	public int disConnect() {
+		if (m_if == null) {
+			return Definition.ERR_IO;
+		}
+		int iret = m_if.DisConnect();
+		if (iret == Definition.NO_ERROR) {
+			m_if = null;
+		}
+		return iret;
+	}
+
+	public int recv(byte buf[], int len, int flags) {
+		int iret;
+		boolean truncated = false;
+		/* Check if there is data left from the last recv operation. */
+		int read_len = m_lastdata.readable_length();
+		if (read_len > 0) {
+
+			if (len < read_len) {
+				read_len = len;
+				truncated = true;
+			}
+			m_lastdata.ReadData(buf, read_len);// (buf,read_len ) ;
+			/* Set result */
+			if (truncated)
+				/*
+				 * The message was too large to fit into the specified buffer
+				 * and was truncated
+				 */
+				iret = -Definition.ERR_MSGSIZE;
+			else {
+				iret = read_len;
+			}
+			return iret;
+		}
+		m_lastdata.flush();
+		iret = ll_recv(m_lastdata);
+		if (iret > 0) {
+			read_len = m_lastdata.getBufferLen();
+			if (len < read_len) {
+				read_len = len;
+				truncated = true;
+			}
+			m_lastdata.ReadData(buf, read_len);// (buf,read_len ) ;
+			/* Set result */
+			if (truncated)
+				/*
+				 * The message was too large to fit into the specified buffer
+				 * and was truncated
+				 */
+				iret = -Definition.ERR_MSGSIZE;
+			else {
+				iret = read_len;
+			}
+			return iret;
+		} else {
+			return iret;// goto exit_func ;
+		}
+	}
+
+	public int send(byte buf[], int size, int flags) {
+		// m_last_err = 0;
+		// m_sendevent = 0;
+		return ll_send(buf, 0, size);
+	}
+
+	// Send application data to remote socket
+	public int ll_send(byte buffer[], int offset, int m_Size) {
+		BufferPack frame = new BufferPack(1024);
+		frame.WriteData((byte) 0x05);
+		frame.WriteData((byte) (0x04 + m_Size));
+		frame.WriteData((byte) m_remoteAddr.getNad());
+		frame.WriteData(buffer, offset, m_Size);
+		char crc16 = cal_crc16(frame.GetBuffer(), 1, frame.getBufferLen() - 1);
+		frame.WriteData(crc16);
+		int ret = m_if.Send(frame.GetBuffer(), 0, frame.getBufferLen());
+		if ((ret != 0)) {
+			return -Definition.ERR_IO;
+		}
+		return Definition.NO_ERROR;
+	}
+
+	/* Receive application data from remote socket */
+	public int ll_recv(BufferPack recvdata) {
+		int ret;
+		ret = m_if.Receive(m_bufferForRead, INPU_RAW_BUF_SIZE);
+		if (ret > 0 && m_bufferForRead != null) {
+			m_recvedBuffer.PushData(m_bufferForRead, ret);
+		}
+		if (ret < 0) {
+			return -Definition.ERR_IO;
+		}
+		if (m_recvedBuffer.GetLength(-1, -1) > 0) {
+			BufferPack pFrame = new BufferPack(0);
+			if (ParseFrame(pFrame)) {
+				if (pFrame.GetBuffer() != null) {
+					if (m_remoteAddr.getNad() == pFrame.GetBuffer()[2]
+							|| m_remoteAddr.getNad() == (byte) 0xff) {
+						recvdata.WriteData(pFrame.GetBuffer(), 3,
+								pFrame.getBufferLen() - 5);
+					}
+					return pFrame.getBufferLen();
+				}
+			}
+		}
+		return 0;
+	}
+
+	private char cal_crc16(byte pCrcData[], int offset, int pLen) {
+		int tmpCrc = 0xffff;
+		System.out.println(tmpCrc);
+		int i, j;
+		for (i = 0; i < pLen; i++) {
+			char tmp = (char) pCrcData[i + offset];
+			tmp &= 0xff;
+			tmpCrc ^= tmp;
+			tmpCrc = (tmpCrc & 0xffff);
+			System.out.println(tmpCrc);
+			for (j = 0; j < 8; j++) {
+
+				if ((tmpCrc & 0x0001) != 0) {
+					tmpCrc = ((tmpCrc >> 1) ^ 0x8408);
+					
+				} else{
+					tmpCrc = (tmpCrc >> 1);
+				}
+				tmpCrc = (tmpCrc & 0xffff);	
+
+			}
+		}
+		return (char) tmpCrc;
+		//int crc = NdkSupport.CalCRC16(pCrcData,offset,pLen);
+		//return (char) crc;
+	}
+
+	public void ioctrol(int name) {
+		switch (name) {
+		case IOCTRL_PURGECOMM: // 清空接收缓冲区数据
+			m_if.ResetInputStream();
+			m_recvedBuffer.Init();
+			for (int i = 0; i < m_bufferForRead.length; i++) {
+				m_bufferForRead[i] = 0x00;
+			}
+			break;
+
+		default:
+			break;
+		}
+	}
+
+	private boolean ParseFrame(BufferPack ppFrame) {// (byte ppFrame1[], Integer
+													// pLen) {
+		boolean result = false;
+		int ipos;
+		int nLen;
+		char chksum;
+		char chksum2;
+		Frame_hdr hdr = new Frame_hdr();
+		int startpos = -1;
+		int CandidatePos = -1;
+		// ppFrame = null;
+		while (true) {
+			/* Search signature */
+			ipos = m_recvedBuffer.SearchByte(startpos, (byte) 0x05);
+			if (ipos == -1) {
+				break;
+			}
+
+			nLen = m_recvedBuffer.GetLength(ipos, -1);
+			if (nLen < MINI_FRAME_SIZE) {
+				if (CandidatePos == -1) {
+					CandidatePos = ipos;
+				}
+				break;
+			}
+			byte byTmp[] = new byte[6];
+			m_recvedBuffer.GetBufData(ipos, byTmp.length, byTmp);
+			hdr.setSOF(byTmp[0]);
+			hdr.setLen(byTmp[1]);
+			hdr.setAddr(byTmp[2]);
+			hdr.setCommand((char) (byTmp[3] | (byTmp[4] << 8)));
+			if (nLen < (hdr.getLen() + 1)) {
+				/*
+				 * 1. The data maybe imcomplete . 2. The data maybe invalid ,so
+				 * we scan the left data Do not pop any data
+				 */
+				if (CandidatePos == -1)
+					CandidatePos = ipos;
+				startpos = m_recvedBuffer.GetNewPos(ipos, 1);
+				continue;
+			}
+			if (hdr.getLen() < (MINI_FRAME_SIZE - 1)) {
+				/*
+				 * the length is wrong ,move to next byte
+				 */
+				// if(CandidatePos == -1)
+				// CandidatePos = ipos;
+				startpos = m_recvedBuffer.GetNewPos(ipos, 1);
+				continue;
+			}
+			byte Tmpbuf[] = null;
+			Tmpbuf = new byte[hdr.getLen() + 1];
+
+			// memset(Tmpbuf,0,hdr.len+1) ;
+			m_recvedBuffer.GetBufData(ipos, hdr.getLen() + 1, Tmpbuf);
+			/* Calculate checksum */
+			chksum = cal_crc16(Tmpbuf, 1, hdr.getLen() - 2);
+			chksum2 = (char) ((Tmpbuf[1 + hdr.getLen() - 2] & 0x00ff) | (Tmpbuf[1 + hdr
+					.getLen() - 1] << 8 & 0xff00));
+			int k1 = chksum;
+			int k2 = chksum2;
+			
+			if (chksum != chksum2) {
+				startpos = m_recvedBuffer.GetNewPos(ipos, 1);
+				continue;
+			}
+			/* Frame is valid */
+			// ppFrame = Tmpbuf;
+			ppFrame.SetBufferSize(hdr.getLen() + 1);
+			ppFrame.WriteData(Tmpbuf, 0, Tmpbuf.length);
+			// pLen = hdr.getLen() + 1;
+			CandidatePos = m_recvedBuffer.GetNewPos(ipos, hdr.getLen() + 1);
+			result = true;
+			break;
+		}
+		/* Do some pop */
+		int Poplen;
+		if (CandidatePos == -1)
+			Poplen = m_recvedBuffer.GetLength(-1, -1);
+		else
+			Poplen = m_recvedBuffer.GetLength(-1, CandidatePos);
+
+		m_recvedBuffer.PopData(null, Poplen, null);
+		return result;
+	}
+
+}

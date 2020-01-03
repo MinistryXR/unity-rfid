@@ -1,0 +1,13 @@
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\run\win64\unicode_debug\TagAccess_CS.exe
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\run\win64\unicode_debug\TagAccess_CS.pdb
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS(reader sample).csprojAssemblyReference.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.AccessConditions.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.Form1.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\WindowsApplication2.Properties.Resources.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS(reader sample).csproj.CoreCompileInputs.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS(reader sample).csproj.CopyComplete
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS.exe
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\HF-╕▀╞╡\samples\C#\TagAccess\obj\x64\debug_unicode\TagAccess_CS.pdb

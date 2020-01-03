@@ -1,0 +1,60 @@
+1458548310943	Delete element
+1458623788511	Delete elements
+1458623819672	Delete element
+1458721861424	Extracts string '关闭射频' into R.string.btn_openRF
+1458721952369	Extracts string '打开射频' into R.string.btn_openRF
+1458722356835	Extracts string '开始' into R.string.btn_startInventory
+1458722373861	Extracts string '停止' into R.string.btn_stopInventory
+1458722484182	Extracts string '参数设置' into R.string.btn_paraInventory
+1458723917371	Extracts string '开始' into R.string.btn_startScanRecord
+1458723945658	Extracts string '停止' into R.string.btn_stopScanRecord
+1458786306125	Delete element
+1458789996329	Rename type 'command_def'
+1458800867205	Rename type 'Drive_Rpan'
+1458801548734	Delete element
+1458801559781	Move compilation unit
+1458801884920	Delete element
+1458801914596	Move compilation unit
+1458808949187	Delete element
+1458868621337	Extracts string '192.168.0.222' into R.string.tv_defaultIp
+1458868652096	Extracts string '9909' into R.string.ed_defaultPort
+1458869282817	Rename resource 'list_item.xml'
+1458869711900	Extracts string 'UID' into R.string.tv_uid
+1458869739545	Extracts string '空中协议' into R.string.tv_protocol
+1458870196802	Extracts string '标签类型' into R.string.tv_tagType
+1458870882180	Rename resource 'listview_bg.xml'
+1458872834680	Rename type 'Person'
+1458872935783	Rename field 'name'
+1458872988291	Rename field 'sex'
+1458873051278	Rename field 'age'
+1458873130375	Encapsulate field 'uidStr'
+1458873137123	Encapsulate field 'ProtocolStr'
+1458873145168	Encapsulate field 'TagTypeStr'
+1458873479713	Rename type 'TableAdapter'
+1458873529918	Rename local variable 'person'
+1458875882799	Rename type 'gFunction'
+1458876013502	Rename type 'ReaderAPI'
+1458895403583	Delete element
+1458896433527	Move compilation unit
+1458965493162	Encapsulate field 'hTag'
+1458966847604	Move compilation unit
+1458966917624	Rename type 'Drive_M201'
+1458967584115	Rename field 'btn_inventory'
+1458972793287	Rename field 'b_threadRun'
+1458973339976	Extracts string '次数' into R.string.tv_inventoryCnt
+1458973417487	Encapsulate field 'founCnt'
+1458978034761	Extracts string '次数' into R.string.tv_inventoryCnt
+1458978212379	Encapsulate field 'findCnt'
+1458984653822	Delete element
+1458988175190	Rename type 'AN_M200_PICC_ICODESLIX'
+1458988181924	Move compilation unit
+1458989405050	Rename type 'Definition'
+1458989452275	Rename type 'Command_def'
+1458990983493	Rename type 'MyHandler'
+1458991404063	Copy file
+1458991634289	Extracts string '次数' into R.string.tv_scanfCnt
+1458992143360	Copy compilation unit
+1458992191385	Encapsulate field 'dataStr'
+1458992265108	Copy compilation unit
+1458992413154	Rename local variable 'inventoryReport'
+1458996569300	Rename package 'com.example.rfidlibsample'

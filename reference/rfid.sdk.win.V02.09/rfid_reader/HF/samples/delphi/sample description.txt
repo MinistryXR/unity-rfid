@@ -1,0 +1,3 @@
+delphi project can only use 32bits-debug dlls
+
+1.TagAccess project: sample for ISO15693 ,ISO14443a reader application ,rfid tag access sample,including inventory ,read memory and write memory and so on.

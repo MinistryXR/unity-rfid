@@ -1,0 +1,11 @@
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessConditions.resources
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeBlkBlock.resources
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.AccessTypeTailBlock.resources
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Form1.resources
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\WindowsApplication2.Properties.Resources.resources
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS(reader sample).csproj.GenerateResource.Cache
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\run\win32\unicode_debug\TagAccess_CS.pdb
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.exe
+E:\SDKs\rfid.sdk.win.V02.04\rfid_reader-读卡器开发包\HF-高频\samples\C#\TagAccess\obj\x86\debug_unicode\TagAccess_CS.pdb

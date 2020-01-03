@@ -1,0 +1,16 @@
+H:\Users\desktop\HF-高频\samples\run\win32\debug\SetOutput_cs.exe
+H:\Users\desktop\HF-高频\samples\run\win32\debug\SetOutput_cs.pdb
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\Debug\SetOutput_cs.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\Debug\SetOutput_cs.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\Debug\SetOutput_cs.csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\Debug\SetOutput_cs.exe
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\Debug\SetOutput_cs.pdb
+H:\Users\desktop\HF-高频\samples\run\win32\unicode_debug\SetOutput_cs.exe
+H:\Users\desktop\HF-高频\samples\run\win32\unicode_debug\SetOutput_cs.pdb
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\debug_unicode\ResolveAssemblyReference.cache
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\debug_unicode\SetOutput_cs.Form1.resources
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\debug_unicode\SetOutput_cs.Properties.Resources.resources
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\debug_unicode\SetOutput_cs.csproj.GenerateResource.Cache
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\debug_unicode\SetOutput_cs.exe
+H:\Users\desktop\HF-高频\samples\C#\SetOutput_cs\obj\x86\debug_unicode\SetOutput_cs.pdb

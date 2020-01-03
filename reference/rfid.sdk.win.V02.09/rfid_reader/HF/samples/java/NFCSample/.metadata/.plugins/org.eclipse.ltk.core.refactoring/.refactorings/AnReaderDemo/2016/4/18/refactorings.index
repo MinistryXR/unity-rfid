@@ -1,0 +1,9 @@
+1461651915080	Copy file
+1461808062434	Rename field 'inventoryTableListView'
+1461808097243	Rename field 'scanfTableView'
+1461808135410	Rename field 'tagNameListView'
+1461808217766	Rename field 'list_inventory'
+1461808261823	Rename field 'list_scan'
+1461809218018	Rename type 'InventorySetActivity'
+1461809271127	Rename type 'ScanfAdapter'
+1461809289985	Rename type 'ScanfReport'

@@ -1,0 +1,4 @@
+1461823884920	Delete element
+1461828612903	Extracts string '书名:' into R.string.tv_book_name
+1461828631888	Extracts string '作者' into R.string.tv_author
+1461828851093	Extracts string '所有书列表' into R.string.tv_bool_list

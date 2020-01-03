@@ -1,0 +1,10 @@
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\run\win64\unicode_debug\ReadTIDAndWrite.exe
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\run\win64\unicode_debug\ReadTIDAndWrite.pdb
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\readTIDAndWrite.csprojAssemblyReference.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\WindowsApplication2.Form1.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\WindowsApplication2.Properties.Resources.resources
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\readTIDAndWrite.csproj.GenerateResource.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\readTIDAndWrite.csproj.CoreCompileInputs.cache
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\readTIDAndWrite.csproj.CopyComplete
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\ReadTIDAndWrite.exe
+C:\Users\joann\Downloads\rfid.sdk.win.V02.09\rfid_reader-╢┴┐¿╞≈┐¬╖ó░ⁿ\UHF-│¼╕▀╞╡\samples\C#\readTIDAndWrite\obj\x64\debug_unicode\ReadTIDAndWrite.pdb

@@ -1,0 +1,698 @@
+package com.rfid.reader;
+
+import com.rfid.api.GFunction;
+import com.rfid.basetype.*;
+import com.rfid.def.RfidDef;
+import com.rfid.def.ApiErrDefinition;
+import com.rfid.def.LibError;
+import com.rfid.def.Proandeav2_command;
+import com.rfid.spec.AN_M201_APL_ISO15693;
+import com.rfid.spec.AN_M201_PICC_ICODESLI;
+import com.rfid.spec.AN_M201_PICC_ICODESLIX;
+import com.rfid.spec.L0_PICC_HANDLE;
+import com.rfid.spec.SpecTagAccess;
+import com.rfid.spec.TagOperateHandle;
+import com.rfid.spec.ISO15693TagDataReport;
+import com.rfid.spec.L0_APL;
+import com.rfid.spec.L0_IdentifyDataIso15693;
+import com.rfid.spec.L0_PICC;
+import com.rfid.spec.SpecAIPInvenParamISO15693;
+import com.rfid.spec.SpecAirProtocInvenParam;
+import com.rfid.spec.SpecConnectParams;
+import com.rfid.spec.SpecInvenParamSet;
+import com.rfid.transport.BufferPack;
+import com.rfid.transport.CommTransport;
+
+public class DriveM201 extends ADReader
+{
+
+	// 打开蓝牙设备
+	public int OpenBlueTool(String addr)
+	{
+		return m_transport.connectBluetoolth(addr);
+	}
+
+	// 打开串口设备
+	public int OpenCom(String sPath, int m_baud, String sFrame, byte addr)
+	{
+		return m_transport.connectCom(sPath, m_baud, sFrame, addr);
+	}
+
+	// 打开TCP
+	public int OpenTcpNet(String localIp, int localPort, String remoteIp,
+			int remotePort)
+	{
+		return m_transport.connectTcpClent(localIp, localPort, remoteIp,
+				remotePort);
+	}
+
+	// 获取设备信息
+	public int GetReaderInfor(StringBuffer buffer)
+	{
+		byte byVersion[] = new byte[2];
+		byte byProductType[] = new byte[3];
+		byte bySerialnum[] = new byte[5];
+		// m_syncTDReports.lock();
+		int iret = CmdGetDeviceInfor(byVersion, byProductType, bySerialnum);
+		// m_syncTDReports.unlock();
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		String strInfo, strFirmwareVersion, strProductType, strSerial;
+		strFirmwareVersion = String.format("%02x.%02x", byVersion[0],
+				byVersion[1]);
+		strProductType = String.format("%02X%02X%02X", byProductType[0],
+				byProductType[1], byProductType[2]);
+		strSerial = String.format("%02X%02X%02X%02X%02X", bySerialnum[0],
+				bySerialnum[1], bySerialnum[2], bySerialnum[3], bySerialnum[4]);
+		strInfo = String.format("%s:%s:%s", strFirmwareVersion, strProductType,
+				strSerial);
+		buffer.append(strInfo);
+		return ApiErrDefinition.NO_ERROR;
+	}
+
+	private int CmdGetDeviceInfor(byte byVersion[], byte byProductType[],
+			byte bySerialnum[])
+	{
+		// string strInfor, strFirmwareVersion, strProductType, strSerial;
+		int iret;
+		BufferPack pbSnd = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		pbSnd.WriteData(Proandeav2_command.ANV2CMD_CTRL_GETINFOR);// pbSnd.write((UINT16)
+																	// ANV2CMD_CTRL_GETINFOR)
+																	// ;
+		iret = transceive(Proandeav2_command.ANV2CMD_CTRL_GETINFOR, pbSnd,
+				pbRecv, 500, false);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;// goto exit_fail;
+		}
+		// parse the command data
+		if (pbRecv.readable_length() < 10)
+		{
+			iret = -ApiErrDefinition.ERR_MSGSIZE;
+			return iret;
+		}
+		pbRecv.ReadData(byVersion, 2);
+		// pbRecv.(byVersion,2 ) ;
+		pbRecv.ReadData(byProductType, 3);
+		pbRecv.ReadData(bySerialnum, 5);
+
+		iret = ApiErrDefinition.NO_ERROR;
+		return iret;
+	}
+
+	public int transceive(char reqCmd, BufferPack snd, BufferPack recv,
+			long timeout, boolean waitEndPacket)
+	{
+		int iret;
+		UINT16 resp_cmd = new UINT16((char) 0);
+		UINT8 resp_sta = new UINT8((byte) 0);
+		byte buffer[] = new byte[RfidDef.MAX_BUFFERPACK_LEN];
+		BufferPack recvBuf = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		m_LastReaderErrCode = 0;
+
+		// 网络连接时，先清空缓冲区数据
+		m_syncLock.lock();
+		m_transport.ioctrol(CommTransport.IOCTRL_PURGECOMM);
+
+		iret = m_transport.ll_send(snd.GetBuffer(), 0, snd.getBufferLen());
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			m_syncLock.unlock();
+			return iret;
+		}
+		long curTime = System.currentTimeMillis();
+		while (true)
+		{
+			// 超时
+			if (System.currentTimeMillis() - curTime > timeout)
+			{
+				iret = -ApiErrDefinition.ERR_TIMEOUT;
+				m_syncLock.unlock();
+				return iret;
+			}
+			recvBuf.flush();
+			while (true)
+			{
+				iret = m_transport.recv(buffer, buffer.length, 0);
+				if ((iret > 0) || (iret == -ApiErrDefinition.ERR_MSGSIZE))
+				{
+
+					if (iret == -ApiErrDefinition.ERR_MSGSIZE)
+					{
+						recvBuf.WriteData(buffer, 0, buffer.length);// (buffer,sizeof(buffer));
+						continue;// goto label_read_left ;
+					}
+					else
+					{
+						/* 接收一个数据包成功 */
+						recvBuf.WriteData(buffer, 0, iret);
+						break;
+					}
+				}
+				else if (iret < 0)
+				{
+					// error occure
+					m_syncLock.unlock();
+					return iret;
+				}
+				else
+				{
+					break;
+				}
+			}
+			if (recvBuf.readable_length() >= 3)
+			{
+				recvBuf.ReadData(resp_cmd);// reqCmd
+				recvBuf.ReadData(resp_sta);
+				if (resp_cmd.getValue() != reqCmd)
+				{
+					continue;// goto label_receiving ;// receive again
+				}
+				recv.WriteData(recvBuf.GetBuffer(), 3,
+						recvBuf.getBufferLen() - 3);// (recvBuf);
+				if (waitEndPacket)
+				{
+					if (recvBuf.readable_length() > 0)
+					{
+						/* 还不是结束包 */
+						// goto label_receiving ;
+						continue;
+					}
+				}
+				break;
+			}
+		}
+		if (resp_sta.getValue() != (byte) 0x00)
+		{
+			SetLastReaderErrCode(resp_sta.getValue());
+			iret = -ApiErrDefinition.ERR_DEVICE;
+			m_syncLock.unlock();
+			return iret;// goto exit_fail;
+		}
+		iret = ApiErrDefinition.NO_ERROR;
+		m_syncLock.unlock();
+		return iret;
+	}
+
+	void SetLastReaderErrCode(int error)
+	{
+		m_LastReaderErrCode = error;
+	}
+
+	int LowLevelInit()
+	{
+		SpecAIPInvenParamISO15693 iso15693param;
+		iso15693param = SpecAIPInvenParamISO15693.create();
+		if (iso15693param != null)
+		{
+			iso15693param.m_aipType = RfidDef.RFID_APL_ISO15693_ID;
+			iso15693param.m_antID = 0;
+			iso15693param.m_enableAFI = false;
+			iso15693param.m_AFI = 0;
+			iso15693param.m_slotType = 0;
+			m_DefInvenParams.AddAirProtocol(iso15693param);
+		}
+		return ApiErrDefinition.NO_ERROR;
+	}
+
+	public int PICC_Inventory(byte AIType, byte AntennaIDs[],
+			SpecInvenParamSet InvenParams)
+	{
+		int iret = ApiErrDefinition.NO_ERROR;
+		SpecInvenParamSet pInvenParams = InvenParams;
+		if (pInvenParams == null)
+		{
+			pInvenParams = m_DefInvenParams;
+		}
+		SpecAirProtocInvenParam p;
+		p = pInvenParams.m_AirProtocolParams;
+		while (p != null)
+		{
+			L0_APL apl;
+			apl = m_L0RFID.GetAPL(p.m_aipType);
+			iret = apl.Inventory(AIType, p, pInvenParams);
+			if (iret != ApiErrDefinition.NO_ERROR)
+			{
+				return iret;
+			}
+			p = (SpecAirProtocInvenParam) p.m_next;
+		}
+		return iret;
+	}
+
+	public int PICC_Connect(SpecConnectParams Params,
+			TagOperateHandle retPICCHandle /*
+											 * Return handle of the connected
+											 * picc
+											 */
+	)
+	{
+		int iret = -1;
+		L0_APL apl;
+		L0_PICC picc;
+		// L0_PICC_HANDLE hPICC = null ;
+
+		if (Params == null)
+		{
+			iret = -ApiErrDefinition.ERR_ARG;
+			return iret;
+		}
+		apl = m_L0RFID.GetAPL(Params.m_AIPId);
+		if (apl == null)
+		{
+			iret = -LibError.ERR_NOTSUP;
+			return iret;
+		}
+
+		picc = apl.GetPicc(Params.m_TagId); // PICCTypeID== 0 ,use default PICC
+		if (picc == null)
+		{
+			iret = -LibError.ERR_NOTSUP;
+			return iret;
+		}
+		iret = picc.Connect(Params, retPICCHandle);// if connect ok return PICC
+													// handle
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+
+		m_lastConnectTagTypeStore = Params.m_TagId;
+		if (retPICCHandle.getTagHandle() == null)
+		{
+			iret = -LibError.ERR_MEM;
+			return iret;
+		}
+		// hPICC.m_picc =picc ;
+		m_ConnPICCs.Register(retPICCHandle.getTagHandle());
+		retPICCHandle.getTagHandle().m_reader = this;
+		// retPICCHandle.setTagHandle(retPICCHandle.getTagHandle());
+		iret = ApiErrDefinition.NO_ERROR;
+		return iret;
+
+	}
+
+	public int InventoryTransceive(BufferPack pbSnd)
+	{
+		int iret = -1;
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		byte buffer[] = new byte[128];
+		UINT16 resp_cmd = new UINT16((char) 0);
+		UINT8 resp_sta = new UINT8((byte) 0);
+
+		int invenTimeout = 30000;// GetInventoryMaxDuration() ;
+		m_LastReaderErrCode = 0;
+		m_transport.ioctrol(CommTransport.IOCTRL_PURGECOMM);// 清空缓冲区数据
+
+		m_syncLock.lock();
+		iret = m_transport.send(pbSnd.GetBuffer(), pbSnd.getBufferLen(), 0);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			m_syncLock.unlock();
+			return iret;
+		}
+		pbRecv.flush();
+		long curTime = System.currentTimeMillis();
+		while (true)
+		{
+			if (System.currentTimeMillis() - curTime >= invenTimeout)
+			{
+				m_syncLock.unlock();
+				return -ApiErrDefinition.ERR_TIMEOUT;
+			}
+			// 快速退出检测
+			if (m_trancQuickExit)
+			{
+				m_trancQuickExit = false;
+				iret = -LibError.ERR_QUICKEXIT;
+				m_syncLock.unlock();
+				return iret;
+			}
+
+			while (true)
+			{
+				iret = m_transport.recv(buffer, buffer.length, 0);
+				if ((iret > 0) || (iret == -LibError.ERR_MSGSIZE))
+				{
+					pbRecv.WriteData(buffer, 0, iret);
+					if (iret == -LibError.ERR_MSGSIZE)
+					{
+						continue;
+					}
+					else
+					{
+						break;
+					}
+				}
+				else if (iret < 0)
+				{
+					m_syncLock.unlock();
+					return iret;
+				}
+				else
+				{
+					//break;
+				}
+			}
+
+			if (pbRecv.readable_length() >= 3)
+			{
+				pbRecv.ReadData(resp_cmd);// reqCmd
+				pbRecv.ReadData(resp_sta);
+				if (resp_cmd.getValue() != Proandeav2_command.ANV2CMD_ISO_INVENTORY)
+				{
+					continue;
+				}
+
+				if (pbRecv.readable_length() > 0)
+				{
+					if (pbRecv.readable_length() >= 9)
+					{
+						byte dsfid = 0;
+						byte[] uid = new byte[8];
+						byte antid = 1;
+						long aip_type = RfidDef.RFID_APL_ISO15693_ID;
+						long picc_type = RfidDef.RFID_UNKNOWN_PICC_ID;
+						dsfid = pbRecv.ReadData();
+						pbRecv.ReadData(uid, 8);
+						GFunction.BytesReverse(uid, 8);
+						if (pbRecv.readable_length() > 0)
+							antid = pbRecv.ReadData();
+						L0_IdentifyDataIso15693 idf_data = new L0_IdentifyDataIso15693();
+						System.arraycopy(uid, 0, idf_data.m_uid, 0, 8);
+						L0_APL paplISO15693;
+						paplISO15693 = m_L0RFID
+								.GetAPL(RfidDef.RFID_APL_ISO15693_ID);
+						if (paplISO15693 != null)
+						{
+							picc_type = paplISO15693.IdentifyTag(idf_data);
+						}
+						String strUID;
+						strUID = GFunction.encodeHexStr(uid);
+						ISO15693TagDataReport pTDR = new ISO15693TagDataReport();
+						pTDR = ISO15693TagDataReport.create();
+						if (pTDR != null)
+						{
+							pTDR.m_AIPType = aip_type;
+							pTDR.m_PICCType = picc_type;
+							pTDR.m_AntID = antid;
+							pTDR.m_Identifier = strUID;
+							pTDR.m_dsfid = dsfid;
+							System.arraycopy(uid, 0, pTDR.m_uid, 0, 8);
+							OnInventoryPICCFound(pTDR);
+						}
+					}
+				}
+				else
+				{
+					break;
+				}
+			}
+		}
+
+		if (resp_sta.getValue() != (byte) 0x00)
+		{
+			if (resp_sta.getValue() != (byte) 0xE0)
+			{
+				SetLastReaderErrCode(resp_sta.getValue());
+				iret = -ApiErrDefinition.ERR_DEVICE;
+				m_syncLock.unlock();
+				return iret;
+			}
+			else
+			{
+				iret = -LibError.ERR_STOPTRRIGOCUR;
+				m_syncLock.unlock();
+				return iret;
+			}
+		}
+
+		iret = ApiErrDefinition.NO_ERROR;
+		m_syncLock.unlock();
+		return iret;
+	}
+
+	int AirProtocolLayerInit()
+	{
+		AN_M201_APL_ISO15693 aplIso15693;
+		aplIso15693 = AN_M201_APL_ISO15693.create();
+		if (aplIso15693 != null)
+		{
+			aplIso15693.m_reader = this;
+			AN_M201_PICC_ICODESLI icodesli;
+			icodesli = AN_M201_PICC_ICODESLI.create();
+			if (icodesli != null)
+			{
+				icodesli.m_apl = aplIso15693;
+				icodesli.m_reader = this;
+				aplIso15693.RegisterPicc(icodesli);
+			}
+
+			AN_M201_PICC_ICODESLIX icodeslix;
+			icodeslix = AN_M201_PICC_ICODESLIX.create();
+			if (icodeslix != null)
+			{
+				icodeslix.m_apl = aplIso15693;
+				icodeslix.m_reader = this;
+				aplIso15693.RegisterPicc(icodeslix);
+			}
+
+			/*
+			 * AN_M200_PICC_TIHFIPlus tihfi_plus; tihfi_plus =
+			 * CAN_M200_PICC_TIHFIPlus::create() ; if(tihfi_plus) {
+			 * tihfi_plus->m_apl = aplIso15693 ; tihfi_plus->m_reader = this ;
+			 * aplIso15693->RegisterPicc(tihfi_plus) ; }
+			 * 
+			 * CAN_M200_PICC_ICODESLIX *icodeslix; icodeslix =
+			 * CAN_M200_PICC_ICODESLIX::create() ; if(icodeslix) {
+			 * icodeslix->m_apl = aplIso15693 ; icodeslix->m_reader = this ;
+			 * aplIso15693->RegisterPicc(icodeslix) ; }
+			 * 
+			 * CAN_M200_PICC_TIHFIStandard *tihfiStandard ; tihfiStandard =
+			 * CAN_M200_PICC_TIHFIStandard::create() ; if(tihfiStandard) {
+			 * tihfiStandard->m_apl = aplIso15693 ; tihfiStandard->m_reader =
+			 * this; aplIso15693->RegisterPicc(tihfiStandard) ; }
+			 * 
+			 * CAN_M200_PICC_TIHFIPro *tihfiPro ; tihfiPro =
+			 * CAN_M200_PICC_TIHFIPro::create(); if(tihfiPro) { tihfiPro->m_apl
+			 * = aplIso15693 ; tihfiPro->m_reader = this;
+			 * aplIso15693->RegisterPicc(tihfiPro) ; }
+			 */
+
+			m_L0RFID.RegisterAPL(aplIso15693);
+		}
+
+		return ApiErrDefinition.NO_ERROR;
+	}
+
+	public int OpenRFTransmitter()
+	{
+		return SetSta_RF((byte) 1);
+	}
+
+	public int CloseRFTransmitter()
+	{
+		return SetSta_RF((byte) 0);
+	}
+
+	private int SetSta_RF(byte OnOff/* 0:close ,1:open */)
+	{
+		int iret;
+		BufferPack pbSnd = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+
+		pbSnd.WriteData(Proandeav2_command.ANV2CMD_CTRL_OCRF);
+		pbSnd.WriteData(OnOff);
+		iret = transceive(Proandeav2_command.ANV2CMD_CTRL_OCRF, pbSnd, pbRecv,
+				500, false);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		iret = ApiErrDefinition.NO_ERROR;
+		return iret;
+	}
+
+	public String GetDeviceName()
+	{
+		return "M201";
+	}
+
+	private int WriteCfgBlock(int cfgNo, byte cfgdata[])
+	{
+
+		BufferPack pbSnd = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		// DWORD bckupTimeOut = m_transcTimeout;
+		// m_transcTimeout = 500 ; // use short timeout ;
+		pbSnd.WriteData(Proandeav2_command.ANV2CMD_CFG_WRITE);//
+		pbSnd.WriteData((byte) (cfgNo & 0xff));
+		pbSnd.WriteData(cfgdata, 0, 8);
+		int iret = -1;
+		iret = transceive(Proandeav2_command.ANV2CMD_CFG_WRITE, pbSnd, pbRecv,
+				500, false);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		return ApiErrDefinition.NO_ERROR;
+	}
+
+	public int WriteConfigBlock(int cfgno, byte[] cfgdata, int nSize, int mask)
+	{
+		byte cfgblock[] = new byte[8];
+		int nCopy = 8;
+		if (nSize < nCopy)
+		{
+			nCopy = nSize;
+		}
+		System.arraycopy(cfgdata, 0, cfgblock, 0, nCopy);
+		return WriteCfgBlock(cfgno, cfgblock);
+	}
+
+	public int SaveConfigBlock(int cfgno)
+	{
+		BufferPack pbSnd = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		pbSnd.WriteData(Proandeav2_command.ANV2CMD_CFG_SAVE);
+		pbSnd.WriteData(cfgno);
+		int iret;
+		iret = transceive(Proandeav2_command.ANV2CMD_CFG_SAVE, pbSnd, pbRecv,
+				500, false);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		return ApiErrDefinition.NO_ERROR;
+	}
+
+	public int ReadCfgBlock(int cfgNo, byte cfgdata[])
+	{
+		int iret;
+		if (cfgdata.length < 8)
+		{
+			iret = -ApiErrDefinition.ERR_MSGSIZE;
+			return iret;
+		}
+		BufferPack pbSnd = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		pbSnd.WriteData(Proandeav2_command.ANV2CMD_CFG_READ);
+		pbSnd.WriteData((byte) (cfgNo & 0xff));
+
+		iret = transceive(Proandeav2_command.ANV2CMD_CFG_READ, pbSnd, pbRecv,
+				500, false);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		// parse the command data
+		if (pbRecv.readable_length() < 8)
+		{
+			iret = -ApiErrDefinition.ERR_MSGSIZE;
+			return iret;
+		}
+		pbRecv.ReadData(cfgdata, 8);
+		iret = ApiErrDefinition.NO_ERROR;
+		return iret;
+	}
+
+	public byte GetRFPower()
+	{
+		byte cfgdata[] = new byte[8];
+		int iret = ReadCfgBlock(1, cfgdata);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return (byte) (iret & 0xff);
+		}
+		if (cfgdata[0] >= 1 && cfgdata[0] <= 6)
+		{
+			return cfgdata[0];
+		}
+		else
+		{
+			return ApiErrDefinition.ERR_UNKNOWN;
+		}
+	}
+
+	// 设置射频功率
+	public int SetRFPower(byte index)
+	{
+		byte buffer[] = new byte[8];
+		int iret = ReadCfgBlock(1, buffer);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+
+		buffer[0] = index;
+
+		iret = WriteCfgBlock(1, buffer);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+
+		iret = SaveConfigBlock(1);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		return ApiErrDefinition.NO_ERROR;
+	}
+
+	public int LoadFactoryDefault()
+	{
+		int iret;
+		BufferPack pbSnd = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		BufferPack pbRecv = new BufferPack(RfidDef.MAX_BUFFERPACK_LEN);
+		pbSnd.WriteData(Proandeav2_command.ANV2CMD_CFG_RESET);// ((UINT16)
+																// ANV2CMD_CFG_RESET)
+																// ;
+		iret = transceive(Proandeav2_command.ANV2CMD_CFG_RESET, pbSnd, pbRecv,
+				500, false);
+		if (iret != ApiErrDefinition.NO_ERROR)
+		{
+			return iret;
+		}
+		iret = ApiErrDefinition.NO_ERROR;
+		return iret;
+	}
+
+	public int PICC_Access(L0_PICC_HANDLE hPICC, SpecTagAccess tagAccess)
+	{
+		int iret = ApiErrDefinition.NO_ERROR;
+		if (hPICC == null)
+		{
+			iret = -LibError.ERR_ARG;
+			return iret;
+		}
+		if (!m_ConnPICCs.Find(hPICC))
+		{
+			iret = -LibError.ERR_NOTSUP;
+			return iret;
+		}
+		if (hPICC.m_picc == null)
+		{
+			iret = -1;
+			return iret;
+		}
+		iret = ((L0_PICC) hPICC.m_picc).Access(hPICC, tagAccess);
+		return iret;
+
+	}
+
+	public int OnlineCheck()
+	{
+		byte byVersion[] = new byte[2];
+		byte byProductType[] = new byte[3];
+		byte bySerialnum[] = new byte[5];
+		int iret = CmdGetDeviceInfor(byVersion, byProductType, bySerialnum);
+		m_firmVer = byVersion[1] & 0xff | (byVersion[0] << 8 & 0xff00);
+		m_productType = (byProductType[0] << 16 & 0xff0000)
+				| (byProductType[1] << 8 & 0xff00) | (byProductType[2] & 0xff);
+		return iret;
+	}
+}
